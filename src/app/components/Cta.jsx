@@ -24,9 +24,9 @@ export default function Cta() {
                         href="/vehicles"
                         className="group bg-[#0b0b0b] px-10 py-20 text-center hover:bg-[#111] transition"
                     >
-                         <p className="mb-4 text-sm tracking-[0.3em] uppercase">
+                        <p className="mb-4 text-sm tracking-[0.3em] uppercase">
                             <span className="bg-neutral-800 text-neutral-200 px-3 py-1 rounded-full">
-                                For Consultants
+                                For Buyers
                             </span>
                         </p>
 
@@ -35,8 +35,9 @@ export default function Cta() {
                         </p>
 
                         <p className="mt-4 text-base text-neutral-400 max-w-sm mx-auto">
-                            Explore verified listings from structured consultant storefronts.
+                            Discover verified vehicles through structured, transparent listings.
                         </p>
+
 
                         <span className="mt-10 inline-block text-white underline underline-offset-8 decoration-neutral-600 group-hover:decoration-neutral-300 transition">
                             Enter Marketplace →
@@ -60,8 +61,9 @@ export default function Cta() {
                         </p>
 
                         <p className="mt-4 text-base text-neutral-400 max-w-sm mx-auto">
-                            Build visibility, credibility, and performance on AVX.
+                            Build visibility and credibility on a structured, performance-led platform.
                         </p>
+
 
                         <span className="mt-10 inline-block text-white underline underline-offset-8 decoration-neutral-600 group-hover:decoration-neutral-300 transition">
                             Start Your Storefront →
