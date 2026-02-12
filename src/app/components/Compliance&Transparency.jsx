@@ -1,67 +1,71 @@
-/////section 10th
 import React from 'react';
 
 const ComplianceAndTransparency = () => {
   return (
-    <section className="py-16 px-6 bg-[var(--color-secondary)]">
-      <div className="max-w-4xl mx-auto">
+    <section className="py-24 px-6 bg-[#000000] flex justify-center items-center">
+      <div className="relative max-w-4xl w-full">
         
-        {/* Compact Glass Capsule */}
-        <div className="relative group p-[1px] rounded-[30px] overflow-hidden bg-gradient-to-r from-[var(--color-fourth)]/40 via-transparent to-[var(--color-fourth)]/40">
+        {/* Decorative Corner Accents */}
+        <div className="absolute -top-2 -left-2 w-8 h-8 border-t border-l border-[var(--color-fourth)] opacity-50"></div>
+        <div className="absolute -bottom-2 -right-2 w-8 h-8 border-b border-r border-[var(--color-fourth)] opacity-50"></div>
+
+        {/* Main Content Container */}
+        <div className="bg-[#0a0a0a] border border-white/10 p-10 md:p-16 relative overflow-hidden">
           
-          <div className="bg-[#0a0a0a] rounded-[29px] p-8 md:p-10 relative overflow-hidden flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            
-            {/* LARGE IMPACT ICON */}
-            <div className="flex-shrink-0">
-              <div className="relative">
-                {/* Outer Glow for Icon */}
-                <div className="absolute inset-0 bg-[var(--color-fourth)] blur-2xl opacity-20"></div>
-                <svg 
-                  width="80" 
-                  height="80" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="var(--color-fourth)" 
-                  strokeWidth="1" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                  className="relative z-10 opacity-90"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  <circle cx="12" cy="12" r="3" fill="var(--color-fourth)" className="opacity-40" />
-                  <path d="m9 12 2 2 4-4" strokeWidth="2.5" />
-                </svg>
+          {/* Subtle Scanline Animation Effect */}
+          <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent via-[var(--color-fourth)]/5 to-transparent h-20 w-full -translate-y-full animate-[scan_4s_linear_infinite]"></div>
+
+          <div className="relative z-10">
+            {/* Header with Serial Style */}
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-10 border-b border-white/5 pb-6">
+              <div className="flex items-center gap-3">
+                <span className="text-[var(--color-fourth)] font-mono text-sm tracking-tighter font-bold">10 //</span>
+                <h2 className="text-white text-xs uppercase tracking-[0.5em] font-medium opacity-70">
+                  Compliance & Transparency
+                </h2>
+              </div>
+              <div className="text-[10px] font-mono text-white/30 uppercase tracking-widest">
+                Status: Verified Secure
               </div>
             </div>
 
-            {/* CONTENT BLOCK - EXACT CONTENT AS REQUESTED */}
-            <div className="text-center md:text-left relative z-10">
-              <h4 className="text-[var(--color-fourth)] font-black uppercase tracking-[0.5em] text-[12px] mb-4">
-                Compliance & Transparency Note
-              </h4>
-              <p className="text-[var(--color-primary)] text-lg md:text-xl font-[var(--font-secondary)] leading-relaxed">
-                AVX is a marketplace platform. Transactions, pricing, and negotiation occur <span className="text-[var(--color-fourth)] font-bold italic">directly</span> between buyers and consultants. AVX does not hold or process payments between parties.
-              </p>
-              <p className="mt-4 text-[var(--color-fourth)] font-bold uppercase tracking-widest text-sm italic">
-                This protects you legally.
-              </p>
-            </div>
+            {/* Content Body */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+              <div className="md:col-span-8">
+                <p className="text-white/80 text-lg leading-relaxed font-light">
+                  AVX operates as a <span className="text-white font-normal">marketplace platform</span>. 
+                  All transactions, pricing, and negotiations occur 
+                  <span className="text-[var(--color-fourth)] italic"> directly </span> 
+                  between buyers and consultants.
+                </p>
+                <p className="mt-4 text-white/50 text-sm leading-relaxed">
+                  AVX does not hold, process, or escrow payments between parties. 
+                  Full autonomy remains with the users.
+                </p>
+              </div>
 
-            {/* Subtle "Safe" Badge */}
-            <div className="absolute top-4 right-8 hidden md:block">
-              <span className="text-[var(--color-fourth)] opacity-[0.07] font-black italic text-5xl select-none">AVX-SECURE</span>
+              {/* The "Shield" Callout */}
+              <div className="md:col-span-4 flex flex-col items-start md:items-end justify-center h-full">
+                <div className="bg-[var(--color-fourth)]/5 border border-[var(--color-fourth)]/20 px-4 py-6 text-center w-full md:w-auto">
+                  <p className="text-[var(--color-fourth)] text-[10px] font-bold uppercase tracking-[0.2em] mb-1">
+                    Legal Protection
+                  </p>
+                  <p className="text-white text-xs font-semibold uppercase italic">
+                    This protects you legally.
+                  </p>
+                </div>
+              </div>
             </div>
-
           </div>
         </div>
 
-        {/* Minimalist Footer Detail */}
-        <div className="mt-6 flex justify-center gap-10">
-            <div className="h-[1px] w-20 bg-[var(--color-third)]/30 self-center"></div>
-            <span className="text-[8px] uppercase tracking-[0.8em] font-bold text-[var(--color-fourth)]">Legal Independence Verified</span>
-            <div className="h-[1px] w-20 bg-[var(--color-third)]/30 self-center"></div>
-        </div>
-
+        {/* CSS for the scanline animation */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          @keyframes scan {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(500%); }
+          }
+        `}} />
       </div>
     </section>
   );
