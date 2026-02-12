@@ -1,0 +1,50 @@
+// app/about/components/TrustSignals.jsx
+
+export default function TrustSignal() {
+    return (
+        <section className="bg-[#080808] border-t border-neutral-800">
+            <div className="mx-auto max-w-7xl px-6 py-40 text-center">
+
+                {/* Title */}
+                <p className="mb-2 text-sm tracking-[0.4em] uppercase text-neutral-400 font-bold">
+                    Built for Accountability
+                </p>
+
+                <h2 className="mx-auto text-4xl sm:text-5xl xl:text-5xl font-medium leading-[1.15] text-white font-[Montserrat] ">
+                    Trust is not claimed. <span className=" text-neutral-400"> It’s measured.</span>
+
+                </h2>
+
+                {/* <p className="mx-auto mt-16 max-w-2xl text-2xl leading-relaxed text-neutral-300 font-[Poppins]">
+                    AVX is growing across major cities in India — onboarding consultants,
+                    standardizing vehicle data, and building inspection-backed confidence
+                    one market at a time.
+                </p> */}
+
+                {/* Metrics */}
+                <div className="mt-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
+
+                    <Metric value="10,000+" label="Consultants onboarded" />
+                    <Metric value="100K+" label="Vehicles listed" />
+                    <Metric value="X+" label="Cities covered" />
+                    <Metric value="Y+" label="Inspections completed" />
+
+                </div>
+
+            </div>
+        </section>
+    );
+}
+
+function Metric({ value, label }) {
+    return (
+        <div>
+            <div className="text-5xl sm:text-6xl font-medium text-white">
+                {value}
+            </div>
+            <p className="mt-4 text-base tracking-wide uppercase text-neutral-400">
+                {label}
+            </p>
+        </div>
+    );
+}

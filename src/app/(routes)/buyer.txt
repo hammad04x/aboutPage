@@ -1,0 +1,172 @@
+// app/about/components/ConsultantsAndBuyers.jsx
+
+import {
+    Store,
+    BarChart3,
+    Megaphone,
+    Layers,
+    ShieldCheck,
+    CheckCircle,
+    Sliders,
+    MessageSquare
+} from "lucide-react";
+
+export default function ConsultantsAndBuyers() {
+    return (
+        <section className="bg-[#0b0b0b] border-t border-neutral-800">
+
+            {/* ===================== */}
+            {/* FOR CONSULTANTS */}
+            {/* ===================== */}
+            <div className="mx-auto max-w-7xl px-6 py-36">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-28">
+
+                    {/* LEFT — STICKY */}
+                    <StickyBlock
+                        label="For Consultants"
+                        titleTop="A platform built"
+                        titleBottom="for serious automotive consultants"
+                        desc="AVX empowers consultants with structured visibility, measurable
+                  performance, and scalable growth — without compromising credibility."
+                        cta={{ text: "Become a Consultant →", href: "/consultant" }}
+                    />
+
+                    {/* RIGHT — SCROLLABLE */}
+                    <div className="space-y-24">
+                        <Capability
+                            icon={<Store size={22} />}
+                            title="Public storefront with brand visibility"
+                            desc="A permanent public presence representing your inventory, reputation, and operating discipline."
+                        />
+                        <Capability
+                            icon={<BarChart3 size={22} />}
+                            title="Performance dashboard & analytics"
+                            desc="Clear insight into views, leads, engagement, and conversion outcomes."
+                        />
+                        <Capability
+                            icon={<Megaphone size={22} />}
+                            title="PPC & featured placements"
+                            desc="Optional paid amplification designed to increase reach without diluting trust."
+                        />
+                        <Capability
+                            icon={<Layers size={22} />}
+                            title="Tier-based growth tools"
+                            desc="Advanced capabilities unlocked progressively as performance compounds."
+                        />
+                        <Capability
+                            icon={<ShieldCheck size={22} />}
+                            title="Inspection credibility layer"
+                            desc="Inspection-backed trust signals that increase buyer confidence and reduce friction."
+                        />
+                    </div>
+
+                </div>
+            </div>
+
+            {/* ===================== */}
+            {/* FOR BUYERS */}
+            {/* ===================== */}
+            <div className="mx-auto max-w-7xl px-6 py-36 border-t border-neutral-800">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-28">
+
+                    {/* LEFT — STICKY */}
+                    <StickyBlock
+                        label="For Buyers"
+                        titleTop="A marketplace designed"
+                        titleBottom="for confident buying decisions"
+                        desc="AVX helps buyers navigate pre-owned vehicles with clarity.
+                  Verified consultants, structured listings, and transparent
+                  communication replace guesswork with confidence."
+                        cta={{ text: "Browse Vehicles →", href: "/vehicles" }}
+                    />
+
+                    {/* RIGHT — SCROLLABLE */}
+                    <div className="space-y-24">
+                        <Capability
+                            icon={<CheckCircle size={22} />}
+                            title="Verified consultant storefronts"
+                            desc="Browse vehicles through consultant profiles that reflect identity, credibility, and standards."
+                        />
+                        <Capability
+                            icon={<Layers size={22} />}
+                            title="Structured vehicle detail pages"
+                            desc="Consistent, information-rich listings designed to reduce ambiguity."
+                        />
+                        <Capability
+                            icon={<ShieldCheck size={22} />}
+                            title="Optional inspection reassurance"
+                            desc="Inspection-backed confidence signals available where reassurance matters."
+                        />
+                        <Capability
+                            icon={<MessageSquare size={22} />}
+                            title="Inquiry & communication transparency"
+                            desc="Clear visibility into inquiry status, responses, and engagement."
+                        />
+                        <Capability
+                            icon={<Sliders size={22} />}
+                            title="Marketplace-level filtering"
+                            desc="Advanced filters across consultants, vehicles, and attributes."
+                        />
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    );
+}
+
+/* ===================== */
+/* REUSABLE COMPONENTS */
+/* ===================== */
+
+function StickyBlock({ label, titleTop, titleBottom, desc, cta }) {
+    return (
+        <div className="lg:sticky lg:top-32 h-fit">
+            <p className="mb-8 inline-block text-lg tracking-[0.4em] uppercase text-neutral-100 font-bold relative">
+                {label}
+                <span className="absolute left-0 -bottom-3 h-[2px] w-16 bg-gradient-to-r from-neutral-100 to-transparent" />
+            </p>
+
+
+            <h2 className="text-4xl sm:text-5xl xl:text-5xl font-medium leading-[1.15] text-white font-[Montserrat]">
+                {titleTop}
+                <span className="block text-neutral-400 mt-2">
+                    {titleBottom}
+                </span>
+            </h2>
+
+            <p className="mt-12 max-w-xl text-xl leading-relaxed text-neutral-300 font-[Poppins]">
+                {desc}
+            </p>
+
+            <div className="mt-20">
+                <a
+                    href={cta.href}
+                    className="inline-flex items-center gap-2 text-lg text-white underline underline-offset-8 decoration-neutral-600 hover:decoration-neutral-300 transition"
+                >
+                    {cta.text}
+                </a>
+            </div>
+        </div>
+    );
+}
+
+function Capability({ title, desc, icon }) {
+    return (
+        <div className="border-l border-neutral-700 pl-10 flex gap-6">
+            <div className="mt-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-neutral-700 text-neutral-300">
+                {icon}
+            </div>
+
+            <div>
+                <h3 className="text-2xl font-medium text-white">
+                    {title}
+                </h3>
+                <p className="mt-4 text-lg leading-relaxed text-neutral-400">
+                    {desc}
+                </p>
+            </div>
+        </div>
+    );
+}

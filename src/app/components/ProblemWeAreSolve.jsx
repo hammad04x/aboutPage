@@ -1,0 +1,91 @@
+import React from "react";
+
+const ProblemWeAreSolve = () => {
+  return (
+    <section className="py-24 px-6 md:px-12 lg:px-24 bg-[var(--color-secondary)]">
+      <div className="max-w-7xl mx-auto">
+
+        {/* Section Header */}
+        <div className="mb-14">
+          <p className="text-xs uppercase tracking-[4px] text-[var(--color-fourth)] mb-3">
+            The Problem We Fix
+          </p>
+
+          <h2 className="text-3xl md:text-5xl font-bold leading-tight text-[var(--color-primary)]">
+            The Used Vehicle Market <br />
+            <span className="text-[var(--color-third)]">
+              Needed Structure
+            </span>
+          </h2>
+
+          <div className="w-14 h-[2px] bg-[var(--color-fourth)] mt-5 opacity-70"></div>
+        </div>
+
+        {/* Content Blocks */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          {/* Card 1 */}
+          <div className="group p-10 bg-[#141414] rounded-xl border border-[var(--color-third)]/10 transition-all duration-300 hover:bg-gradient-to-br hover:from-[#141414] hover:to-[#0b1a30] hover:border-[var(--color-fourth)]">
+            
+            <div className="text-[var(--color-third)] text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
+              ISSUE 01
+            </div>
+
+            <h3 className="text-lg md:text-xl font-semibold mb-3 text-[var(--color-primary)]">
+              Fragmented Listings
+            </h3>
+
+            <p className="text-[var(--color-third)] text-sm md:text-base leading-relaxed">
+              Vehicles scattered across platforms without consistency, making the search process exhausting and inefficient.
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="group p-10 bg-[#141414] rounded-xl border border-[var(--color-third)]/10 transition-all duration-300 hover:bg-gradient-to-br hover:from-[#141414] hover:to-[#0b1a30] hover:border-[var(--color-fourth)]">
+            
+            <div className="text-[var(--color-third)] text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
+              ISSUE 02
+            </div>
+
+            <h3 className="text-lg md:text-xl font-semibold mb-3 text-[var(--color-primary)]">
+              Low Transparency
+            </h3>
+
+            <p className="text-[var(--color-third)] text-sm md:text-base leading-relaxed">
+              Limited inspection clarity and unclear seller credibility often leave buyers feeling uncertain and unprotected.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="group p-10 bg-[#141414] rounded-xl border border-[var(--color-third)]/10 transition-all duration-300 hover:bg-gradient-to-br hover:from-[#141414] hover:to-[#0b1a30] hover:border-[var(--color-fourth)]">
+            
+            <div className="text-[var(--color-third)] text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
+              ISSUE 03
+            </div>
+
+            <h3 className="text-lg md:text-xl font-semibold mb-3 text-[var(--color-primary)]">
+              No Accountability Layer
+            </h3>
+
+            <p className="text-[var(--color-third)] text-sm md:text-base leading-relaxed">
+              No performance visibility for consultants, creating a marketplace where quality and service aren't measurable.
+            </p>
+          </div>
+
+        </div>
+
+        {/* Closing Line */}
+        <div className="mt-20 text-center">
+          <p className="text-lg md:text-xl font-medium text-[var(--color-primary)]">
+            AVX was built to solve this  
+            <span className="text-[var(--color-fourth)] opacity-90"> structurally</span> —  
+            not cosmetically.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default ProblemWeAreSolve;
