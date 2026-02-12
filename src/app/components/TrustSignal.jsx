@@ -2,7 +2,7 @@
 
 export default function TrustSignals() {
     return (
-        <section className="bg-[var(--color-secondary)] border-t border-neutral-800">
+        <section className="bg-[var(--color-secondary)]">
             <div className="mx-auto max-w-7xl px-6 py-40">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">

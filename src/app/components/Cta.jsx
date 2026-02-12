@@ -2,7 +2,7 @@
 
 export default function Cta() {
     return (
-        <section className="bg-[#060606] border-t border-neutral-800">
+        <section className="bg-[#060606] ">
             <div className="mx-auto max-w-7xl px-6 py-36">
 
                 {/* Heading */}

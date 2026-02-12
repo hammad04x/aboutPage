@@ -125,7 +125,7 @@ export default function ConsultantsAndBuyers() {
   }, [active]);
 
   return (
-    <section className="bg-[#0b0b0b] border-t border-neutral-800">
+    <section className="bg-[var(--color-secondary)] ">
       <div className="mx-auto max-w-7xl px-6 py-36">
 
         {/* ===================== */}
