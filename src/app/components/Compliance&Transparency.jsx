@@ -10,7 +10,7 @@ const ComplianceAndTransparency = () => {
       <div className="max-w-5xl mx-auto">
 
         {/* ===== MAIN PANEL ===== */}
-        <div className="relative group">
+        <div className="relative group hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]">
 
           {/* Blue Edge Aura */}
           <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-r from-[var(--color-fourth)]/40 via-transparent to-[var(--color-fourth)]/40 opacity-40 blur-sm" />
