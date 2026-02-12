@@ -80,7 +80,7 @@ const HowAvxWorks = () => {
             <div
               key={index}
               onMouseEnter={() => setActiveStep(index)}
-              className={`relative overflow-hidden transition-all duration-500 ease-in-out cursor-pointer rounded-2xl border border-white/5 
+              className={`relative overflow-hidden transition-all duration-500 ease-in-out cursor-pointer rounded-2xl border border-white/70 
                 ${activeStep === index ? 'flex-[3] bg-[#111]' : 'flex-1 bg-[#0a0a0a] hover:bg-[#0f0f0f]'}`}
             >
 

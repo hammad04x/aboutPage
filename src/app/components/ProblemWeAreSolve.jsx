@@ -2,7 +2,7 @@ import React from "react";
 
 const ProblemWeAreSolve = () => {
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-[var(--color-secondary)]">
+    <section className="py-24 px-6 md:px-8 lg:px-8 bg-[var(--color-secondary)]">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header */}
