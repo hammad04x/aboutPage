@@ -25,7 +25,7 @@ const ProblemWeAreSolve = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* Card 1 */}
-                    <div className="group p-10 bg-[#141414] rounded-xl border border-[var(--color-third)]/10 transition-all duration-300  hover:border-[var(--color-fourth)]">
+                    <div className="group p-10 bg-[#141414] rounded-xl border-2 border-[var(--color-third)]/10 transition-all duration-300  hover:border-[var(--color-third)]/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]">
             <div className="text-[var(--color-third)] text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
               ISSUE 01
             </div>
@@ -40,7 +40,7 @@ const ProblemWeAreSolve = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="group p-10 bg-[#141414] rounded-xl border border-[var(--color-third)]/10 transition-all duration-300  hover:border-[var(--color-fourth)]">
+          <div className="group p-10 bg-[#141414] rounded-xl border-2 border-[var(--color-third)]/10 transition-all duration-300  hover:border-[var(--color-third)]/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]">
             
             <div className="text-[var(--color-third)] text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
               ISSUE 02
@@ -56,7 +56,7 @@ const ProblemWeAreSolve = () => {
           </div>
 
           {/* Card 3 */}
-                    <div className="group p-10 bg-[#141414] rounded-xl border border-[var(--color-third)]/10 transition-all duration-300  hover:border-[var(--color-fourth)]">
+                    <div className="group p-10 bg-[#141414] rounded-xl border-2 border-[var(--color-third)]/10 transition-all duration-300  hover:border-[var(--color-third)]/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]">
             
             <div className="text-[var(--color-third)] text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
               ISSUE 03

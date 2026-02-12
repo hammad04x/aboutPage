@@ -57,9 +57,10 @@ export default function HeroSection() {
                 className="
   p-[2px]
   rounded-full
-  bg-[linear-gradient(90deg,#044596_0%,#60a5fa_50%,#044596_100%)]
+  bg-neutral-300
   transition-all duration-300
   hover:scale-[1.03]
+  hover:bg-[linear-gradient(90deg,#044596_0%,#60a5fa_50%,#044596_100%)]
 "
               >
                 <a
