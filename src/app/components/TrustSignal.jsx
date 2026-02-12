@@ -1,50 +1,110 @@
 // app/about/components/TrustSignals.jsx
 
-export default function TrustSignal() {
+export default function TrustSignals() {
     return (
-        <section className="bg-[#080808] border-t border-neutral-800">
-            <div className="mx-auto max-w-7xl px-6 py-40 text-center">
+        <section className="bg-[var(--color-secondary)] border-t border-neutral-800">
+            <div className="mx-auto max-w-7xl px-6 py-40">
 
-                {/* Title */}
-                <p className="mb-2 text-sm tracking-[0.4em] uppercase text-neutral-400 font-bold">
-                    Built for Accountability
-                </p>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
 
-                <h2 className="mx-auto text-4xl sm:text-5xl xl:text-5xl font-medium leading-[1.15] text-white font-[Montserrat] ">
-                    Trust is not claimed. <span className=" text-neutral-400"> It’s measured.</span>
+                    {/* LEFT — CONTEXT */}
+                    <div>
+                        <p className="mb-6 inline-flex items-center gap-3 text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-bold">
+                            <span className="h-[2px] w-10 bg-[var(--color-fourth)]" />
+                            Built for Accountability
+                        </p>
 
-                </h2>
+                        <h2 className="text-4xl sm:text-5xl xl:text-6xl font-medium leading-tight text-[var(--color-primary)]">
+                            Trust is built
+                            <span className="block text-[var(--color-fourth)] mt-2">
+                                through measurable signals
+                            </span>
+                        </h2>
 
-                {/* <p className="mx-auto mt-16 max-w-2xl text-2xl leading-relaxed text-neutral-300 font-[Poppins]">
-                    AVX is growing across major cities in India — onboarding consultants,
-                    standardizing vehicle data, and building inspection-backed confidence
-                    one market at a time.
-                </p> */}
+                        <p className="mt-10 max-w-xl text-xl leading-relaxed text-[var(--color-third)] font-[var(--font-secondary)]">
+                            AVX doesn’t rely on claims or testimonials. Trust emerges from
+                            structured participation, transparent performance, and verifiable
+                            activity across the marketplace.
+                        </p>
+                    </div>
 
-                {/* Metrics */}
-                <div className="mt-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
+                    {/* RIGHT — EXACT SCHEMATIC */}
+                    {/* RIGHT — TRUE REFERENCE CENTER */}
+                    <div className="relative h-[480px]">
 
-                    <Metric value="10,000+" label="Consultants onboarded" />
-                    <Metric value="100K+" label="Vehicles listed" />
-                    <Metric value="X+" label="Cities covered" />
-                    <Metric value="Y+" label="Inspections completed" />
+                        {/* MAIN AXES — STOP AT SQUARE CORNERS */}
+
+                        {/* vertical top */}
+                        <span className="absolute left-1/2 top-0 h-[40%] w-px bg-neutral-600/50" />
+
+                        {/* vertical bottom */}
+                        <span className="absolute left-1/2 bottom-0 h-[40%] w-px bg-neutral-600/50" />
+
+                        {/* horizontal left */}
+                        <span className="absolute top-1/2 left-0 w-[40%] h-px bg-neutral-600/50" />
+
+                        {/* horizontal right */}
+                        <span className="absolute top-1/2 right-0 w-[40%] h-px bg-neutral-600/50" />
+
+                        {/* AXIS END TICKS */}
+                        <span className="absolute left-1/2 top-0 h-3 w-[2px] bg-[var(--color-fourth)] -translate-x-1/2" />
+                        <span className="absolute left-1/2 bottom-0 h-3 w-[2px] bg-[var(--color-fourth)] -translate-x-1/2" />
+                        <span className="absolute left-0 top-1/2 w-3 h-[2px] bg-[var(--color-fourth)] -translate-y-1/2" />
+                        <span className="absolute right-0 top-1/2 w-3 h-[2px] bg-[var(--color-fourth)] -translate-y-1/2" />
+
+                        {/* CENTER SQUARE (OUTER) */}
+                        <span className="absolute left-1/2 top-1/2 h-6 w-6 bg-[var(--color-fourth)] -translate-x-1/2 -translate-y-1/2 z-10" />
+
+                        {/* CENTER SQUARE (INNER) */}
+                        <span className="absolute left-1/2 top-1/2 h-3 w-3 bg-[var(--color-secondary)] -translate-x-1/2 -translate-y-1/2 z-20" />
+
+                        {/* SIGNALS */}
+
+                        {/* TOP RIGHT */}
+                        <div className="absolute top-[20%] right-[12%]">
+                            <div className="text-xl font-medium text-[var(--color-primary)]">
+                                100K+
+                            </div>
+                            <p className="mt-1 text-sm text-[var(--color-third)]">
+                                Vehicles listed
+                            </p>
+                        </div>
+
+                        {/* TOP LEFT */}
+                        <div className="absolute top-[20%] left-[12%] text-right">
+                            <div className="text-xl font-medium text-[var(--color-primary)]">
+                                10K+
+                            </div>
+                            <p className="mt-1 text-sm text-[var(--color-third)]">
+                                Consultants onboarded
+                            </p>
+                        </div>
+
+                        {/* BOTTOM LEFT */}
+                        <div className="absolute bottom-[20%] left-[14%]">
+                            <div className="text-xl font-medium text-[var(--color-primary)]">
+                                Growing
+                            </div>
+                            <p className="mt-1 text-sm text-[var(--color-third)]">
+                                Cities across India
+                            </p>
+                        </div>
+
+                        {/* BOTTOM RIGHT */}
+                        <div className="absolute bottom-[20%] right-[14%]">
+                            <div className="text-xl font-medium text-[var(--color-primary)]">
+                                In Progress
+                            </div>
+                            <p className="mt-1 text-sm text-[var(--color-third)]">
+                                Inspection rollout
+                            </p>
+                        </div>
+
+                    </div>
+
 
                 </div>
-
             </div>
         </section>
-    );
-}
-
-function Metric({ value, label }) {
-    return (
-        <div>
-            <div className="text-5xl sm:text-6xl font-medium text-white">
-                {value}
-            </div>
-            <p className="mt-4 text-base tracking-wide uppercase text-neutral-400">
-                {label}
-            </p>
-        </div>
     );
 }

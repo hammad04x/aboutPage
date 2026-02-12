@@ -1,76 +1,98 @@
-/////3rd  section 
-import React from 'react';
+// app/about/components/WhyAvxDifferent.jsx
+import React from "react";
 
-const WhyAvxDifferent = () => {
+const features = [
+  {
+    id: "01",
+    title: "Verified Consultant Identity",
+    desc:
+      "Every consultant on AVX operates through a public storefront backed by structured business information and accountability signals.",
+  },
+  {
+    id: "02",
+    title: "Inspection Credibility Layer",
+    desc:
+      "Optional inspection visibility and re-verification options that prioritise buyer confidence without forcing friction.",
+  },
+  {
+    id: "03",
+    title: "Performance Transparency",
+    desc:
+      "Consultant activity, engagement, and outcomes are surfaced through real signals — not vanity metrics.",
+  },
+  {
+    id: "04",
+    title: "Structured Search & Discovery",
+    desc:
+      "Vehicles are ranked by relevance, quality, and trust indicators — ensuring the best value surfaces first.",
+  },
+];
+
+export default function WhyAvxDifferent() {
   return (
-    <section className="relative py-24 px-6 md:px-12 lg:px-24 bg-[var(--color-secondary)] overflow-hidden">
-      {/* Background Decor - Subtle blue glow for interest */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[var(--color-fourth)]/5 rounded-full blur-[120px] -z-10"></div>
-      
+    <section className="bg-[var(--color-secondary)] py-36 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto">
-        
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tighter uppercase italic">
-            Not Another <br />
-            <span className="text-[var(--color-fourth)] not-italic">Listing Platform</span>
+
+        {/* Header */}
+        <div className=" mb-28">
+          <p className="mb-6 text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold ">
+            Why AVX
+          </p>
+
+          <h2 className="text-4xl md:text-6xl font-medium">
+            Not another  <span className=" text-[var(--color-fourth)]">   listing platform</span>
           </h2>
-          <p className="text-[var(--color-third)] max-w-2xl mx-auto font-[var(--font-secondary)]">
-            We didn't just build a database; we built an ecosystem of trust and verified performance.
+
+          <p className="mt-8 text-xl text-[var(--color-third)]  leading-relaxed">
+            AVX is engineered to remove ambiguity from the used-vehicle market by
+            introducing structure, accountability, and measurable trust.
           </p>
         </div>
 
-        {/* Differentiator Blocks */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
-          
-          {/* 01. Verified Consultant Identity */}
-          <div className="relative p-10 bg-white/5 border border-[var(--color-third)]/10 rounded-3xl group hover:bg-[var(--color-fourth)]/10 transition-all duration-300">
-            <span className="absolute top-8 right-10 text-5xl font-bold opacity-10 group-hover:opacity-100 group-hover:text-[var(--color-fourth)] transition-opacity">01</span>
-            <div className="max-w-[85%]">
-              <h3 className="text-2xl font-bold mb-4 text-[var(--color-primary)]">Verified Consultant Identity</h3>
-              <p className="text-[var(--color-third)] leading-relaxed">
-                Every consultant profile carries structured business information and performance signals. No anonymous sellers—only verified professionals.
-              </p>
-            </div>
-          </div>
+        {/* Feature Strips */}
+        {/* Feature Strips */}
+        <div className="space-y-24">
+          {features.map((item, index) => {
+            const isLeftContent = index % 2 === 0;
 
-          {/* 02. Inspection Layer */}
-          <div className="relative p-10 bg-white/5 border border-[var(--color-third)]/10 rounded-3xl group hover:bg-[var(--color-fourth)]/10 transition-all duration-300">
-            <span className="absolute top-8 right-10 text-5xl font-bold opacity-10 group-hover:opacity-100 group-hover:text-[var(--color-fourth)] transition-opacity">02</span>
-            <div className="max-w-[85%]">
-              <h3 className="text-2xl font-bold mb-4 text-[var(--color-primary)]">Inspection Layer</h3>
-              <p className="text-[var(--color-third)] leading-relaxed">
-                Optional assurance that matters. AVX enables independent inspection visibility and re-verification options to give you peace of mind.
-              </p>
-            </div>
-          </div>
+            return (
+              <div
+                key={item.id}
+                className={`group relative flex flex-col ${isLeftContent ? "md:flex-row" : "md:flex-row-reverse"
+                  } gap-16 items-center`}
+              >
+                {/* Number */}
+                <div
+                  className={`absolute top-1/2 -translate-y-1/2 text-[10rem] font-bold select-none pointer-events-none transition-colors duration-300
+          ${isLeftContent ? "md:right-0 md:left-auto" : "md:left-0 md:right-auto"}
+          text-white/5 group-hover:text-[var(--color-fourth)]/30`}
+                >
+                  {item.id}
+                </div>
 
-          {/* 03. Performance Transparency */}
-          <div className="relative p-10 bg-white/5 border border-[var(--color-third)]/10 rounded-3xl group hover:bg-[var(--color-fourth)]/10 transition-all duration-300">
-            <span className="absolute top-8 right-10 text-5xl font-bold opacity-10 group-hover:opacity-100 group-hover:text-[var(--color-fourth)] transition-opacity">03</span>
-            <div className="max-w-[85%]">
-              <h3 className="text-2xl font-bold mb-4 text-[var(--color-primary)]">Performance Transparency</h3>
-              <p className="text-[var(--color-third)] leading-relaxed">
-                Numbers don't lie. Consultant storefronts display real-time activity, authentic reviews, and actual engagement metrics.
-              </p>
-            </div>
-          </div>
+                {/* Content */}
+                <div className="relative max-w-xl border rounded-2xl border-transparent p-6 transition-colors duration-300 group-hover:border-[var(--color-fourth)]">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-[var(--color-primary)]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-lg text-[var(--color-third)] leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
 
-          {/* 04. Structured Search & Discovery */}
-          <div className="relative p-10 bg-white/5 border border-[var(--color-third)]/10 rounded-3xl group hover:bg-[var(--color-fourth)]/10 transition-all duration-300">
-            <span className="absolute top-8 right-10 text-5xl font-bold opacity-10 group-hover:opacity-100 group-hover:text-[var(--color-fourth)] transition-opacity">04</span>
-            <div className="max-w-[85%]">
-              <h3 className="text-2xl font-bold mb-4 text-[var(--color-primary)]">Structured Search & Discovery</h3>
-              <p className="text-[var(--color-third)] leading-relaxed">
-                Our algorithm ranks vehicles by relevance and quality signals, ensuring you see the best value first, not just the newest post.
-              </p>
-            </div>
-          </div>
 
+                {/* Visual Bar */}
+                <div
+                  className={`hidden md:block h-px flex-1 transition-colors duration-300
+          ${isLeftContent ? "bg-neutral-700" : "bg-neutral-700"}
+          group-hover:bg-[var(--color-fourth)]/60`}
+                />
+              </div>
+            );
+          })}
         </div>
+
       </div>
     </section>
   );
-};
-
-export default WhyAvxDifferent;
+}
