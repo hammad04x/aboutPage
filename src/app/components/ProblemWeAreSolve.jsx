@@ -75,7 +75,7 @@ const ProblemWeAreSolve = () => {
         </div>
 
         {/* Closing Line */}
-        <div className="mt-20 text-center">
+        <div className="mt-10 text-center">
           <p className="text-lg md:text-xl font-medium text-[var(--color-primary)]">
             AVX was built to solve this  
             <span className="text-[var(--color-fourth)] opacity-90"> structurally</span> —  
