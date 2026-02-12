@@ -72,7 +72,7 @@ export default function WhyAvxDifferent() {
 
                 {/* Content */}
                 <div className="relative max-w-xl border rounded-2xl border-transparent p-6 transition-colors duration-300 group-hover:border-[var(--color-fourth)]">
-                  <h3 className="text-2xl md:text-3xl font-medium text-[var(--color-primary)]">
+                  <h3 className="text-2xl md:text-3xl font-semibold text-[var(--color-primary)]">
                     {item.title}
                   </h3>
                   <p className="mt-4 text-lg text-[var(--color-third)] leading-relaxed">
