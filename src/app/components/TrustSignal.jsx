@@ -2,7 +2,7 @@
 
 export default function TrustSignals() {
     return (
-        <section className="bg-[var(--color-secondary)] border-t border-neutral-800">
+        <section className="bg-[var(--color-secondary)]">
             <div className="mx-auto max-w-7xl px-6 py-40">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
@@ -14,7 +14,7 @@ export default function TrustSignals() {
                             Built for Accountability
                         </p>
 
-                        <h2 className="text-4xl sm:text-5xl xl:text-6xl font-medium leading-tight text-[var(--color-primary)]">
+                        <h2 className="text-4xl sm:text-5xl xl:text-5xl font-medium leading-tight text-[var(--color-primary)]">
                             Trust is built
                             <span className="block text-[var(--color-fourth)] mt-2">
                                 through measurable signals
@@ -53,7 +53,7 @@ export default function TrustSignals() {
                         <span className="absolute right-0 top-1/2 w-3 h-[2px] bg-[var(--color-fourth)] -translate-y-1/2" />
 
                         {/* CENTER SQUARE (OUTER) */}
-                        <span className="absolute left-1/2 top-1/2 h-6 w-6 bg-[var(--color-fourth)] -translate-x-1/2 -translate-y-1/2 z-10" />
+                        <span className="absolute left-1/2 top-1/2 h-6 w-6 bg-neutral-500 -translate-x-1/2 -translate-y-1/2 z-10" />
 
                         {/* CENTER SQUARE (INNER) */}
                         <span className="absolute left-1/2 top-1/2 h-3 w-3 bg-[var(--color-secondary)] -translate-x-1/2 -translate-y-1/2 z-20" />
@@ -61,41 +61,41 @@ export default function TrustSignals() {
                         {/* SIGNALS */}
 
                         {/* TOP RIGHT */}
-                        <div className="absolute top-[20%] right-[12%]">
-                            <div className="text-xl font-medium text-[var(--color-primary)]">
+                        <div className="absolute top-[20%] right-[23%]">
+                            <div className="text-2xl font-semibold text-[var(--color-fourth)]">
                                 100K+
                             </div>
-                            <p className="mt-1 text-sm text-[var(--color-third)]">
+                            <p className="mt-1 text-m text-[var(--color-third)]">
                                 Vehicles listed
                             </p>
                         </div>
 
                         {/* TOP LEFT */}
                         <div className="absolute top-[20%] left-[12%] text-right">
-                            <div className="text-xl font-medium text-[var(--color-primary)]">
+                            <div className="text-2xl font-semibold text-[var(--color-fourth)]">
                                 10K+
                             </div>
-                            <p className="mt-1 text-sm text-[var(--color-third)]">
+                            <p className="mt-1 text-m text-[var(--color-third)]">
                                 Consultants onboarded
                             </p>
                         </div>
 
                         {/* BOTTOM LEFT */}
-                        <div className="absolute bottom-[20%] left-[14%]">
-                            <div className="text-xl font-medium text-[var(--color-primary)]">
+                        <div className="absolute bottom-[20%] left-[17.5%]">
+                            <div className="text-2xl font-semibold text-[var(--color-fourth)] text-end">
                                 Growing
                             </div>
-                            <p className="mt-1 text-sm text-[var(--color-third)]">
+                            <p className="mt-1 text-m text-[var(--color-third)]">
                                 Cities across India
                             </p>
                         </div>
 
                         {/* BOTTOM RIGHT */}
-                        <div className="absolute bottom-[20%] right-[14%]">
-                            <div className="text-xl font-medium text-[var(--color-primary)]">
+                        <div className="absolute bottom-[20%] right-[18%]">
+                            <div className="text-2xl font-semibold text-[var(--color-fourth)]">
                                 In Progress
                             </div>
-                            <p className="mt-1 text-sm text-[var(--color-third)]">
+                            <p className="mt-1 text-m text-[var(--color-third)]">
                                 Inspection rollout
                             </p>
                         </div>

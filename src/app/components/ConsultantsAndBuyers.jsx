@@ -125,7 +125,7 @@ export default function ConsultantsAndBuyers() {
   }, [active]);
 
   return (
-    <section className="bg-[#0b0b0b] border-t border-neutral-800">
+    <section className="bg-[var(--color-secondary)] ">
       <div className="mx-auto max-w-7xl px-6 py-36">
 
         {/* ===================== */}
@@ -205,7 +205,7 @@ function StickyBlock({ label, titleTop, titleBottom, desc, cta }) {
         </span>
       </h2>
 
-      <p className="mt-12 max-w-xl text-xl leading-relaxed text-neutral-300 font-[Poppins]">
+      <p className="mt-12 max-w-xl text-xl leading-relaxed text-neutral-300 ">
         {desc}
       </p>
 

@@ -39,7 +39,7 @@ export default function WhyAvxDifferent() {
             Why AVX
           </p>
 
-          <h2 className="text-4xl md:text-6xl font-medium">
+          <h2 className="text-4xl sm:text-5xl xl:text-5xl font-medium">
             Not another  <span className=" text-[var(--color-fourth)]">   listing platform</span>
           </h2>
 
