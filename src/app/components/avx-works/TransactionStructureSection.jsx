@@ -18,7 +18,7 @@ export default function TransactionStructureSection() {
 
           <h2 className="text-3xl md:text-[42px] font-bold leading-tight text-white mb-5">
             Marketplace
-            <span className="block bg-gradient-to-r from-blue-400 to-[var(--color-fourth)] bg-clip-text text-transparent">
+            <span className="block text-[var(--color-fourth)]">
               Transparency
             </span>
           </h2>
@@ -57,7 +57,7 @@ export default function TransactionStructureSection() {
 
               <p className="text-white text-lg leading-relaxed">
                 AVX does
-                <span className="text-blue-400 font-semibold"> not process payments </span>
+                <span className="text-[var(--color-fourth)] font-semibold"> not process payments </span>
                  between parties.
               </p>
 
@@ -81,7 +81,7 @@ export default function TransactionStructureSection() {
             bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)] p-6 backdrop-blur-xl
             text-left hover:border-blue-400/30 transition hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]
           ">
-            <FiUsers className="text-2xl text-blue-400 mb-4" />
+            <FiUsers className="text-2xl text-[var(--color-fourth)] mb-4" />
             <h3 className="text-white font-semibold mb-2">
               Marketplace Connector
             </h3>
@@ -96,7 +96,7 @@ export default function TransactionStructureSection() {
             bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)] p-6 backdrop-blur-xl
             text-left hover:border-blue-400/30 transition hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]
           ">
-            <HiOutlineScale className="text-2xl text-blue-400 mb-4" />
+            <HiOutlineScale className="text-2xl text-[var(--color-fourth)] mb-4" />
             <h3 className="text-white font-semibold mb-2">
               Transparent Negotiation
             </h3>
@@ -111,7 +111,7 @@ export default function TransactionStructureSection() {
             bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)] p-6 backdrop-blur-xl
             text-left hover:border-blue-400/30 transition hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]
           ">
-            <MdOutlinePayments className="text-2xl text-blue-400 mb-4" />
+            <MdOutlinePayments className="text-2xl text-[var(--color-fourth)] mb-4" />
             <h3 className="text-white font-semibold mb-2">
               No Payment Handling
             </h3>

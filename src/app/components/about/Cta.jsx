@@ -87,7 +87,7 @@ export default function Cta() {
               text-white
               underline underline-offset-8
               decoration-white/40
-              group-hover:decoration-white
+              group-hover:decoration-[var(--color-fourth)]
               transition
             ">
               Enter Marketplace →
@@ -151,7 +151,7 @@ export default function Cta() {
               text-white
               underline underline-offset-8
               decoration-white/40
-              group-hover:decoration-white
+              group-hover:decoration-[var(--color-fourth)]
               transition
             ">
               Start Your Storefront →

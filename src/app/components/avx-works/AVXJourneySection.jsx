@@ -45,7 +45,7 @@ export default function AVXJourneySection() {
             The AVX Buying Flow
           </h2>
 
-          <p className="text-[var(--color-third)] max-w-xl mx-auto text-[14px]">
+          <p className="text-[var(--color-fourth)] max-w-xl mx-auto text-[14px]">
             Structured. Transparent. Accountable.
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function AVXJourneySection() {
           <div className="
             absolute left-1/2 top-0 bottom-0
             w-[2px]
-            bg-gradient-to-b from-blue-500 via-blue-400 to-blue-600
+            bg-[var(--color-fourth)]
             opacity-60
           " />
 
@@ -91,7 +91,7 @@ export default function AVXJourneySection() {
                   transition
                 ">
 
-                  <p className="text-blue-300 text-sm font-medium">
+                  <p className="text-[var(--color-fourth)] text-sm font-medium">
                     Step {i + 1}
                   </p>
 
@@ -99,7 +99,7 @@ export default function AVXJourneySection() {
                     {step.title}
                   </p>
 
-                  <p className="text-[15px] text-blue-200/70 mt-2 leading-relaxed">
+                  <p className="text-[15px] text-neutral-300 mt-2 leading-relaxed">
                     {step.desc}
                   </p>
 

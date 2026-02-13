@@ -55,7 +55,7 @@ export default function WhyThisMattersSection() {
 
             <h2 className="text-3xl md:text-[46px] font-bold leading-[1.15] text-white">
               Confidence Comes
-              <span className="block bg-gradient-to-r from-blue-400 to-[var(--color-fourth)] bg-clip-text text-transparent">
+              <span className="block  text-[var(--color-fourth)]">
                 From Clarity
               </span>
             </h2>
@@ -71,7 +71,7 @@ export default function WhyThisMattersSection() {
               <p className="text-lg font-semibold text-white">
                 Trust is not claimed.
               </p>
-              <p className="text-lg font-semibold text-blue-300">
+              <p className="text-lg font-semibold text-[var(--color-fourth)]">
                 It is built into the system.
               </p>
             </div>
@@ -104,7 +104,7 @@ export default function WhyThisMattersSection() {
       "
                 />
 
-                <p className="relative text-blue-300 text-sm font-medium mb-2">
+                <p className="relative text-[var(--color-fourth)] text-sm font-medium mb-2">
                   {card.title}
                 </p>
 

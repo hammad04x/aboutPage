@@ -17,7 +17,7 @@ export default function InteractionSection() {
 
             <h2 className="text-3xl md:text-[38px] font-bold leading-tight text-white">
               Direct Communication,
-              <span className="block bg-gradient-to-r from-blue-400 to-[var(--color-fourth)] bg-clip-text text-transparent">
+              <span className="block text-[var(--color-fourth)]">
                 Platform Accountability
               </span>
             </h2>

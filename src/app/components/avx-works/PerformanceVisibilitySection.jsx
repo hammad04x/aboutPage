@@ -19,7 +19,7 @@ export default function PerformanceVisibilitySection() {
 
             <h2 className="text-3xl md:text-[40px] font-bold leading-tight text-white">
               Consultant Storefronts with
-              <span className="block bg-gradient-to-r from-blue-400 to-[var(--color-fourth)] bg-clip-text text-transparent">
+              <span className="block text-[var(--color-fourth)]">
                 Accountability
               </span>
             </h2>
@@ -37,7 +37,7 @@ export default function PerformanceVisibilitySection() {
                 "Response Time Indicators",
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-blue-400 rounded-full" />
+                  <div className="w-2 h-2 bg-[var(--color-fourth)] rounded-full" />
                   <p className="text-sm text-white/90">{item}</p>
                 </div>
               ))}
@@ -63,7 +63,7 @@ export default function PerformanceVisibilitySection() {
 
               {/* Consultant Avatar */}
               <div className="absolute bottom-3 left-3 flex items-center gap-2">
-                <div className="w-9 h-9 rounded-full bg-blue-500 flex items-center justify-center text-xs font-bold">
+                <div className="w-9 h-9 rounded-full bg-[var(--color-fourth)] flex items-center justify-center text-xs font-bold">
                   AV
                 </div>
                 <span className="text-xs text-white">AVX Certified</span>
@@ -76,7 +76,7 @@ absolute top-10 right-9
 px-4 py-2 rounded-xl
 bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)] border border-blue-400/30
 backdrop-blur-md text-sm 
-animate-[floatY_6s_ease-in-out_infinite]
+animate-[floatY_3s_ease-in-out_infinite]
 "
             >
               <div className="flex items-center gap-2 whitespace-nowrap">
@@ -92,7 +92,7 @@ absolute bottom-16 right-10
 px-4 py-2 rounded-xl
 bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)] border border-blue-400/30
 backdrop-blur-md text-sm 
-animate-[floatY_7s_ease-in-out_infinite]
+animate-[floatY_3s_ease-in-out_infinite]
 "
             >
               <div className="flex items-center gap-2 whitespace-nowrap">
@@ -108,7 +108,7 @@ absolute top-24 left-8
 px-4 py-2 rounded-xl
 bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)] border border-blue-400/30
 backdrop-blur-md text-sm
-animate-[floatY_8s_ease-in-out_infinite]
+animate-[floatY_3s_ease-in-out_infinite]
 "
             >
               <div className="flex items-center gap-2 whitespace-nowrap">
@@ -124,7 +124,7 @@ absolute bottom-20 left-10
 px-4 py-2 rounded-xl
 bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)] border border-blue-400/30
 backdrop-blur-md text-sm
-animate-[floatY_9s_ease-in-out_infinite]
+animate-[floatY_4s_ease-in-out_infinite]
 "
             >
               <div className="flex items-center gap-2 whitespace-nowrap">
