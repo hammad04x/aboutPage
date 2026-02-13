@@ -1,0 +1,129 @@
+"use client"
+
+import { FiUsers } from "react-icons/fi";
+import { HiOutlineScale } from "react-icons/hi";
+import { MdOutlinePayments } from "react-icons/md";
+
+export default function TransactionStructureSection() {
+  return (
+    <section className="relative py-10 bg-[var(--color-secondary)] overflow-hidden">
+
+      <div className="relative max-w-7xl mx-auto px-6">
+
+        {/* ===== HEADER ===== */}
+        <div className="max-w-3xl mb-8">
+          <p className="text-xs tracking-[0.28em] uppercase text-[var(--color-third)] mb-4">
+            Transaction Structure
+          </p>
+
+          <h2 className="text-3xl md:text-[42px] font-bold leading-tight text-white mb-5">
+            Marketplace
+            <span className="block bg-gradient-to-r from-blue-400 to-[var(--color-fourth)] bg-clip-text text-transparent">
+              Transparency
+            </span>
+          </h2>
+        </div>
+
+        {/* ===== LEFT RIGHT BLOCK ===== */}
+        <div className="grid lg:grid-cols-2 gap-14 items-center">
+
+          {/* LEFT TEXT */}
+          <div className="space-y-6 max-w-xl">
+
+            <p className="text-[15px] text-[var(--color-third)] leading-relaxed">
+              AVX operates as a structured marketplace connecting buyers and consultants
+              through verified listings, performance metrics, and transparent activity visibility.
+            </p>
+
+            <p className="text-[15px] text-white leading-relaxed">
+              Vehicle pricing, negotiation, and transaction settlement occur directly between
+              buyers and consultants.
+            </p>
+
+          </div>
+
+          {/* RIGHT TRANSPARENCY CARD */}
+          <div className="flex w-[100%]">
+
+            <div className="
+              w-full 
+              rounded-2xl
+              border border-neutral-70
+              bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)]
+              backdrop-blur-xl
+              p-8
+              shadow-xl
+            ">
+
+              <p className="text-white text-lg leading-relaxed">
+                AVX does
+                <span className="text-blue-400 font-semibold"> not process payments </span>
+                 between parties.
+              </p>
+
+              <p className="text-[var(--color-third)] text-sm mt-4 leading-relaxed">
+                Instead, the platform provides structured visibility, consultant performance data,
+                and verified interaction tracking — helping buyers make informed decisions.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* ===== CARDS SECTION (FULL WIDTH BELOW) ===== */}
+        <div className="grid md:grid-cols-3 gap-6 mt-20">
+
+          {/* Card 1 */}
+          <div className="
+            rounded-2xl border border-white/10
+            bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)] p-6 backdrop-blur-xl
+            text-left hover:border-blue-400/30 transition hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]
+          ">
+            <FiUsers className="text-2xl text-blue-400 mb-4" />
+            <h3 className="text-white font-semibold mb-2">
+              Marketplace Connector
+            </h3>
+            <p className="text-sm text-[var(--color-third)]">
+              AVX connects verified buyers and professional consultants through structured listings.
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className="
+            rounded-2xl border border-white/10
+            bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)] p-6 backdrop-blur-xl
+            text-left hover:border-blue-400/30 transition hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]
+          ">
+            <HiOutlineScale className="text-2xl text-blue-400 mb-4" />
+            <h3 className="text-white font-semibold mb-2">
+              Transparent Negotiation
+            </h3>
+            <p className="text-sm text-[var(--color-third)]">
+              Pricing and negotiation happen directly between parties with full visibility.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className="
+            rounded-2xl border border-white/10
+            bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)] p-6 backdrop-blur-xl
+            text-left hover:border-blue-400/30 transition hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]
+          ">
+            <MdOutlinePayments className="text-2xl text-blue-400 mb-4" />
+            <h3 className="text-white font-semibold mb-2">
+              No Payment Handling
+            </h3>
+            <p className="text-sm text-[var(--color-third)]">
+              AVX does not process transactions between buyers and consultants.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  )
+}

@@ -1,7 +1,6 @@
 "use client";
 
 export default function HeroSection() {
-
   return (
     <section className="relative overflow-hidden min-h-screen  bg-[var(--color-secondary)]">
       <div className="absolute inset-0 bg-black" />

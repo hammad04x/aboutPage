@@ -6,9 +6,6 @@ import TransactionStructureSection from "@/app/components/avx-works/TransactionS
 import WhyThisMattersSection from "@/app/components/avx-works/WhyThisMattersSection";
 
 
-import Cta from "../components/about/Cta";
-import AvxInspectionLayer from "../components/avx-works/AvxInspectionLayer";
-import AvxStructure from "../components/avx-works/AvxStructure";
 
 
 
@@ -22,9 +19,6 @@ export default function AvxWorksPage() {
         <TransactionStructureSection/>
         <AVXJourneySection/>
         <WhyThisMattersSection/>
-          <AvxStructure/>
-          <AvxInspectionLayer/>
-          <Cta/>
         </>
     );
 }
