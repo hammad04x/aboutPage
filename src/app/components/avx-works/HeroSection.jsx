@@ -4,15 +4,10 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-[92vh] flex items-center bg-[#0d0f14] overflow-hidden">
 
-      {/* === BACKGROUND DEPTH LAYERS === */}
-
-      {/* Soft Blue Orb */}
+      {/* BACKGROUND */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0d0f14] via-[#0b0e13] to-[#0d0f14]" />
       <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-[#007bff]/10 blur-[160px] rounded-full" />
 
-      {/* Dark Tech Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0d0f14] via-[#0b0e13] to-[#0d0f14]" />
-
-      {/* Grid Pattern */}
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
@@ -22,16 +17,14 @@ export default function HeroSection() {
         }}
       />
 
-      {/* === CONTENT === */}
-
+      {/* CONTENT */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 w-full">
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-14 items-center">
 
           {/* ================= LEFT ================= */}
           <div className="max-w-xl space-y-8">
 
-            {/* Badge */}
             <span className="
               inline-flex items-center gap-2
               px-4 py-1.5
@@ -44,29 +37,15 @@ export default function HeroSection() {
               Our Process
             </span>
 
-            {/* Heading */}
             <div className="space-y-3">
-              <h1 className="
-                text-4xl sm:text-5xl lg:text-[56px]
-                font-bold leading-[1.05]
-                text-[#f8fafc]
-                tracking-tight
-              ">
+              <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-bold leading-[1.05] text-[#f8fafc] tracking-tight">
                 How AVX
               </h1>
-
-              <h1 className="
-                text-4xl sm:text-5xl lg:text-[56px]
-                font-bold leading-[1.05]
-                tracking-tight
-                bg-gradient-to-r from-[#60a5fa] to-[#007bff]
-                bg-clip-text text-transparent
-              ">
+              <h1 className="text-4xl sm:text-5xl lg:text-[56px] font-bold leading-[1.05] tracking-tight text-[var(--color-fourth)]">
                 Works
               </h1>
             </div>
 
-            {/* Text */}
             <div className="space-y-4 pt-2">
               <p className="text-lg text-[#e5e7eb] font-medium">
                 AVX is a structured marketplace for pre-owned vehicles.
@@ -78,13 +57,11 @@ export default function HeroSection() {
               </p>
             </div>
 
-            {/* Accent Line */}
-            <div className="w-24 h-[2px] bg-gradient-to-r from-[#044596] to-[#60a5fa] rounded-full" />
+            <div className="w-24 h-[2px] bg-[var(--color-fourth)] rounded-full" />
 
-            {/* BUTTONS (UNCHANGED AS REQUESTED) */}
+            {/* BUTTONS (UNCHANGED) */}
             <div className="flex flex-col sm:flex-row gap-4 pt-3">
 
-              {/* Primary */}
               <a
                 href="/vehicles"
                 className="
@@ -103,7 +80,6 @@ export default function HeroSection() {
                 Browse Vehicles
               </a>
 
-              {/* Secondary */}
               <a
                 href="/consultant"
                 className="
@@ -127,56 +103,67 @@ export default function HeroSection() {
 
           </div>
 
-          {/* ================= RIGHT ================= */}
-          <div className="relative h-[340px] lg:h-[480px]">
+          {/* ================= RIGHT SYSTEM STACK ================= */}
+          <div className="relative h-[460px]">
 
-            {/* Frame Glow */}
-            <div className="absolute -inset-6 bg-gradient-to-r from-[#007bff]/10 to-transparent blur-2xl rounded-3xl" />
-
+            {/* MAIN SYSTEM CARD */}
             <div className="
-              relative h-full
-              rounded-2xl
-              overflow-hidden
-              border border-[#1f2937]
+              absolute left-0 top-0
+              w-[72%] h-[70%]
+              rounded-2xl border border-[#1f2937]
+              bg-[#0f1117]/95 backdrop-blur-xl
               shadow-[0_40px_100px_rgba(0,0,0,0.8)]
-              bg-[#0b0e13]
+              p-6 z-20
             ">
+              <p className="text-sm text-[#9ca3af] mb-5">Marketplace Transparency</p>
 
-              {/* Image */}
-              <img
-                src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1200&q=80"
-                className="w-full h-full object-cover scale-[1.02]"
-                alt=""
-              />
-
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0d0f14] via-transparent to-transparent opacity-70" />
-
-              {/* Stats Card */}
-              <div className="
-                absolute bottom-6 left-6 right-6
-                bg-[#0f1117]/95
-                backdrop-blur-xl
-                border border-[#1f2937]
-                rounded-xl
-                p-5
-              ">
-                <div className="grid grid-cols-3 text-center gap-2">
-                  <div>
-                    <p className="text-xl font-bold text-[#60a5fa]">500+</p>
-                    <p className="text-xs text-[#9ca3af]">Vehicles</p>
-                  </div>
-                  <div>
-                    <p className="text-xl font-bold text-[#60a5fa]">100+</p>
-                    <p className="text-xs text-[#9ca3af]">Consultants</p>
-                  </div>
-                  <div>
-                    <p className="text-xl font-bold text-[#60a5fa]">98%</p>
-                    <p className="text-xs text-[#9ca3af]">Satisfaction</p>
-                  </div>
+              <div className="space-y-4 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-white">Verified Consultants</span>
+                  <span className="text-[var(--color-fourth)] font-semibold">100+</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-white">Active Listings</span>
+                  <span className="text-[var(--color-fourth)] font-semibold">500+</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-white">Inspection Visibility</span>
+                  <span className="text-[var(--color-fourth)] font-semibold">Enabled</span>
                 </div>
               </div>
+            </div>
 
+            {/* IMAGE CARD (NEW — MIDDLE LAYER) */}
+            <div className="
+              absolute left-[10%] top-[48%]
+              w-[88%] h-[40%]
+              rounded-xl overflow-hidden
+              border border-[#1f2937]
+              shadow-[0_30px_80px_rgba(0,0,0,0.8)]
+              z-30
+            ">
+              <img
+                src="/car-hero-2.jpg"
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0d0f14]/80 to-transparent" />
+            </div>
+
+            {/* PERFORMANCE CARD */}
+            <div className="
+              absolute right-20 bottom-0
+              w-[58%]
+              rounded-xl border border-[#1f2937]
+              bg-[#0b0e13]/95 backdrop-blur-xl
+              p-5 shadow-xl z-30
+            ">
+              <p className="text-xs text-[#9ca3af] mb-3">Performance Snapshot</p>
+
+              <div className="flex justify-between text-sm">
+                <span className="text-white">Buyer Satisfaction</span>
+                <span className="text-[var(--color-fourth)] font-semibold">98%</span>
+              </div>
             </div>
 
           </div>
