@@ -1,8 +1,8 @@
 export default function Cta() {
   return (
-    <section className="bg-[#050505] border-t border-white/10">
+    <section className="hero_car_half2 ">
 
-      <div className="mx-auto max-w-7xl px-6 py-20">
+      <div className="mx-auto max-w-7xl px-6 pb-20">
 
         {/* Heading */}
         <div className="text-center">

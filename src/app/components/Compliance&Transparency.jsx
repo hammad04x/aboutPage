@@ -5,15 +5,15 @@ const ComplianceAndTransparency = () => {
     <section className="py-20 px-6 bg-[var(--color-secondary)] relative overflow-hidden">
 
       {/* Ambient Blue Support Glow */}
-      <div className="absolute top-1/2 right-[-200px] -translate-y-1/2 w-[600px] h-[600px] bg-[var(--color-fourth)] opacity-[0.08] blur-[180px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 right-[-200px] -translate-y-1/2 w-[600px] h-[600px]  rounded-full pointer-events-none" />
 
       <div className="max-w-5xl mx-auto">
 
         {/* ===== MAIN PANEL ===== */}
-        <div className="relative group">
+        <div>
 
           {/* Blue Edge Aura */}
-          <div className="absolute -inset-[1px] rounded-3xl bg-gradient-to-r from-[var(--color-fourth)]/40 via-transparent to-[var(--color-fourth)]/40 opacity-40 blur-sm" />
+          <div className="absolute -inset-[1px] rounded-3xl " />
 
           {/* Card */}
           <div className="
@@ -22,7 +22,7 @@ const ComplianceAndTransparency = () => {
             border border-white/10
             bg-[#0d0f14]
             px-8 py-12 md:px-14 md:py-16
-            shadow-[0_40px_120px_rgba(0,0,0,0.8)]
+           hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]
           ">
 
             <div className="flex flex-col md:flex-row gap-10 md:gap-14">

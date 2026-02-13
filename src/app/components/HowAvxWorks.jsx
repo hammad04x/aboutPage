@@ -40,7 +40,7 @@ const HowAvxWorks = () => {
   ];
 
   return (
-    <section className="py-28 bg-[#080808] text-white border-y border-white/5">
+    <section className="pb-20 bg-[var(--color-secondary)] text-white ">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
@@ -53,7 +53,7 @@ const HowAvxWorks = () => {
           <div className="relative z-10">
             <div className="inline-flex items-center gap-3 mb-4">
               <span className="h-[1px] w-8 bg-[var(--color-fourth)]/50"></span>
-              <span className="text-[var(--color-fourth)] text-xs md:text-sm tracking-[0.4em] uppercase font-semibold">
+              <span className="text-[var(--color-fourth)] text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold">
                 The Journey
               </span>
               <span className="h-[1px] w-8 bg-[var(--color-fourth)]/50"></span>
@@ -80,7 +80,7 @@ const HowAvxWorks = () => {
             <div
               key={index}
               onMouseEnter={() => setActiveStep(index)}
-              className={`relative overflow-hidden transition-all duration-500 ease-in-out cursor-pointer rounded-2xl border border-white/5 
+              className={`relative overflow-hidden transition-all duration-500 ease-in-out cursor-pointer rounded-2xl border border-white/70 
                 ${activeStep === index ? 'flex-[3] bg-[#111]' : 'flex-1 bg-[#0a0a0a] hover:bg-[#0f0f0f]'}`}
             >
 

@@ -6,12 +6,8 @@ const VisionAndApproach = () => {
       className={`
         group relative overflow-hidden
         border-b-2 border-transparent
-        rounded-xl p-8 transition-all duration-500 ease-in-out
-        /* Default State: Lighter border, subtle background */
-        border ${isVision ? 'border-gray-800' : 'border-gray-800'} 
-        bg-[#0a0a0a] 
-        /* Hover State: Darker/Defined border and lift */
-        hover:border-[var(--color-fourth)] hover:bg-[#000] hover:-translate-y-2
+        rounded-xl p-8 transition-all duration-500 ease-in-out 
+        hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]
       `}
     >
       <h2 className="text-3xl font-bold mb-4">
@@ -31,7 +27,7 @@ const VisionAndApproach = () => {
   );
 
   return (
-    <section className="py-20 px-6 md:px-12 bg-[var(--color-secondary)] text-[var(--color-primary)]">
+    <section className="py-10 px-6 md:px-12 bg-[var(--color-secondary)] text-[var(--color-primary)]">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         
         <Card 

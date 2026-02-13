@@ -3,13 +3,13 @@
 export default function TrustSignals() {
     return (
         <section className="bg-[var(--color-secondary)]">
-            <div className="mx-auto max-w-7xl px-6 py-40">
+            <div className="mx-auto max-w-7xl px-6 py-20">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
 
                     {/* LEFT — CONTEXT */}
                     <div>
-                        <p className="mb-6 inline-flex items-center gap-3 text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-bold">
+                        <p className="mb-6 inline-flex items-center gap-3 text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold">
                             <span className="h-[2px] w-10 bg-[var(--color-fourth)]" />
                             Built for Accountability
                         </p>

@@ -30,7 +30,7 @@ const features = [
 
 export default function WhyAvxDifferent() {
   return (
-    <section className="bg-[var(--color-secondary)] py-36 px-6 md:px-12 lg:px-24">
+    <section className="bg-[var(--color-secondary)] pb-20 px-6 md:px-8 lg:px-8">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}

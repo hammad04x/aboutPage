@@ -3,15 +3,15 @@
 export default function HeroSection() {
 
   return (
-    <section className="relative overflow-hidden bg-[var(--color-secondary)]">
+    <section className="relative overflow-hidden min-h-screen  bg-[var(--color-secondary)]">
       <div className="absolute inset-0 bg-black" />
-      <div className="absolute right-[-200px] top-[-200px] w-[600px] h-[600px] bg-[var(--color-fourth)] opacity-[0.12] blur-[160px] rounded-full" />
+      <div className="absolute right-[-200px] top-[-200px] w-[600px] h-[600px] rounded-full" />
 
       <div className="relative mx-auto max-w-7xl  pt-10 lg:pt-10 pb-5">
-        <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-4 pl-8 lg:pl-22 pr-0">
+        <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-4 pl-8 lg:pl-8 pr-0">
           {/* LEFT TEXT */}
           <div className="w-full lg:w-[40%]">
-            <p className="text-xs tracking-[0.4em] uppercase text-white/50 mb-6">
+            <p className="text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold mb-6">
               About AVX
             </p>
 

@@ -126,7 +126,7 @@ export default function ConsultantsAndBuyers() {
 
   return (
     <section className="bg-[var(--color-secondary)] ">
-      <div className="mx-auto max-w-7xl px-6 py-36">
+      <div className="mx-auto max-w-7xl px-6 py-10">
 
         {/* ===================== */}
         {/* TOGGLE */}
@@ -193,7 +193,7 @@ export default function ConsultantsAndBuyers() {
 function StickyBlock({ label, titleTop, titleBottom, desc, cta }) {
   return (
     <div className="lg:sticky lg:top-32 h-fit">
-      <p className="mb-8 inline-block text-lg tracking-[0.4em] uppercase text-neutral-4 00 font-bold relative">
+      <p className="mb-8 inline-block text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold relative">
         {label}
         <span className="absolute left-0 -bottom-3 h-[2px] w-16 bg-gradient-to-r from-neutral-100 to-transparent" />
       </p>
