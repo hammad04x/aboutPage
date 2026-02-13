@@ -1,3 +1,5 @@
+import ReVerification from "../components/avx-works/ReVerification";
+import VehiclesListed from "../components/avx-works/vehiclesListed";
 import AVXJourneySection from "@/app/components/avx-works/AVXJourneySection";
 import AvxHero from "@/app/components/avx-works/HeroSection";
 import InteractionSection from "@/app/components/avx-works/InteractionSection";
@@ -16,6 +18,8 @@ import AvxStructure from "../components/avx-works/AvxStructure";
 export default function AvxWorksPage() {
     return (
         <>
+         <VehiclesListed/>
+         <ReVerification/>
         <AvxHero/>
         <InteractionSection/>
         <PerformanceVisibilitySection/>

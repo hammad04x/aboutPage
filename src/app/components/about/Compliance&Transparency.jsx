@@ -102,7 +102,6 @@ const ComplianceAndTransparency = () => {
               </div>
 
             </div>
-
           </div>
 
         </div>

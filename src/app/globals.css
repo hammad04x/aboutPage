@@ -1,27 +1,26 @@
-@import "tailwindcss";
+  @import "tailwindcss";
 
-@layer base {
-  :root {
-    --color-primary: #fffef7;
-    --color-secondary: #121212;
-    --color-third: #bebebe;
-    --color-fourth: #007bff;
-    --font-primary: "Montserrat", sans-serif;
-    --font-secondary: "Poppins", sans-serif;
-  --hover-border: linear-gradient(
-    90deg,
-    #a78bfa 0%,
-    #6366f1 40%,
-    #3b82f6 70%,
-    #8b5cf6 100%
-  );
-  }
+  @layer base {
+    :root {
+      --color-primary: #fffef7;
+      --color-secondary: #121212;
+      --color-third: #bebebe;
+      --color-fourth: #007bff;
+      --font-primary: "Montserrat", sans-serif;
+      --font-secondary: "Poppins", sans-serif;
+      --hover-border:linear-gradient(90deg, 
+          #044596 0%, 
+          #60a5fa 50%, 
+          #044596 100%);
+      
+    }
 
-  body {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-    font-family: var(--font-secondary);
-  }
+    body {
+      background-color: var(--color-secondary);
+      color: var(--color-primary);
+      font-family: var(--font-secondary);
+      
+    }
 
   h1,
   h2,
