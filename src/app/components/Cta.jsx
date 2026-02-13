@@ -37,7 +37,7 @@ export default function Cta() {
               group
               flex-1
               transition-all duration-500 ease-out
-              bg-[var(--color-fourth)]
+              hover:bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)]
               hover:flex-[1.3]
               px-10 py-16 lg:py-20
               text-center
@@ -102,7 +102,7 @@ export default function Cta() {
               group
               flex-1
               transition-all duration-500 ease-out
-              bg-[var(--color-fourth)]
+              hover:bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)]
               hover:flex-[1.3]
               px-10 py-16 lg:py-20
               text-center
