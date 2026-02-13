@@ -1,0 +1,262 @@
+"use client";
+
+import { useState } from "react";
+import {
+    Settings,
+    Layers,
+    Zap,
+    Paintbrush,
+    ShieldCheck,
+    CheckCircle,
+    AlertCircle,
+} from "lucide-react";
+
+const ITEMS = [
+    {
+        id: "engine",
+        title: "Engine & drivetrain",
+        desc: "Mechanical performance, transmission health, and drivetrain response.",
+        icon: Settings,
+        angle: 0,
+    },
+    {
+        id: "structure",
+        title: "Structural integrity",
+        desc: "Frame alignment, load paths, and impact indicators.",
+        icon: Layers,
+        angle: 72,
+    },
+    {
+        id: "electrical",
+        title: "Electrical systems",
+        desc: "Sensors, electronics, wiring, and battery health.",
+        icon: Zap,
+        angle: 144,
+    },
+    {
+        id: "cosmetic",
+        title: "Cosmetic condition",
+        desc: "Exterior panels, paint quality, and interior wear.",
+        icon: Paintbrush,
+        angle: 216,
+    },
+    {
+        id: "verification",
+        title: "Flood & odometer",
+        desc: "Water exposure signals and mileage consistency checks.",
+        icon: ShieldCheck,
+        angle: 288,
+    },
+];
+
+export default function AvxInspectionLayer() {
+    const [active, setActive] = useState(ITEMS[0]);
+
+    return (
+        <section className="bg-[#0b0b0b] border-t border-neutral-800">
+            <div className="mx-auto max-w-7xl px-6 py-32">
+
+                {/* HEADER */}
+                <div className="max-w-4xl mb-14">
+                    <p className="text-xs tracking-[0.4em] uppercase text-neutral-500">
+                        AVX Inspection Layer
+                    </p>
+
+                    <h2 className="mt-6 text-5xl xl:text-6xl font-medium leading-tight">
+                        Independent inspection,
+                        <span className="block text-blue-500">
+                            visible before decisions
+                        </span>
+                    </h2>
+
+                    <p className="mt-6 text-xl leading-relaxed text-neutral-400">
+                        AVX applies a structured 200-point inspection framework to surface
+                        vehicle condition clearly — beyond seller claims.
+                    </p>
+                </div>
+
+                {/* KEY PRINCIPLES — THIS WAS MISSING */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-28">
+                    <SignalPoint
+                        index="01"
+                        title="Independent by design"
+                        desc="Inspection data is platform-governed, not seller-declared."
+                    />
+                    <SignalPoint
+                        index="02"
+                        title="Deep system coverage"
+                        desc="Critical vehicle systems are evaluated through a structured 200-point framework."
+                    />
+                    <SignalPoint
+                        index="03"
+                        title="Visible before contact"
+                        desc="Inspection status is shown directly on listings to reduce uncertainty."
+                    />
+                </div>
+
+
+                {/* SYSTEM */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+
+                    {/* RADIAL SYSTEM */}
+                    <div className="lg:col-span-6 flex justify-center">
+                        <div className="relative h-[420px] w-[420px]">
+
+                            {/* CORE */}
+                            <div className="absolute inset-24 rounded-full
+                bg-[#0d0d0d]
+                border border-neutral-700
+                flex items-center justify-center text-center px-6">
+                                <div>
+                                    <p className="text-xs tracking-widest uppercase text-neutral-500">
+                                        Inspection Core
+                                    </p>
+                                    <p className="mt-3 text-xl font-semibold text-[var(--color-fourth)]">
+                                        AVX Verification
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* NODES */}
+                            {ITEMS.map((item) => {
+                                const Icon = item.icon;
+                                const isActive = active.id === item.id;
+
+                                return (
+                                    <button
+                                        key={item.id}
+                                        onMouseEnter={() => setActive(item)}
+                                        onClick={() => setActive(item)}
+                                        className={`absolute top-1/2 left-1/2
+                      h-14 w-14 rounded-full
+                      flex items-center justify-center
+                      transition-all duration-300 ease-out
+                      ${isActive
+                                                ? "bg-blue-500 text-black scale-110"
+                                                : "bg-[#0d0d0d] text-neutral-400 border border-neutral-700 hover:scale-105"
+                                            }`}
+                                        style={{
+                                            transform: `
+                        rotate(${item.angle}deg)
+                        translate(${isActive ? 188 : 176}px)
+                        rotate(-${item.angle}deg)
+                        translate(-50%, -50%)
+                      `,
+                                        }}
+                                    >
+                                        <Icon size={20} />
+                                    </button>
+                                );
+                            })}
+                        </div>
+                    </div>
+
+                    {/* CONTEXT PANEL */}
+                    <div className="lg:col-span-6">
+                        <div className="rounded-3xl border border-neutral-800
+              bg-gradient-to-b from-[#101010] to-[#090909]
+              p-10 flex flex-col">
+
+                            <p className="text-xs tracking-widest uppercase text-neutral-500 mb-2">
+                                Inspection focus
+                            </p>
+
+                            <h3 className="text-2xl font-semibold text-[var(--color-fourth)] mb-4">
+                                {active.title}
+                            </h3>
+
+                            <p className="text-lg leading-relaxed text-neutral-400 max-w-xl">
+                                {active.desc}
+                            </p>
+
+                            <div className="my-6 h-px w-full bg-neutral-800/60" />
+
+                            <div className="flex items-center gap-3">
+                                {active.id === "verification" ? (
+                                    <>
+                                        <AlertCircle size={18} className="text-neutral-500" />
+                                        <span className="text-sm text-neutral-400">
+                                            Inspection available on request
+                                        </span>
+                                    </>
+                                ) : (
+                                    <>
+                                        <CheckCircle size={18} className="text-blue-500" />
+                                        <span className="text-sm text-blue-500">
+                                            Inspection summary visible on listing
+                                        </span>
+                                    </>
+                                )}
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    );
+}
+
+/* KEY POINT COMPONENT */
+function KeyPoint({ title, desc }) {
+    return (
+        <div>
+            <h4 className="text-lg font-semibold text-white mb-2">
+                {title}
+            </h4>
+            <p className="text-neutral-400 leading-relaxed">
+                {desc}
+            </p>
+        </div>
+    );
+}
+
+function SignalPoint({ index, title, desc }) {
+  return (
+    <div
+      className="
+        group relative rounded-2xl
+        border border-neutral-800
+        bg-gradient-to-b from-[#101010] to-[#090909]
+        p-8
+        transition-all duration-300 ease-out
+        hover:border-[var(--color-fourth)]
+        hover:translate-y-[-2px]
+      "
+    >
+      {/* SYSTEM MARKER */}
+      <div
+        className="
+          absolute -top-3 left-6
+          px-3 py-1 rounded-full
+          text-xs tracking-widest uppercase
+          border border-neutral-800
+          bg-[#0b0b0b]
+          text-neutral-400
+          transition-all duration-300
+          group-hover:border-[var(--color-fourth)]
+          group-hover:text-[var(--color-fourth)]
+        "
+      >
+        {index}
+      </div>
+
+      {/* CONTENT */}
+      <h4
+        className="
+          mt-4 text-xl font-semibold
+          text-white
+          transition-colors duration-300
+          group-hover:text-[var(--color-fourth)]
+        "
+      >
+        {title}
+      </h4>
+
+      <p className="mt-3 text-neutral-400 leading-relaxed">
+        {desc}
+      </p>
+    </div>
+  );
+}
