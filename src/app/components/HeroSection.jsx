@@ -1,57 +1,104 @@
-// app/about/components/AboutHero.jsx
+"use client";
 
 export default function HeroSection() {
-    return (
-        <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-            {/* Background Image */}
-            <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{
-                    backgroundImage:
-                        "url('https://images.openai.com/static-rsc-3/-s4-goFethhOwkUwmgIaHz6AiDWt5wkAvRpsnZDEgvTtrpesXRZvk0w9EqcJN4O-7LJBhQtDY9TDqmSbvIg8lEOzuRN_K3Pa2C7hJ8SU2XU?purpose=fullsize&v=1')",
-                }}
-            />
 
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/70" />
+  return (
+    <section className="relative overflow-hidden bg-[var(--color-secondary)]">
+      <div className="absolute inset-0 bg-black" />
+      <div className="absolute right-[-200px] top-[-200px] w-[600px] h-[600px] bg-[var(--color-fourth)] opacity-[0.12] blur-[160px] rounded-full" />
 
-            {/* Content */}
-            <div className="relative z-10 max-w-5xl px-6 text-center">
-                {/* Page Title */}
-                <p className="mb-10 inline-block border border-neutral-600 px-5 py-2 text-sm tracking-[0.4em] uppercase text-neutral-100 font-medium">
-                    About AVX
-                </p>
+      <div className="relative mx-auto max-w-7xl  pt-10 lg:pt-10 pb-5">
+        <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-4 pl-8 lg:pl-22 pr-0">
+          {/* LEFT TEXT */}
+          <div className="w-full lg:w-[40%]">
+            <p className="text-xs tracking-[0.4em] uppercase text-white/50 mb-6">
+              About AVX
+            </p>
 
+            <h1
+              className="
+              text-4xl sm:text-5xl xl:text-6xl
+              font-semibold
+              leading-[1.05]
+              text-[var(--color-primary)]
+              font-[Montserrat]
+            "
+            >
+              India's Premium
+              <br />
+              <span className="text-white/70">Pre-Owned Vehicle Platform</span>
+            </h1>
 
-                {/* Headline */}
-                <h1 className="text-4xl sm:text-5xl xl:text-6xl font-medium leading-[1.15] text-white font-[Montserrat]">
-                    India’s Structured Marketplace for Pre-Owned Vehicles
-                </h1>
+            <p className="mt-8 text-lg text-[var(--color-third)] max-w-lg leading-relaxed">
+              AVX brings structure, performance visibility, and trust into the
+              used vehicle ecosystem — connecting serious buyers with verified
+              consultants and inspected inventory.
+            </p>
 
-                {/* Subtext */}
-                <p className="mx-auto mt-10 max-w-3xl text-xl leading-relaxed text-neutral-300 font-[Poppins]">
-                    AVX exists to solve fragmentation, opacity, and trust gaps in the used
-                    vehicle market — enabling buyers and professional consultants to
-                    operate with clarity, confidence, and measurable performance.
-                </p>
+            {/* CTA */}
+            <div className="flex flex-wrap gap-5 mt-10">
+              <a
+                href="/vehicles"
+                className="
+                  px-7 py-4
+                  rounded-xl
+                  bg-[var(--color-fourth)]
+                  text-white
+                  font-medium
+                  transition-all duration-300
+                  hover:scale-[1.04]
+                  hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]
+                "
+              >
+                Browse Vehicles
+              </a>
 
-                {/* Soft CTAs */}
-                <div className="mt-16 flex justify-center gap-10 text-lg">
-                    <a
-                        href="/vehicles"
-                        className="text-white underline underline-offset-8 decoration-neutral-600 hover:decoration-neutral-300 transition"
-                    >
-                        Browse vehicles
-                    </a>
-
-                    <a
-                        href="/consultant"
-                        className="text-neutral-300 hover:text-white transition"
-                    >
-                        Become a consultant →
-                    </a>
-                </div>
+              <div
+                className="
+  p-[2px]
+  rounded-full
+  bg-neutral-300
+  transition-all duration-300
+  hover:scale-[1.03]
+  hover:bg-[linear-gradient(90deg,#044596_0%,#60a5fa_50%,#044596_100%)]
+"
+              >
+                <a
+                  href="/consultant"
+                  className="
+      block
+      px-7 py-3.5
+      rounded-full
+      bg-[var(--color-secondary)]
+      text-white/90
+      font-medium
+      transition-all duration-300
+      hover:text-white
+    "
+                >
+                  Become Consultant
+                </a>
+              </div>
             </div>
-        </section>
-    );
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="w-full lg:w-[60%] relative">
+            <img
+              src="/hero_car_half.jpg"
+              alt="Vehicle"
+              className="
+                w-full
+                h-[260px]
+                sm:h-[340px]
+                md:h-[420px]
+                lg:h-[480px]
+                object-cover
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

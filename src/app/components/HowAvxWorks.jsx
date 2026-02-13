@@ -42,8 +42,8 @@ const HowAvxWorks = () => {
   return (
     <section className="py-28 bg-[#080808] text-white border-y border-white/5">
       <div className="max-w-7xl mx-auto px-6">
-        
-       {/* HEADER */}
+
+        {/* HEADER */}
         <div className="relative mb-10 text-center">
           {/* Subtle Decorative Background Text */}
           <div className="absolute inset-0 -top-8 flex justify-center items-center opacity-[0.03] pointer-events-none select-none">
@@ -65,8 +65,8 @@ const HowAvxWorks = () => {
 
             <div className="max-w-2xl mx-auto">
               <p className="text-[var(--color-third)] text-base md:text-lg leading-relaxed opacity-80">
-                A premium, direct-to-owner experience designed for the 
-                <span className="text-white font-medium"> modern automotive market</span>. 
+                A premium, direct-to-owner experience designed for the
+                <span className="text-white font-medium"> modern automotive market</span>.
                 Simple, transparent, and built for performance.
               </p>
             </div>
@@ -83,7 +83,7 @@ const HowAvxWorks = () => {
               className={`relative overflow-hidden transition-all duration-500 ease-in-out cursor-pointer rounded-2xl border border-white/5 
                 ${activeStep === index ? 'flex-[3] bg-[#111]' : 'flex-1 bg-[#0a0a0a] hover:bg-[#0f0f0f]'}`}
             >
-              
+
               {/* Collapsed Title */}
               <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${activeStep === index ? 'opacity-0' : 'opacity-100'}`}>
                 <span className="rotate-90 md:-rotate-90 whitespace-nowrap text-xs uppercase tracking-[0.35em] font-semibold text-[var(--color-third)]">
@@ -113,22 +113,22 @@ const HowAvxWorks = () => {
                     {step.desc}
                   </p>
                 </div>
-                
+
                 {/* Progress Bar */}
                 <div className="w-full h-[2px] bg-white/5 mt-6 overflow-hidden">
-                  <div 
+                  <div
                     className="h-full bg-[var(--color-fourth)] transition-all duration-700 ease-out"
                     style={{ width: activeStep === index ? '100%' : '0%' }}
                   ></div>
                 </div>
               </div>
 
-             <span
-  className={`absolute bottom-19 right-6 text-6xl font-bold text-blue-600/35 pointer-events-none transition-opacity duration-300 
+              <span
+                className={`absolute bottom-19 right-6 text-6xl font-bold text-blue-600/35 pointer-events-none transition-opacity duration-300 
   ${activeStep === index ? 'opacity-100' : 'opacity-0'}`}
->
-  0{index + 1}
-</span>
+              >
+                0{index + 1}
+              </span>
 
             </div>
           ))}
@@ -136,12 +136,12 @@ const HowAvxWorks = () => {
 
         {/* Bottom Indicators */}
         <div className="mt-12 flex justify-center gap-3">
-            {steps.map((_, i) => (
-                <div 
-                    key={i}
-                    className={`h-[2px] rounded-full transition-all duration-300 ${activeStep === i ? 'w-14 bg-[var(--color-fourth)]' : 'w-5 bg-white/10'}`}
-                />
-            ))}
+          {steps.map((_, i) => (
+            <div
+              key={i}
+              className={`h-[2px] rounded-full transition-all duration-300 ${activeStep === i ? 'w-14 bg-[var(--color-fourth)]' : 'w-5 bg-white/10'}`}
+            />
+          ))}
         </div>
 
       </div>

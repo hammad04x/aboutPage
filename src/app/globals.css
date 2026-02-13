@@ -8,6 +8,10 @@
     --color-fourth: #007bff;
     --font-primary: "Montserrat", sans-serif;
     --font-secondary: "Poppins", sans-serif;
+    --hover-border:linear-gradient(90deg, 
+        #044596 0%, 
+        #60a5fa 50%, 
+        #044596 100%);
   }
 
   body {
