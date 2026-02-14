@@ -77,7 +77,7 @@ const ComplianceAndTransparency = () => {
                   text-primary
                   text-lg md:text-xl
                   leading-relaxed
-                  font-[var(--font-secondary)]
+                  font-secondary
                 ">
                   AVX is a marketplace platform. Transactions, pricing, and
                   negotiation occur{" "}
