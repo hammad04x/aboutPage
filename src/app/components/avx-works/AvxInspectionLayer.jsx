@@ -213,50 +213,54 @@ function KeyPoint({ title, desc }) {
 }
 
 function SignalPoint({ index, title, desc }) {
-    return (
-        <div
-            className="
-        group relative rounded-2xl
+  return (
+    <div
+      className="
+        group relative overflow-hidden
+        rounded-2xl
         border border-neutral-800
         bg-gradient-to-b from-[#101010] to-[#090909]
         p-8
         transition-all duration-300 ease-out
         hover:border-[var(--color-fourth)]
-        hover:translate-y-[-2px]
       "
-        >
-            {/* SYSTEM MARKER */}
-            <div
-                className="
-          absolute -top-3 left-6
-          px-3 py-1 rounded-full
-          text-xs tracking-widest uppercase
-          border border-neutral-800
-          bg-[#0b0b0b]
-          text-neutral-400
-          transition-all duration-300
-          group-hover:border-[var(--color-fourth)]
-          group-hover:text-[var(--color-fourth)]
+    >
+      {/* GHOST INDEX */}
+      <span
+        className="
+          pointer-events-none
+          absolute top-6 right-6
+          text-[72px]
+          font-semibold
+          tracking-tight
+          text-neutral-800/40
+          transition-colors duration-300
+          group-hover:text-[var(--color-fourth)]/20
         "
-            >
-                {index}
-            </div>
+      >
+        {index}
+      </span>
 
-            {/* CONTENT */}
-            <h4
-                className="
-          mt-4 text-xl font-semibold
-          text-white
+      {/* CONTENT */}
+      <h4
+        className="
+          relative z-10
+          text-xl font-semibold text-white mb-3
           transition-colors duration-300
           group-hover:text-[var(--color-fourth)]
         "
-            >
-                {title}
-            </h4>
+      >
+        {title}
+      </h4>
 
-            <p className="mt-3 text-neutral-400 leading-relaxed">
-                {desc}
-            </p>
-        </div>
-    );
+      <p
+        className="
+          relative z-10
+          text-neutral-400 leading-relaxed max-w-sm
+        "
+      >
+        {desc}
+      </p>
+    </div>
+  );
 }
