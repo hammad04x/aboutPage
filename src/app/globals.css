@@ -8,24 +8,36 @@
       --color-fourth: #007bff;
       --font-primary: "Montserrat", sans-serif;
       --font-secondary: "Poppins", sans-serif;
-      --hover-border:linear-gradient(90deg, 
-          #044596 0%, 
-          #60a5fa 50%, 
+      --hover-border: linear-gradient(90deg,
+          #044596 0%,
+          #60a5fa 50%,
           #044596 100%);
-      
+
+    }
+
+    @theme {
+      --color-primary: #fffef7;
+      --color-secondary: #121212;
+      --color-third: #bebebe;
+      --breakpoint-3xl: 120rem;
+      --color-fourth: #007bff;
+      --primary: "Montserrat", sans-serif;
+      --secondary: "Poppins", sans-serif;
+
+      --animate-spin-slow: spin 3s linear infinite;
     }
 
     body {
       background-color: var(--color-secondary);
       color: var(--color-primary);
       font-family: var(--font-secondary);
-      
+
     }
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: var(--font-primary);
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--font-primary);
+    }
   }
-}

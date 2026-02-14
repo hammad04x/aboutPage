@@ -18,7 +18,7 @@ export default function AvxStructure() {
 
           <h2 className="mt-6 text-5xl xl:text-6xl font-medium leading-tight">
             Built on verification,
-            <span className="block text-[var(--color-fourth)]">
+            <span className="block text-fourth">
               not just listings
             </span>
           </h2>
@@ -72,7 +72,7 @@ export default function AvxStructure() {
 
                 <p className="mt-4 text-2xl font-semibold leading-tight">
                   Platform-owned
-                  <span className="block text-[var(--color-fourth)]">
+                  <span className="block text-fourth">
                     marketplace
                   </span>
                 </p>
@@ -150,12 +150,12 @@ function TrustNode({ icon, title, desc, className = "" }) {
       <div className="flex items-center justify-center h-12 w-12 rounded-full
         border border-neutral-700
         bg-[#0b0b0b]
-       text-[var(--color-fourth)]
+       text-fourth
         mb-4">
         {icon}
       </div>
 
-      <h3 className="text-m font-semibold uppercase tracking-widest text-[var(--color-fourth)] ">
+      <h3 className="text-m font-semibold uppercase tracking-widest text-fourth ">
         {title}
       </h3>
 
