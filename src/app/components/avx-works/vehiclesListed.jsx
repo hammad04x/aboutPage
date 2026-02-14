@@ -122,7 +122,7 @@ export default function VehiclesListed() {
                       height="15"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="primary"
+                      stroke="#f8fafc"
                       strokeWidth="1.8"
                       strokeLinecap="round"
                       strokeLinejoin="round"
