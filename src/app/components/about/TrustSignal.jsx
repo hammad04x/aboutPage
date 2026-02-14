@@ -21,7 +21,7 @@ export default function TrustSignals() {
                             </span>
                         </h2>
 
-                        <p className="mt-10 max-w-xl text-xl leading-relaxed text-third font-[var(--font-secondary)]">
+                        <p className="mt-10 max-w-xl text-xl leading-relaxed text-third font-secondary">
                             AVX doesn’t rely on claims or testimonials. Trust emerges from
                             structured participation, transparent performance, and verifiable
                             activity across the marketplace.

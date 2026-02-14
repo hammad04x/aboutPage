@@ -55,7 +55,7 @@ export default function HeroSection() {
 
           <div className="max-w-xl space-y-8"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#60a5fa]/30 text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold bg-[#044596]/10 backdrop-blur-md">
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#60a5fa]/30 text-sm tracking-[0.4em] uppercase text-third font-semibold bg-[#044596]/10 backdrop-blur-md">
               Our Process
             </span>
 
@@ -81,7 +81,7 @@ export default function HeroSection() {
                 Browse Vehicles
               </a>
 
-              <a href="/consultant" className="px-7 py-3.5 rounded-xl text-sm font-semibold border border-[#374151] border-2 text-[#e5e7eb] bg-[#111318] transition duration-300 hover:border-fourth hover:text-fourth hover:bg-[#151922] hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]">
+              <a href="/consultant" className="px-7 py-3.5 rounded-xl text-sm font-semibold border border-[#374151] border-2 text-primary bg-[#111318] transition duration-300 hover:border-fourth hover:text-fourth hover:bg-[#151922] hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]">
                 Become a Consultant
               </a>
             </div>

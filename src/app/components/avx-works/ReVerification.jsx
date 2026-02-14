@@ -56,7 +56,7 @@
                         </span>
                     </div>
 
-                    <h3 className="text-xl font-semibold text-[var(--color-primary)] mb-2">
+                    <h3 className="text-xl font-semibold text-primary mb-2">
                         Fresh inspection
                     </h3>
 
@@ -91,7 +91,7 @@
                         </span>
                     </div>
 
-                    <h3 className="text-xl font-semibold text-[var(--color-primary)] mb-2">
+                    <h3 className="text-xl font-semibold text-primary mb-2">
                         Video walkthrough
                     </h3>
 

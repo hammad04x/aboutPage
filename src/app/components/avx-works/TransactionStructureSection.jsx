@@ -48,7 +48,7 @@ export default function TransactionStructureSection() {
             <div className="
               w-full 
               rounded-2xl
-              border border-neutral-70
+              border border-primary/70
               bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)]
               backdrop-blur-xl
               p-8

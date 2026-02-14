@@ -47,7 +47,7 @@ export default function InteractionSection() {
               px-4 py-1.5 rounded-full text-sm font-semibold cursor-pointer transition
               ${activeRole === "buyer"
                 ? "bg-primary text-secondary"
-                : "bg-neutral-800 text-white"
+                : "bg-neutral-800 text-primary"
               }
             `}
           >

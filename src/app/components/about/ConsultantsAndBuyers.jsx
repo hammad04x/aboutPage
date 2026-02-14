@@ -195,7 +195,7 @@ function StickyBlock({ label, titleTop, titleBottom, desc, cta }) {
     <div className="lg:sticky lg:top-32 h-fit">
       <p className="mb-8 inline-block text-sm tracking-[0.4em] uppercase text-third font-semibold relative">
         {label}
-        <span className="absolute left-0 -bottom-3 h-[2px] w-16 bg-gradient-to-r from-neutral-100 to-transparent" />
+        <span className="absolute left-0 -bottom-3 h-[2px] w-16 bg-gradient-to-r from-primary to-transparent" />
       </p>
 
       <h2 className="text-4xl sm:text-5xl xl:text-5xl font-medium leading-[1.15] text-primary font-[Montserrat]">
