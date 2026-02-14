@@ -16,7 +16,7 @@ export default function VehiclesListed() {
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-secondary font-secondary">
       <div className="max-w-7xl mx-auto">
         {/* Main Glassmorphic Container */}
-        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur-sm p-8 md:p-12">
+        <div className="relative overflow-hidden rounded-2xl border border-primary/10 bg-primary/[0.02] backdrop-blur-sm p-8 md:p-12">
 
           <div className="grid lg:grid-cols-2 gap-14 items-center">
 
@@ -29,7 +29,7 @@ export default function VehiclesListed() {
               </div>
 
               <h2 className="text-3xl md:text-5xl font-primary font-bold leading-tight mb-6">
-                Standardized <span className="text-[var(--color-fourth)]">Verification</span>
+                Standardized <span className="text-fourth">Verification</span>
               </h2>
 
               <p className="text-third text-sm md:text-base leading-relaxed mb-10 max-w-lg">
@@ -46,28 +46,28 @@ export default function VehiclesListed() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.4, delay: i * 0.1 }}
                     viewport={{ once: true }}
-                    className="flex items-center justify-between p-4 rounded-xl border border-white/5 bg-white/[0.03] group hover:border-[var(--color-fourth)]/50 transition-all"
+                    className="flex items-center justify-between p-4 rounded-xl border border-primary/5 bg-primary/[0.03] group hover:border-fourth/50 transition-all"
                   >
                     <div className="flex items-center gap-4">
-                      <div className="text-[var(--color-fourth)] opacity-80 group-hover:opacity-100">
+                      <div className="text-fourth opacity-80 group-hover:opacity-100">
                         {point.icon}
                       </div>
-                      <p className="text-sm md:text-[15px] text-white/85 font-medium">
+                      <p className="text-sm md:text-[15px] text-primary/85 font-medium">
                         {point.text}
                       </p>
                     </div>
                     <div className="flex items-center gap-2">
                       <span className="text-[9px] font-bold text-third uppercase tracking-tighter">Verified</span>
-                      <CheckCircle2 size={16} className="text-[var(--color-fourth)]" />
+                      <CheckCircle2 size={16} className="text-fourth" />
                     </div>
                   </motion.div>
                 ))}
               </div>
 
-              <div className="flex items-center gap-4 p-4 rounded-xl bg-[var(--color-fourth)]/5 border border-[var(--color-fourth)]/20">
-                <ShieldCheck className="text-[var(--color-fourth)]" size={24} />
+              <div className="flex items-center gap-4 p-4 rounded-xl bg-fourth/5 border border-fourth/20">
+                <ShieldCheck className="text-fourth" size={24} />
                 <p className="text-sm text-third">
-                  This approach ensures <span className="text-white font-semibold">100% comparable data</span> for every buyer.
+                  This approach ensures <span className="text-primary font-semibold">100% comparable data</span> for every buyer.
                 </p>
               </div>
             </div>
@@ -102,11 +102,11 @@ export default function VehiclesListed() {
     "
               >
                 {/* subtle inner rim */}
-                <div className="pointer-events-none absolute inset-0 rounded-[24px] ring-1 ring-white/[0.05]" />
+                <div className="pointer-events-none absolute inset-0 rounded-[24px] ring-1 ring-primary/[0.05]" />
 
                 {/* IMAGE */}
                 <div className="relative p-3 pb-0">
-                  <div className="rounded-[16px] overflow-hidden border border-white/10">
+                  <div className="rounded-[16px] overflow-hidden border border-primary/10">
                     <img
                       src="/car-image.jpg"
                       alt="Chevrolet Camaro"
@@ -115,14 +115,14 @@ export default function VehiclesListed() {
                   </div>
 
                   {/* wishlist */}
-                  <button className="absolute right-5 top-5 w-9 h-9 rounded-full bg-black/55 backdrop-blur border border-white/20 flex items-center justify-center hover:bg-black/70 transition">
+                  <button className="absolute right-5 top-5 w-9 h-9 rounded-full bg-black/55 backdrop-blur border border-primary/20 flex items-center justify-center hover:bg-black/70 transition">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="15"
                       height="15"
                       viewBox="0 0 24 24"
                       fill="none"
-                      stroke="white"
+                      stroke="primary"
                       strokeWidth="1.8"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -135,34 +135,34 @@ export default function VehiclesListed() {
 
                 {/* CONTENT */}
                 <div className="px-5 pt-4 pb-5">
-                  <h3 className="text-[20px] font-semibold text-white tracking-tight mb-2">
+                  <h3 className="text-[20px] font-semibold text-primary tracking-tight mb-2">
                     Chevrolet Camaro
                   </h3>
 
-                  <p className="text-[13px] text-white/65 mb-2">
+                  <p className="text-[13px] text-primary/65 mb-2">
                     Listed By: Nihal Chaudhary
                   </p>
 
-                  <div className="flex items-center gap-2 text-white/55 text-[13px] mb-4">
+                  <div className="flex items-center gap-2 text-primary/55 text-[13px] mb-4">
                     <span>📍</span>
                     <span>Chhapi, Gujarat</span>
                   </div>
 
-                  <div className="flex flex-wrap gap-x-3 gap-y-1 text-[13px] text-white/65 mb-4">
+                  <div className="flex flex-wrap gap-x-3 gap-y-1 text-[13px] text-primary/65 mb-4">
                     <span>2022</span>
                     <span>• Manual</span>
                     <span>• petrol</span>
                     <span>• 5</span>
                   </div>
 
-                  <div className="flex items-center gap-1.5 text-white/80 text-[13px] mb-5">
+                  <div className="flex items-center gap-1.5 text-primary/80 text-[13px] mb-5">
                     <span>★</span>
                     <span>4.3</span>
                   </div>
 
                   {/* PRICE + BUTTON */}
                   <div className="flex items-center justify-between">
-                    <p className="text-[22px] font-semibold text-white tracking-tight">
+                    <p className="text-[22px] font-semibold text-primary tracking-tight">
                       ₹ 9.25 Lakh
                     </p>
 
@@ -174,7 +174,7 @@ export default function VehiclesListed() {
             px-6 py-2.5
             rounded-full
             bg-secondary
-            text-white/90
+            text-primary/90
             text-[13px]
             font-medium
             border border-primary/20
