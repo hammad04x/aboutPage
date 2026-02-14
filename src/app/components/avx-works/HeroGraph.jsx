@@ -23,7 +23,7 @@ export default function HeroGraph() {
             cursor={{ fill: "rgba(96,165,250,0.08)" }}
             wrapperStyle={{ outline: "none", background: "transparent" }}
             contentStyle={{
-              background: "#000000",
+              background: "secondary",
               border: "1px solid #1f2937",
               borderRadius: "10px",
               color: "#fff",

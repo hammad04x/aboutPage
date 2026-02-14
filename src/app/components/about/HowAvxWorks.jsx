@@ -40,7 +40,7 @@ const HowAvxWorks = () => {
   ];
 
   return (
-    <section className="pb-20 bg-[var(--color-secondary)] text-white ">
+    <section className="pb-20 bg-secondary text-white ">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
@@ -53,7 +53,7 @@ const HowAvxWorks = () => {
           <div className="relative z-10">
             <div className="inline-flex items-center gap-3 mb-4">
               <span className="h-[1px] w-8 bg-[var(--color-fourth)]/50"></span>
-              <span className="text-[var(--color-fourth)] text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold">
+              <span className="text-[var(--color-fourth)] text-sm tracking-[0.4em] uppercase text-third font-semibold">
                 The Journey
               </span>
               <span className="h-[1px] w-8 bg-[var(--color-fourth)]/50"></span>
@@ -64,7 +64,7 @@ const HowAvxWorks = () => {
             </h2>
 
             <div className="max-w-2xl mx-auto">
-              <p className="text-[var(--color-third)] text-base md:text-lg leading-relaxed opacity-80">
+              <p className="text-third text-base md:text-lg leading-relaxed opacity-80">
                 A premium, direct-to-owner experience designed for the
                 <span className="text-white font-medium"> modern automotive market</span>.
                 Simple, transparent, and built for performance.
@@ -86,7 +86,7 @@ const HowAvxWorks = () => {
 
               {/* Collapsed Title */}
               <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${activeStep === index ? 'opacity-0' : 'opacity-100'}`}>
-                <span className="rotate-90 md:-rotate-90 whitespace-nowrap text-xs uppercase tracking-[0.35em] font-semibold text-[var(--color-third)]">
+                <span className="rotate-90 md:-rotate-90 whitespace-nowrap text-xs uppercase tracking-[0.35em] font-semibold text-third">
                   {step.title}
                 </span>
               </div>
@@ -109,7 +109,7 @@ const HowAvxWorks = () => {
                     {step.title}
                   </h3>
 
-                  <p className="text-[var(--color-third)] text-base leading-relaxed max-w-xs">
+                  <p className="text-third text-base leading-relaxed max-w-xs">
                     {step.desc}
                   </p>
                 </div>

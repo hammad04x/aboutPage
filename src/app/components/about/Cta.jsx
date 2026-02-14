@@ -1,6 +1,6 @@
 export default function Cta() {
   return (
-    <section className="hero_car_half2 ">
+    <section className="hero_car_half2 bg-secondary">
 
       <div className="mx-auto max-w-7xl px-6 pb-20">
 
@@ -48,7 +48,7 @@ export default function Cta() {
             {/* TAG */}
             <p className="mb-6">
               <span className="
-                bg-black/25
+                bg-secondary/25
                 text-natural-400
                 px-4 py-1.5
                 rounded-full
@@ -112,7 +112,7 @@ export default function Cta() {
             {/* TAG */}
             <p className="mb-6">
               <span className="
-                bg-black/25
+                bg-secondary/25
                text-natural-400
                 px-4 py-1.5
                 rounded-full

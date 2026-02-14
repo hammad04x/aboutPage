@@ -7,12 +7,12 @@ import {
 
 export default function AvxStructure() {
   return (
-    <section className="relative bg-[#0a0a0a] border-t border-neutral-800 overflow-hidden">
+    <section className="relative bg-secondary border-t border-neutral-800 overflow-hidden">
       <div className="mx-auto max-w-6xl px-6 py-20">
 
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-15">
-          <p className="text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold">
+          <p className="text-sm tracking-[0.4em] uppercase text-third font-semibold">
             The AVX Structure
           </p>
 
@@ -23,7 +23,7 @@ export default function AvxStructure() {
             </span>
           </h2>
 
-          <p className="mt-8 text-lg leading-relaxed text-neutral-400">
+          <p className="mt-8 text-lg leading-relaxed text-third">
             Posting on AVX follows a required verification flow.
             Access exists under platform ownership and control.
           </p>
@@ -77,7 +77,7 @@ export default function AvxStructure() {
                   </span>
                 </p>
 
-                <p className="mt-4 text-sm leading-relaxed text-neutral-400">
+                <p className="mt-4 text-sm leading-relaxed text-third">
                   All activity operates under AVX rules,
                   visibility logic, and enforcement.
                 </p>
@@ -149,7 +149,7 @@ function TrustNode({ icon, title, desc, className = "" }) {
     <div className={`relative z-10 flex flex-col items-center text-center max-w-xs ${className}`}>
       <div className="flex items-center justify-center h-12 w-12 rounded-full
         border border-neutral-700
-        bg-[#0b0b0b]
+        bg-secondary
        text-fourth
         mb-4">
         {icon}
@@ -159,7 +159,7 @@ function TrustNode({ icon, title, desc, className = "" }) {
         {title}
       </h3>
 
-      <p className="mt-2 text-m leading-relaxed text-neutral-400">
+      <p className="mt-2 text-m leading-relaxed text-third">
         {desc}
       </p>
     </div>

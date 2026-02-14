@@ -2,7 +2,7 @@
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden min-h-screen  bg-[var(--color-secondary)]">
+    <section className="relative overflow-hidden min-h-screen  bg-secondary">
       <div className="absolute inset-0 bg-black" />
       <div className="absolute right-[-200px] top-[-200px] w-[600px] h-[600px] rounded-full" />
 
@@ -10,7 +10,7 @@ export default function HeroSection() {
         <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-4 pl-8 lg:pl-8 pr-0">
           {/* LEFT TEXT */}
           <div className="w-full lg:w-[40%]">
-            <p className="text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold mb-6">
+            <p className="text-sm tracking-[0.4em] uppercase text-third font-semibold mb-6">
               About AVX
             </p>
 
@@ -28,7 +28,7 @@ export default function HeroSection() {
               <span className="text-white/70">Pre-Owned Vehicle Platform</span>
             </h1>
 
-            <p className="mt-8 text-lg text-[var(--color-third)] max-w-lg leading-relaxed">
+            <p className="mt-8 text-lg text-third max-w-lg leading-relaxed">
               AVX brings structure, performance visibility, and trust into the
               used vehicle ecosystem — connecting serious buyers with verified
               consultants and inspected inventory.
@@ -56,7 +56,7 @@ export default function HeroSection() {
                 className="
   p-[2px]
   rounded-full
-  bg-neutral-300
+  bg-third/20
   transition-all duration-300
   hover:scale-[1.03]
   hover:bg-[linear-gradient(90deg,#044596_0%,#60a5fa_50%,#044596_100%)]
@@ -68,7 +68,7 @@ export default function HeroSection() {
       block
       px-7 py-3.5
       rounded-full
-      bg-[var(--color-secondary)]
+      bg-secondary
       text-white/90
       font-medium
       transition-all duration-300

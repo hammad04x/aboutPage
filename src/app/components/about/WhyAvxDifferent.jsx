@@ -30,12 +30,12 @@ const features = [
 
 export default function WhyAvxDifferent() {
   return (
-    <section className="bg-[var(--color-secondary)] pb-20 px-6 md:px-8 lg:px-8">
+    <section className="bg-secondary pb-20 px-6 md:px-8 lg:px-8">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
         <div className=" mb-28">
-          <p className="mb-6 text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold ">
+          <p className="mb-6 text-sm tracking-[0.4em] uppercase text-third font-semibold ">
             Why AVX
           </p>
 
@@ -43,7 +43,7 @@ export default function WhyAvxDifferent() {
             Not another  <span className=" text-[var(--color-fourth)]">   listing platform</span>
           </h2>
 
-          <p className="mt-8 text-xl text-[var(--color-third)]  leading-relaxed">
+          <p className="mt-8 text-xl text-third  leading-relaxed">
             AVX is engineered to remove ambiguity from the used-vehicle market by
             introducing structure, accountability, and measurable trust.
           </p>
@@ -75,7 +75,7 @@ export default function WhyAvxDifferent() {
                   <h3 className="text-2xl md:text-3xl font-semibold text-[var(--color-primary)]">
                     {item.title}
                   </h3>
-                  <p className="mt-4 text-lg text-[var(--color-third)] leading-relaxed">
+                  <p className="mt-4 text-lg text-third leading-relaxed">
                     {item.desc}
                   </p>
                 </div>

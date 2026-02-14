@@ -2,7 +2,7 @@ import React from "react";
 
 const ComplianceAndTransparency = () => {
   return (
-    <section className="py-20 px-6 bg-[var(--color-secondary)] relative overflow-hidden">
+    <section className="py-20 px-6 bg-secondary relative overflow-hidden">
 
       {/* Ambient Blue Support Glow */}
       <div className="absolute top-1/2 right-[-200px] -translate-y-1/2 w-[600px] h-[600px]  rounded-full pointer-events-none" />

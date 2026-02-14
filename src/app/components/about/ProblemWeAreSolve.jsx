@@ -2,18 +2,18 @@ import React from "react";
 
 const ProblemWeAreSolve = () => {
   return (
-    <section className="py-24 px-6 md:px-8 lg:px-8 bg-[var(--color-secondary)]">
+    <section className="py-24 px-6 md:px-8 lg:px-8 bg-secondary">
       <div className="max-w-7xl mx-auto">
 
-        {/* Section Header */}
+        {/* Section Header */} 
         <div className="mb-14">
-          <p className="text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold mb-3">
+          <p className="text-sm tracking-[0.4em] uppercase text-third font-semibold mb-3">
             The Problem We Fix
           </p>
 
           <h2 className="text-3xl md:text-5xl font-bold leading-tight text-[var(--color-primary)]">
             The Used Vehicle Market <br />
-            <span className="text-[var(--color-third)]">
+            <span className="text-third">
               Needed Structure
             </span>
           </h2>
@@ -25,8 +25,8 @@ const ProblemWeAreSolve = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* Card 1 */}
-                    <div className="group p-10 bg-[#141414] rounded-xl border-2 border-[var(--color-third)]/10 transition-all duration-300  hover:border-[var(--color-third)]/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]">
-            <div className="text-[var(--color-third)] text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
+                    <div className="group p-10 bg-secondary rounded-xl border-2 border-third/10 transition-all duration-300  hover:border-third/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]">
+            <div className="text-third text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
               ISSUE 01
             </div>
 
@@ -34,15 +34,15 @@ const ProblemWeAreSolve = () => {
               Fragmented Listings
             </h3>
 
-            <p className="text-[var(--color-third)] text-sm md:text-base leading-relaxed">
+            <p className="text-third text-sm md:text-base leading-relaxed">
               Vehicles scattered across platforms without consistency, making the search process exhausting and inefficient.
             </p>
           </div>
 
           {/* Card 2 */}
-          <div className="group p-10 bg-[#141414] rounded-xl border-2 border-[var(--color-third)]/10 transition-all duration-300  hover:border-[var(--color-third)]/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]">
+          <div className="group p-10 bg-secondary rounded-xl border-2 border-third/10 transition-all duration-300  hover:border-third/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]">
             
-            <div className="text-[var(--color-third)] text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
+            <div className="text-third text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
               ISSUE 02
             </div>
 
@@ -50,15 +50,15 @@ const ProblemWeAreSolve = () => {
               Low Transparency
             </h3>
 
-            <p className="text-[var(--color-third)] text-sm md:text-base leading-relaxed">
+            <p className="text-third text-sm md:text-base leading-relaxed">
               Limited inspection clarity and unclear seller credibility often leave buyers feeling uncertain and unprotected.
             </p>
           </div>
 
           {/* Card 3 */}
-                    <div className="group p-10 bg-[#141414] rounded-xl border-2 border-[var(--color-third)]/10 transition-all duration-300  hover:border-[var(--color-third)]/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]">
+                    <div className="group p-10 bg-secondary rounded-xl border-2 border-third/10 transition-all duration-300  hover:border-third/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]">
             
-            <div className="text-[var(--color-third)] text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
+            <div className="text-third text-sm tracking-widest mb-6 opacity-70 group-hover:text-[var(--color-fourth)] transition-colors">
               ISSUE 03
             </div>
 
@@ -66,7 +66,7 @@ const ProblemWeAreSolve = () => {
               No Accountability Layer
             </h3>
 
-            <p className="text-[var(--color-third)] text-sm md:text-base leading-relaxed">
+            <p className="text-third text-sm md:text-base leading-relaxed">
               No performance visibility for consultants, creating a marketplace where quality and service aren't measurable.
             </p>
           </div>

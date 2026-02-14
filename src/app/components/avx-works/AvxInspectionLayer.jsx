@@ -53,23 +53,23 @@ export default function AvxInspectionLayer() {
     const [active, setActive] = useState(ITEMS[0]);
 
     return (
-        <section className="bg-[#0b0b0b] border-t border-neutral-800">
+        <section className="bg-secondary border-t border-neutral-800">
             <div className="mx-auto max-w-7xl px-6 py-22">
 
                 {/* HEADER */}
                 <div className="max-w-4xl mb-14">
-                    <p className="text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold">
+                    <p className="text-sm tracking-[0.4em] uppercase text-third font-semibold">
                         AVX Inspection Layer
                     </p>
 
                     <h2 className="mt-6 text-5xl xl:text-6xl font-medium leading-tight">
                         Independent inspection,
-                        <span className="block text-blue-500">
+                        <span className="block text-fourth">
                             visible before decisions
                         </span>
                     </h2>
 
-                    <p className="mt-6 text-xl leading-relaxed text-neutral-400">
+                    <p className="mt-6 text-xl leading-relaxed text-third">
                         AVX applies a structured 200-point inspection framework to surface
                         vehicle condition clearly — beyond seller claims.
                     </p>
@@ -108,10 +108,10 @@ export default function AvxInspectionLayer() {
                 border border-neutral-700
                 flex items-center justify-center text-center px-6">
                                 <div>
-                                    <p className="text-xs tracking-widest uppercase text-neutral-500">
+                                    <p className="text-xs tracking-widest uppercase text-third">
                                         Inspection Core
                                     </p>
-                                    <p className="mt-3 text-xl font-semibold text-[var(--color-fourth)]">
+                                    <p className="mt-3 text-xl font-semibold text-fourth">
                                         AVX Verification
                                     </p>
                                 </div>
@@ -132,8 +132,8 @@ export default function AvxInspectionLayer() {
                       flex items-center justify-center
                       transition-all duration-300 ease-out
                       ${isActive
-                                                ? "bg-blue-500 text-black scale-110"
-                                                : "bg-[#0d0d0d] text-neutral-400 border border-neutral-700 hover:scale-105"
+                                                ? "bg-fourth text-black scale-110"
+                                                : "bg-[#0d0d0d] text-third border border-neutral-700 hover:scale-105"
                                             }`}
                                         style={{
                                             transform: `
@@ -161,11 +161,11 @@ export default function AvxInspectionLayer() {
                                 Inspection focus
                             </p>
 
-                            <h3 className="text-2xl font-semibold text-[var(--color-fourth)] mb-4">
+                            <h3 className="text-2xl font-semibold text-fourth mb-4">
                                 {active.title}
                             </h3>
 
-                            <p className="text-lg leading-relaxed text-neutral-400 max-w-xl">
+                            <p className="text-lg leading-relaxed text-third max-w-xl">
                                 {active.desc}
                             </p>
 
@@ -175,14 +175,14 @@ export default function AvxInspectionLayer() {
                                 {active.id === "verification" ? (
                                     <>
                                         <AlertCircle size={18} className="text-neutral-500" />
-                                        <span className="text-sm text-neutral-400">
+                                        <span className="text-sm text-third">
                                             Inspection available on request
                                         </span>
                                     </>
                                 ) : (
                                     <>
-                                        <CheckCircle size={18} className="text-blue-500" />
-                                        <span className="text-sm text-blue-500">
+                                        <CheckCircle size={18} className="text-fourth" />
+                                        <span className="text-sm text-fourth">
                                             Inspection summary visible on listing
                                         </span>
                                     </>
@@ -205,7 +205,7 @@ function KeyPoint({ title, desc }) {
             <h4 className="text-lg font-semibold text-white mb-2">
                 {title}
             </h4>
-            <p className="text-neutral-400 leading-relaxed">
+            <p className="text-third leading-relaxed">
                 {desc}
             </p>
         </div>
@@ -213,9 +213,9 @@ function KeyPoint({ title, desc }) {
 }
 
 function SignalPoint({ index, title, desc }) {
-  return (
-    <div
-      className="
+    return (
+        <div
+            className="
         group relative overflow-hidden
         rounded-2xl
         border border-neutral-800
@@ -224,10 +224,10 @@ function SignalPoint({ index, title, desc }) {
         transition-all duration-300 ease-out
         hover:border-[var(--color-fourth)]
       "
-    >
-      {/* GHOST INDEX */}
-      <span
-        className="
+        >
+            {/* GHOST INDEX */}
+            <span
+                className="
           pointer-events-none
           absolute top-6 right-6
           text-[72px]
@@ -235,32 +235,32 @@ function SignalPoint({ index, title, desc }) {
           tracking-tight
           text-neutral-800/40
           transition-colors duration-300
-          group-hover:text-[var(--color-fourth)]/20
+          group-hover:text-fourth/20
         "
-      >
-        {index}
-      </span>
+            >
+                {index}
+            </span>
 
-      {/* CONTENT */}
-      <h4
-        className="
+            {/* CONTENT */}
+            <h4
+                className="
           relative z-10
           text-xl font-semibold text-white mb-3
           transition-colors duration-300
-          group-hover:text-[var(--color-fourth)]
+          group-hover:text-fourth
         "
-      >
-        {title}
-      </h4>
+            >
+                {title}
+            </h4>
 
-      <p
-        className="
+            <p
+                className="
           relative z-10
-          text-neutral-400 leading-relaxed max-w-sm
+          text-third leading-relaxed max-w-sm
         "
-      >
-        {desc}
-      </p>
-    </div>
-  );
+            >
+                {desc}
+            </p>
+        </div>
+    );
 }

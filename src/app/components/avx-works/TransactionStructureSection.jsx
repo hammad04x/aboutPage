@@ -6,13 +6,13 @@ import { MdOutlinePayments } from "react-icons/md";
 
 export default function TransactionStructureSection() {
   return (
-    <section className="relative py-20 bg-[var(--color-secondary)] overflow-hidden">
+    <section className="relative py-20 bg-secondary overflow-hidden">
 
       <div className="relative max-w-7xl mx-auto px-6">
 
         {/* ===== HEADER ===== */}
         <div className="max-w-3xl mb-8">
-          <p className="text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold mb-4">
+          <p className="text-sm tracking-[0.4em] uppercase text-third font-semibold mb-4">
             Transaction Structure
           </p>
 
@@ -30,7 +30,7 @@ export default function TransactionStructureSection() {
           {/* LEFT TEXT */}
           <div className="space-y-6 max-w-xl">
 
-            <p className="text-[15px] text-[var(--color-third)] leading-relaxed">
+            <p className="text-[15px] text-third leading-relaxed">
               AVX operates as a structured marketplace connecting buyers and consultants
               through verified listings, performance metrics, and transparent activity visibility.
             </p>
@@ -61,7 +61,7 @@ export default function TransactionStructureSection() {
                  between parties.
               </p>
 
-              <p className="text-[var(--color-third)] text-sm mt-4 leading-relaxed">
+              <p className="text-third text-sm mt-4 leading-relaxed">
                 Instead, the platform provides structured visibility, consultant performance data,
                 and verified interaction tracking — helping buyers make informed decisions.
               </p>
@@ -85,7 +85,7 @@ export default function TransactionStructureSection() {
             <h3 className="text-white font-semibold mb-2">
               Marketplace Connector
             </h3>
-            <p className="text-sm text-[var(--color-third)]">
+            <p className="text-sm text-third">
               AVX connects verified buyers and professional consultants through structured listings.
             </p>
           </div>
@@ -100,7 +100,7 @@ export default function TransactionStructureSection() {
             <h3 className="text-white font-semibold mb-2">
               Transparent Negotiation
             </h3>
-            <p className="text-sm text-[var(--color-third)]">
+            <p className="text-sm text-third">
               Pricing and negotiation happen directly between parties with full visibility.
             </p>
           </div>
@@ -115,7 +115,7 @@ export default function TransactionStructureSection() {
             <h3 className="text-white font-semibold mb-2">
               No Payment Handling
             </h3>
-            <p className="text-sm text-[var(--color-third)]">
+            <p className="text-sm text-third">
               AVX does not process transactions between buyers and consultants.
             </p>
           </div>

@@ -2,14 +2,14 @@
 
 export default function TrustSignals() {
     return (
-        <section className="bg-[var(--color-secondary)]">
+        <section className="bg-secondary">
             <div className="mx-auto max-w-7xl px-6 py-20">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 items-center">
 
                     {/* LEFT — CONTEXT */}
                     <div>
-                        <p className="mb-6 inline-flex items-center gap-3 text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold">
+                        <p className="mb-6 inline-flex items-center gap-3 text-sm tracking-[0.4em] uppercase text-third font-semibold">
                             <span className="h-[2px] w-10 bg-[var(--color-fourth)]" />
                             Built for Accountability
                         </p>
@@ -21,7 +21,7 @@ export default function TrustSignals() {
                             </span>
                         </h2>
 
-                        <p className="mt-10 max-w-xl text-xl leading-relaxed text-[var(--color-third)] font-[var(--font-secondary)]">
+                        <p className="mt-10 max-w-xl text-xl leading-relaxed text-third font-[var(--font-secondary)]">
                             AVX doesn’t rely on claims or testimonials. Trust emerges from
                             structured participation, transparent performance, and verifiable
                             activity across the marketplace.
@@ -53,10 +53,10 @@ export default function TrustSignals() {
                         <span className="absolute right-0 top-1/2 w-3 h-[2px] bg-[var(--color-fourth)] -translate-y-1/2" />
 
                         {/* CENTER SQUARE (OUTER) */}
-                        <span className="absolute left-1/2 top-1/2 h-6 w-6 bg-neutral-500 -translate-x-1/2 -translate-y-1/2 z-10" />
+                        <span className="absolute left-1/2 top-1/2 h-6 w-6 bg-third/40 -translate-x-1/2 -translate-y-1/2 z-10" />
 
                         {/* CENTER SQUARE (INNER) */}
-                        <span className="absolute left-1/2 top-1/2 h-3 w-3 bg-[var(--color-secondary)] -translate-x-1/2 -translate-y-1/2 z-20" />
+                        <span className="absolute left-1/2 top-1/2 h-3 w-3 bg-secondary -translate-x-1/2 -translate-y-1/2 z-20" />
 
                         {/* SIGNALS */}
 
@@ -65,7 +65,7 @@ export default function TrustSignals() {
                             <div className="text-2xl font-semibold text-[var(--color-fourth)]">
                                 100K+
                             </div>
-                            <p className="mt-1 text-m text-[var(--color-third)]">
+                            <p className="mt-1 text-m text-third">
                                 Vehicles listed
                             </p>
                         </div>
@@ -75,7 +75,7 @@ export default function TrustSignals() {
                             <div className="text-2xl font-semibold text-[var(--color-fourth)]">
                                 10K+
                             </div>
-                            <p className="mt-1 text-m text-[var(--color-third)]">
+                            <p className="mt-1 text-m text-third">
                                 Consultants onboarded
                             </p>
                         </div>
@@ -85,7 +85,7 @@ export default function TrustSignals() {
                             <div className="text-2xl font-semibold text-[var(--color-fourth)] text-end">
                                 Growing
                             </div>
-                            <p className="mt-1 text-m text-[var(--color-third)]">
+                            <p className="mt-1 text-m text-third">
                                 Cities across India
                             </p>
                         </div>
@@ -95,7 +95,7 @@ export default function TrustSignals() {
                             <div className="text-2xl font-semibold text-[var(--color-fourth)]">
                                 In Progress
                             </div>
-                            <p className="mt-1 text-m text-[var(--color-third)]">
+                            <p className="mt-1 text-m text-third">
                                 Inspection rollout
                             </p>
                         </div>

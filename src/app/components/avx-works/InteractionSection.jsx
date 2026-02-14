@@ -7,7 +7,7 @@ export default function InteractionSection() {
   // activeRole: "buyer" | "consultant" | null
 
   return (
-    <section className="relative bg-[var(--color-secondary)] py-20 overflow-hidden">
+    <section className="relative bg-secondary py-20 overflow-hidden">
 
       {/* RECORDING STATUS */}
       <div className="absolute top-10 right-14 flex items-center gap-2 text-xs font-mono text-red-500">
@@ -19,7 +19,7 @@ export default function InteractionSection() {
 
         {/* SECTION HEADER */}
         <div className="max-w-3xl mb-14">
-          <p className="text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold">
+          <p className="text-sm tracking-[0.4em] uppercase text-third font-semibold">
             Buyer & Consultant Interaction
           </p>
 
@@ -30,7 +30,7 @@ export default function InteractionSection() {
             </span>
           </h2>
 
-          <p className="mt-6 text-lg text-neutral-400 leading-relaxed">
+          <p className="mt-6 text-lg text-third leading-relaxed">
             Buyers and consultants communicate directly while AVX observes,
             records, and enforces accountability without intervening.
           </p>
@@ -46,7 +46,7 @@ export default function InteractionSection() {
             className={`
               px-4 py-1.5 rounded-full text-sm font-semibold cursor-pointer transition
               ${activeRole === "buyer"
-                ? "bg-white text-black"
+                ? "bg-white text-secondary"
                 : "bg-neutral-800 text-white"
               }
             `}
@@ -54,7 +54,7 @@ export default function InteractionSection() {
             Buyer
           </span>
 
-          <span className="text-neutral-500 text-lg">↔</span>
+          <span className="text-third text-lg">↔</span>
 
           {/* CONSULTANT PILL */}
           <span
@@ -71,7 +71,7 @@ export default function InteractionSection() {
             Consultant
           </span>
 
-          <span className="ml-auto text-xs font-mono text-neutral-500">
+          <span className="ml-auto text-xs font-mono text-third">
             SESSION · AVX-INT-0921
           </span>
         </div>
@@ -105,7 +105,7 @@ export default function InteractionSection() {
                   Requesting inspection clarity and confirmation of odometer consistency.
                 </p>
 
-                <div className="mt-2 text-right text-xs text-neutral-400">
+                <div className="mt-2 text-right text-xs text-third">
                   11:31 AM
                 </div>
               </div>
@@ -164,7 +164,7 @@ export default function InteractionSection() {
 
         {/* FOOTNOTE */}
         <div className="mt-16 max-w-2xl">
-          <p className="text-sm text-neutral-500 leading-relaxed">
+          <p className="text-sm text-third leading-relaxed">
             AVX does not participate in conversations.
             The platform exists to ensure traceability, auditability, and trust.
           </p>

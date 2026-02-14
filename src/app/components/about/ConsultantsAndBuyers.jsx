@@ -125,7 +125,7 @@ export default function ConsultantsAndBuyers() {
   }, [active]);
 
   return (
-    <section className="bg-[var(--color-secondary)] ">
+    <section className="bg-secondary">
       <div className="mx-auto max-w-7xl px-6 py-10">
 
         {/* ===================== */}
@@ -146,7 +146,7 @@ export default function ConsultantsAndBuyers() {
               className={`relative z-10 px-8 py-3 text-sm uppercase tracking-widest transition
                 ${active === "buyers"
                   ? "text-black"
-                  : "text-neutral-300 hover:text-white"}`}
+                  : "text-third hover:text-white"}`}
             >
               For Buyers
             </button>
@@ -157,7 +157,7 @@ export default function ConsultantsAndBuyers() {
               className={`relative z-10 px-10 py-3 text-sm uppercase tracking-widest transition
                 ${active === "consultants"
                   ? "text-black"
-                  : "text-neutral-300 hover:text-white"}`}
+                  : "text-third hover:text-white"}`}
             >
               For Consultants
             </button>
@@ -193,7 +193,7 @@ export default function ConsultantsAndBuyers() {
 function StickyBlock({ label, titleTop, titleBottom, desc, cta }) {
   return (
     <div className="lg:sticky lg:top-32 h-fit">
-      <p className="mb-8 inline-block text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold relative">
+      <p className="mb-8 inline-block text-sm tracking-[0.4em] uppercase text-third font-semibold relative">
         {label}
         <span className="absolute left-0 -bottom-3 h-[2px] w-16 bg-gradient-to-r from-neutral-100 to-transparent" />
       </p>
@@ -205,7 +205,7 @@ function StickyBlock({ label, titleTop, titleBottom, desc, cta }) {
         </span>
       </h2>
 
-      <p className="mt-12 max-w-xl text-xl leading-relaxed text-neutral-300 ">
+      <p className="mt-12 max-w-xl text-xl leading-relaxed text-third">
         {desc}
       </p>
 
@@ -232,7 +232,7 @@ function Capability({ title, desc, icon }) {
         <h3 className="text-2xl font-medium text-white">
           {title}
         </h3>
-        <p className="mt-4 text-lg leading-relaxed text-neutral-400">
+        <p className="mt-4 text-lg leading-relaxed text-third">
           {desc}
         </p>
       </div>

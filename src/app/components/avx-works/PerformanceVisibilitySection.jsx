@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 
 export default function PerformanceVisibilitySection() {
   return (
-    <section className="relative py-28 bg-[var(--color-secondary)] overflow-hidden">
+    <section className="relative py-28 bg-secondary overflow-hidden">
 
       {/* ambient glow */}
       <div className="absolute left-1/2 top-0 w-[700px] h-[700px]  rounded-full" />
 
       <div className="relative max-w-7xl mx-auto px-6">
         <div>
-            <p className="text-xs tracking-[0.35em] uppercase text-[var(--color-third)] font-semibold mb-4">
+            <p className="text-xs tracking-[0.35em] uppercase text-third font-semibold mb-4">
                 Performance Visibility
               </p>
 
@@ -32,7 +32,7 @@ export default function PerformanceVisibilitySection() {
 
             <div>
               
-              <p className="text-[15px] text-[var(--color-third)] mt-4 leading-relaxed">
+              <p className="text-[15px] text-third mt-4 leading-relaxed">
                 Every consultant operates through a transparent public profile
                 where buyers can evaluate performance metrics, reliability signals,
                 and responsiveness before making decisions.
@@ -99,12 +99,12 @@ function Metric({ icon, title, desc }) {
   return (
     <motion.div
       whileHover={{ y: -4 }}
-      className="p-5 rounded-xl border hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)] border-white/10 bg-[#0b0e13]/80 backdrop-blur-xl hover:border-blue-400/40 transition hover:bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)]"
+      className="p-5 rounded-xl border hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)] border-white/10 bg-secondary/80 backdrop-blur-xl hover:border-blue-400/40 transition hover:bg-[linear-gradient(90deg,#313131_0%,#1a1919_45%,#000000_100%)]"
     >
       <div className="text-xl mb-3">{icon}</div>
 
       <p className="text-white font-semibold text-sm">{title}</p>
-      <p className="text-[13px] text-[var(--color-third)] mt-1 leading-relaxed">
+      <p className="text-[13px] text-third mt-1 leading-relaxed">
         {desc}
       </p>
     </motion.div>

@@ -35,11 +35,11 @@ function CountUp({ end, suffix = "" }) {
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[92vh] flex items-center bg-[#0d0f14] overflow-hidden">
+    <section className="relative min-h-[92vh] flex items-center bg-secondary overflow-hidden">
 
       {/* ===== BACKGROUND DEPTH ===== */}
 
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0d0f14] via-[#0b0e13] to-[#0d0f14]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary via-[#0b0e13] to-secondary" />
 
       {/* animated orb */}
       <motion.div
@@ -68,7 +68,7 @@ export default function HeroSection() {
               </h1>
             </div>
 
-            <p className="text-[15px] text-[#9ca3af] leading-relaxed max-w-lg">
+            <p className="text-[15px] text-third leading-relaxed max-w-lg">
               We connect verified consultants and serious buyers through
               transparent listings, inspection visibility, and performance
               accountability.
@@ -110,19 +110,19 @@ export default function HeroSection() {
                   <p className="text-lg font-bold text-[var(--color-fourth)]">
                     <CountUp end={100} suffix="+" />
                   </p>
-                  <p className="text-[11px] text-[#9ca3af] uppercase">Consultants</p>
+                  <p className="text-[11px] text-third uppercase">Consultants</p>
                 </div>
                 <div>
                   <p className="text-lg font-bold text-[var(--color-fourth)]">
                     <CountUp end={500} suffix="+" />
                   </p>
-                  <p className="text-[11px] text-[#9ca3af] uppercase">Listings</p>
+                  <p className="text-[11px] text-third uppercase">Listings</p>
                 </div>
                 <div>
                   <p className="text-lg font-bold text-[var(--color-fourth)]">
                     <CountUp end={98} suffix="%" />
                   </p>
-                  <p className="text-[11px] text-[#9ca3af] uppercase">Visibility</p>
+                  <p className="text-[11px] text-third uppercase">Visibility</p>
                 </div>
               </div>
             </motion.div>
@@ -131,7 +131,7 @@ export default function HeroSection() {
             <div className="absolute left-0 top-[55%] w-[88%] h-[30%] rounded-xl overflow-hidden border border-[#1f2937] shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-30"
             >
               <img src="/car-hero-21.jpg" className="w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0d0f14]/80 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent" />
             </div>
 
             {/* PERFORMANCE CARD */}
@@ -141,7 +141,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="absolute right-10 bottom-[-10px] w-[58%] rounded-xl border border-[#1f2937] bg-[#0b0e13]/95 backdrop-blur-xl p-5 shadow-xl z-30"
             >
-              <p className="text-xs text-[#9ca3af] mb-4 tracking-wide uppercase">
+              <p className="text-xs text-third mb-4 tracking-wide uppercase">
                 Performance Snapshot
               </p>
 
@@ -153,7 +153,7 @@ export default function HeroSection() {
                 ].map((item, i) => (
                   <div key={i} className="bg-[#0f1117] rounded-lg p-3 border border-[#1f2937] text-center hover:border-[#60a5fa]/40 transition">
                     <p className="text-lg font-bold text-[var(--color-fourth)]">{item.v}</p>
-                    <p className="text-[10px] text-[#9ca3af] uppercase tracking-wide">{item.l}</p>
+                    <p className="text-[10px] text-third uppercase tracking-wide">{item.l}</p>
                   </div>
                 ))}
               </div>

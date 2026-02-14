@@ -3,7 +3,7 @@
 
     const ReVerification = () => {
     return (
-        <section className="relative py-28 px-6 bg-[var(--color-secondary)] overflow-hidden">
+        <section className="relative py-28 px-6 bg-secondary overflow-hidden">
         {/* ambient glow */}
 
         <div className="max-w-7xl mx-auto">
@@ -12,7 +12,7 @@
             {/* LEFT — Narrative */}
             <div className="lg:col-span-5">
                 <div className="flex items-center gap-3 mb-8">
-                <span className="text-sm tracking-[0.4em] uppercase text-[var(--color-third)] font-semibold">
+                <span className="text-sm tracking-[0.4em] uppercase text-third font-semibold">
                     Optional Re-Verification
                 </span>
                 </div>
@@ -25,12 +25,12 @@
                 </span>
                 </h2>
 
-                <p className="text-[var(--color-third)] leading-relaxed max-w-md">
+                <p className="text-third leading-relaxed max-w-md">
                 Even if a vehicle already includes an inspection report, buyers
                 can request deeper verification for total peace of mind.
                 </p>
 
-                <p className="text-sm italic text-[var(--color-third)] mt-6 border-l border-[var(--color-fourth)] pl-4">
+                <p className="text-sm italic text-third mt-6 border-l border-[var(--color-fourth)] pl-4">
                 Because confidence is not one-size-fits-all.
                 </p>
             </div>
@@ -40,7 +40,7 @@
                 
                 {/* CARD */}
                 <div className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-white/10 via-white/5 to-transparent hover:from-[var(--color-fourth)]/40 transition-all duration-500">
-                <div className="relative rounded-2xl bg-[var(--color-secondary)] p-7 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center">
+                <div className="relative rounded-2xl bg-secondary p-7 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center">
                     
                     {/* icon */}
                     <div className="w-16 h-16 shrink-0 bg-[var(--color-fourth)]/10 rounded-xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:bg-[var(--color-fourth)]/20">
@@ -60,14 +60,14 @@
                         Fresh inspection
                     </h3>
 
-                    <p className="text-sm text-[var(--color-third)] leading-relaxed">
+                    <p className="text-sm text-third leading-relaxed">
                         Request a newly conducted professional inspection to verify
                         the vehicle’s real-time mechanical condition.
                     </p>
                     </div>
 
                     {/* arrow */}
-                    <button className="shrink-0 p-3 rounded-xl border border-white/10 text-[var(--color-third)] transition-all duration-300 group-hover:text-white group-hover:border-[var(--color-fourth)] group-hover:bg-[var(--color-fourth)]/10">
+                    <button className="shrink-0 p-3 rounded-xl border border-white/10 text-third transition-all duration-300 group-hover:text-white group-hover:border-[var(--color-fourth)] group-hover:bg-[var(--color-fourth)]/10">
                     <ArrowUpRight size={18} />
                     </button>
                 </div>
@@ -75,7 +75,7 @@
 
                 {/* CARD */}
                 <div className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-white/10 via-white/5 to-transparent hover:from-[var(--color-fourth)]/40 transition-all duration-500">
-                <div className="relative rounded-2xl bg-[var(--color-secondary)] p-7 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center">
+                <div className="relative rounded-2xl bg-secondary p-7 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center">
                     
                     {/* icon */}
                     <div className="w-16 h-16 shrink-0 bg-[var(--color-fourth)]/10 rounded-xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:bg-[var(--color-fourth)]/20">
@@ -95,14 +95,14 @@
                         Video walkthrough
                     </h3>
 
-                    <p className="text-sm text-[var(--color-third)] leading-relaxed">
+                    <p className="text-sm text-third leading-relaxed">
                         Get a personalized video focusing on the exact areas you
                         want to inspect before making your decision.
                     </p>
                     </div>
 
                     {/* arrow */}
-                    <button className="shrink-0 p-3 rounded-xl border border-white/10 text-[var(--color-third)] transition-all duration-300 group-hover:text-white group-hover:border-[var(--color-fourth)] group-hover:bg-[var(--color-fourth)]/10">
+                    <button className="shrink-0 p-3 rounded-xl border border-white/10 text-third transition-all duration-300 group-hover:text-white group-hover:border-[var(--color-fourth)] group-hover:bg-[var(--color-fourth)]/10">
                     <ArrowUpRight size={18} />
                     </button>
                 </div>
@@ -111,7 +111,7 @@
                 {/* footer */}
                 <div className="flex items-center gap-2 pt-2 opacity-70">
                 <ShieldCheck size={15} className="text-[var(--color-fourth)]" />
-                <span className="text-[11px] tracking-wide uppercase text-[var(--color-third)]">
+                <span className="text-[11px] tracking-wide uppercase text-third">
                     Verified by AVX
                 </span>
                 </div>
