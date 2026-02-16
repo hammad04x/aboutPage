@@ -3,6 +3,7 @@
 
 import { CheckCircle2, ShieldCheck, UserCheck, FileText, MapPin, Search } from "lucide-react";
 import { motion } from "framer-motion";
+import { Verified } from "lucide-react";
 
 export default function VehiclesListed() {
   const points = [
@@ -72,130 +73,87 @@ export default function VehiclesListed() {
               </div>
             </div>
 
-           {/* RIGHT VISUAL */}
-<motion.div
-  initial={{ opacity: 0, y: 40 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.5 }}
-  viewport={{ once: true }}
-  className="relative flex justify-center lg:justify-end"
->
-  <div
-    className="
-      group relative
-      w-full max-w-[340px]
-      rounded-[24px]
-      overflow-hidden
-      bg-[#0c0f14]
-      border-2 border-primary/25
-      transition-all duration-300
-      hover:-translate-y-1
-      hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]
-    "
-  >
-    {/* subtle inner rim */}
-    <div className="pointer-events-none absolute inset-0 rounded-[24px] ring-1 ring-primary/[0.05]" />
+            {/* RIGHT VISUAL — HERO TRUST BADGE */}
+            {/* RIGHT VISUAL: The Master Authentication Seal */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8, rotateY: 20 }}
+              whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+              viewport={{ once: true }}
+              className="relative flex justify-center lg:justify-end perspective-1000"
+            >
+              {/* Multi-layered Ambient Glow for depth */}
+              <div className="absolute inset-0 bg-fourth/20 blur-[120px] rounded-full scale-75 animate-pulse" />
 
-    {/* IMAGE SECTION */}
-    <div className="relative p-2 pb-0">
-      <div className="rounded-[16px] overflow-hidden border border-primary/10 relative">
-        <img
-          src="/car_image_olx.jpg"
-          alt="Chevrolet Camaro"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-        />
-        
-        {/* ✨ PROFESSIONAL BADGE: TOP LEFT */}
-        <div className="absolute top-3 left-3 flex flex-col gap-2">
-          <div className="flex items-center gap-1.5 bg-fourth px-2.5 py-1 rounded-full shadow-lg backdrop-blur-md">
-            <ShieldCheck size={12} className="text-white" />
-            <span className="text-[10px] font-bold text-white uppercase tracking-wider">AVX Verified</span>
-          </div>
-          <div className="flex items-center gap-1.5 bg-black/60 border border-white/20 px-2.5 py-1 rounded-full backdrop-blur-md">
-             <span className="text-[10px] font-medium text-white/90">200+ Points Inspected</span>
-          </div>
-        </div>
-      </div>
+              <div className="relative group">
+                {/* ✨ THE MASTER BADGE */}
+                <div className="relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center">
 
-      {/* wishlist */}
-      <button className="absolute right-5 top-5 w-9 h-9 rounded-full bg-black/55 backdrop-blur border border-primary/20 flex items-center justify-center hover:bg-black/70 transition">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="15"
-          height="15"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#f8fafc"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="opacity-80"
-        >
-          <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
-        </svg>
-      </button>
-    </div>
+                  {/* Outer Rotating Ring (Decorative) */}
+                  <div className="absolute inset-0 border-2 border-dashed border-fourth/20 rounded-full animate-[spin_20s_linear_infinity]" />
 
-    {/* CONTENT */}
-    <div className="px-5 pt-4 pb-5">
-      <div className="flex justify-between items-start mb-1">
-        <h3 className="text-[20px] font-semibold text-primary tracking-tight">
-          Chevrolet Camaro
-        </h3>
-        {/* ✨ RATING BADGE */}
-        <div className="flex items-center gap-1 bg-primary/5 px-2 py-0.5 rounded border border-primary/10">
-          <span className="text-fourth text-[11px]">★</span>
-          <span className="text-primary/80 text-[11px] font-bold">4.3</span>
-        </div>
-      </div>
+                  {/* Middle Glass Ring */}
+                  <div className="absolute inset-4 border border-white/10 rounded-full bg-white/[0.02] backdrop-blur-sm shadow-[inset_0_0_40px_rgba(255,255,255,0.05)]" />
 
-      <p className="text-[13px] text-primary/65 mb-3">
-        Listed By: <span className="text-primary/90 font-medium">Nihal Chaudhary</span>
-      </p>
+                  {/* Main Hexagonal / Circular Core */}
+                  <div className="relative w-60 h-60 md:w-80 md:h-80 rounded-full bg-[#080808] border-[1px] border-white/20 shadow-2xl flex flex-col items-center justify-center overflow-hidden">
 
-      {/* ✨ SPECIFICATION BADGES */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        <span className="bg-primary/5 border border-primary/10 text-primary/70 text-[10px] px-2 py-1 rounded-md font-medium uppercase">Manual</span>
-        <span className="bg-primary/5 border border-primary/10 text-primary/70 text-[10px] px-2 py-1 rounded-md font-medium uppercase">Petrol</span>
-        <span className="bg-primary/5 border border-primary/10 text-primary/70 text-[10px] px-2 py-1 rounded-md font-medium uppercase">1st Owner</span>
-      </div>
+                    {/* Animated Scan Line across the Badge */}
+                    <motion.div
+                      animate={{ top: ['-10%', '110%'] }}
+                      transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                      className="absolute left-0 right-0 h-20 bg-gradient-to-b from-transparent via-fourth/10 to-transparent z-10"
+                    />
 
-      <div className="flex items-center gap-2 text-primary/55 text-[13px] mb-5">
-        <MapPin size={14} className="text-fourth/70" />
-        <span>Chhapi, Gujarat</span>
-      </div>
+                    {/* Top Branding */}
+                    <div className="absolute top-12 flex flex-col items-center">
+                      <p className="text-[10px] font-black text-fourth uppercase tracking-[0.4em] mb-1">Standardized</p>
+                      <div className="h-[1px] w-12 bg-fourth/40" />
+                    </div>
 
-      {/* PRICE + BUTTON */}
-      <div className="flex items-center justify-between pt-2 border-t border-primary/5">
-        <div>
-           <p className="text-[22px] font-semibold text-primary tracking-tight">
-             ₹ 9.25 Lakh
-           </p>
-           <p className="text-[10px] text-fourth font-medium uppercase tracking-widest">Fixed Price</p>
-        </div>
+                    {/* Center Icon & Title */}
+                    <div className="flex flex-col items-center z-20">
+                      <div className="relative mb-3">
+                        <ShieldCheck size={64} className="text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]" />
+                        <motion.div
+                         
+                          className="absolute -top-1 -right-1"
+                        >
+                          <Verified size={24} className="text-fourth" />
+                        </motion.div>
+                      </div>
+                      <h3 className="text-4xl font-primary font-black text-white tracking-tighter mb-1">AVX<span className="text-fourth">.</span></h3>
+                      <p className="text-[11px] font-bold text-white/40 uppercase tracking-[0.2em]">Verified Asset</p>
+                    </div>
 
-        <a
-          href="/consultant"
-          className="
-            px-5 py-2
-            rounded-full
-            bg-secondary
-            text-primary/90
-            text-[13px]
-            font-semibold
-            border border-primary/20
-            transition-all duration-300
-            hover:text-primary
-            hover:border-fourth
-            hover:shadow-[0_0_15px_rgba(255,255,255,0.1)]
-          "
-        >
-          View Details
-        </a>
-      </div>
-    </div>
-  </div>
-</motion.div>
+                    {/* Bottom Metadata */}
+                    <div className="absolute bottom-10 flex items-center gap-6">
+                      <div className="text-center">
+                        <p className="text-[12px] text-white/30 uppercase font-bold mb-0.5">Confidence</p>
+                        <p className="text-[15px] text-white/90 font-mono">100%</p>
+                      </div>
+                      <div className="w-[1px] h-6 bg-white/10" />
+                      <div className="text-center">
+                        <p className="text-[12px] text-white/30 uppercase font-bold mb-0.5">Precision</p>
+                        <p className="text-[15px] text-white/90 font-mono">A++</p>
+                      </div>
+                    </div>
+
+                    {/* Background "Verified" Text Watermark */}
+                    <span className="absolute text-[80px] font-black text-white/[0.02] -bottom-4 pointer-events-none select-none">TRUST</span>
+                  </div>
+
+                  {/* Outer Floating Accents */}
+                  <div className="absolute -top-4 -right-4 bg-black border border-white/10 px-4 py-2 rounded-2xl shadow-xl">
+                    <p className="text-[9px] font-mono text-fourth">ISO:9001 COMPLIANT</p>
+                  </div>
+                  <div className="absolute -bottom-2 -left-4 bg-black border border-white/10 px-4 py-2 rounded-2xl shadow-xl">
+                    <p className="text-[9px] font-mono text-white/60 uppercase tracking-widest">Protocol 2.0</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
 
 
           </div>
