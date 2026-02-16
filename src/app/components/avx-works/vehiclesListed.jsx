@@ -139,7 +139,7 @@ export default function VehiclesListed() {
                       </div>
                     </div>
 
-                    {/* Background "Verified" Text Watermark */}
+                    {/* Background "Verified" Text Watermark ..*/}
                     <span className="absolute text-[80px] font-black text-primary/[0.02] -bottom-4 pointer-events-none select-none">TRUST</span>
                   </div>
 
