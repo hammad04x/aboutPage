@@ -56,7 +56,7 @@ export default function PerformanceVisibilitySection() {
           </div>
 
           {/* RIGHT METRICS GRID */}
-          {/* <div className="grid sm:grid-cols-2 mt-[16] gap-5">
+          <div className="grid sm:grid-cols-2 mt-[16] gap-5">
             <Metric
               icon={<FcAreaChart />}
               title="Active Inventory"
@@ -80,7 +80,7 @@ export default function PerformanceVisibilitySection() {
               title="Response Time"
               desc="Know how quickly consultants engage with buyers."
             />
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
