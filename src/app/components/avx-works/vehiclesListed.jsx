@@ -14,7 +14,7 @@ export default function VehiclesListed() {
   ];
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-secondary font-secondary">
+    <section className="py-20 px-0 md:px-12 lg:px-6 bg-secondary font-secondary">
       <div className="max-w-7xl mx-auto">
         {/* Main Glassmorphic Container */}
         <div className="relative overflow-hidden rounded-2xl border border-primary/10 bg-primary/[0.02] backdrop-blur-sm p-8 md:p-12">

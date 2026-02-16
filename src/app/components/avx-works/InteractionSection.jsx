@@ -5,8 +5,12 @@ export default function InteractionSection() {
     <section className="bg-secondary py-5 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6">
 
+        <p className="text-sm tracking-[0.4em] uppercase text-third font-semibold mb-10">
+          AVX Inspection Layer
+        </p>
+
         {/* HEADER */}
-        <div className="max-w-3xl mb-32">
+        <div className="max-w-3xl mb-15">
           <h2 className="text-5xl font-semibold leading-tight text-primary">
             Direct Communication
             <span className="block text-fourth">
@@ -21,7 +25,7 @@ export default function InteractionSection() {
         </div>
 
         {/* STAIR VISUALS */}
-        <div className="relative flex items-end justify-center gap-14">
+        <div className="relative flex items-end justify-center gap-2">
 
           {/* LEFT IMAGE + POINTS */}
           <div className="flex flex-col gap-10">

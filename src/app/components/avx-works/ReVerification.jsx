@@ -3,7 +3,7 @@
 
     const ReVerification = () => {
     return (
-        <section className="relative py-28 px-6 bg-secondary overflow-hidden">
+        <section className="relative py-10 px-6 bg-secondary overflow-hidden">
         {/* ambient glow */}
 
         <div className="max-w-7xl mx-auto">

@@ -35,7 +35,7 @@ function CountUp({ end, suffix = "" }) {
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[92vh] flex items-center bg-secondary overflow-hidden">
+    <section className="relative min-h-screen flex items-center bg-secondary overflow-hidden">
 
       {/* ===== BACKGROUND DEPTH ===== */}
 

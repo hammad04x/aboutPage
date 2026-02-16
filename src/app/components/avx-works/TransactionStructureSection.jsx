@@ -6,7 +6,7 @@ import { MdOutlinePayments } from "react-icons/md";
 
 export default function TransactionStructureSection() {
   return (
-    <section className="relative py-20 bg-secondary overflow-hidden">
+    <section className="relative py-15 bg-secondary overflow-hidden">
 
       <div className="relative max-w-7xl mx-auto px-6">
 
@@ -73,7 +73,7 @@ export default function TransactionStructureSection() {
         </div>
 
         {/* ===== CARDS SECTION (FULL WIDTH BELOW) ===== */}
-        <div className="grid md:grid-cols-3 gap-6 mt-20">
+        <div className="grid md:grid-cols-3 gap-6 mt-10">
 
           {/* Card 1 */}
           <div className="

@@ -25,7 +25,7 @@ export default function WhyThisMattersSection() {
   ];
 
   return (
-    <section className="relative pt-10 pb-13 bg-secondary overflow-hidden">
+    <section className="relative pt-15 pb-13 bg-secondary overflow-hidden">
       {/* HORIZON LIGHT */}
       <div
         className="

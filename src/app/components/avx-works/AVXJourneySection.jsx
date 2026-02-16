@@ -31,7 +31,7 @@ const steps = [
 
 export default function AVXJourneySection() {
   return (
-    <section className="relative py-20 bg-secondary overflow-hidden">
+    <section className="relative py-10 bg-secondary overflow-hidden">
 
       <div className="relative max-w-5xl mx-auto px-6">
 

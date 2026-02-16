@@ -7,8 +7,8 @@ import {
 
 export default function AvxStructure() {
   return (
-    <section className="relative bg-secondary border-t border-neutral-800 overflow-hidden">
-      <div className="mx-auto max-w-6xl px-6 py-20">
+    <section className="relative bg-secondary overflow-hidden">
+      <div className="mx-auto max-w-6xl px-6">
 
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-15">
