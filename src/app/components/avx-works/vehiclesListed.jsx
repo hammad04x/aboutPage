@@ -72,128 +72,130 @@ export default function VehiclesListed() {
               </div>
             </div>
 
-            {/* RIGHT VISUAL */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="relative flex justify-center lg:justify-end"
-            >
-              <div
-                className="
+           {/* RIGHT VISUAL */}
+<motion.div
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  viewport={{ once: true }}
+  className="relative flex justify-center lg:justify-end"
+>
+  <div
+    className="
       group relative
       w-full max-w-[340px]
       rounded-[24px]
       overflow-hidden
       bg-[#0c0f14]
-
-      /* ✨ gradient border feel */
       border-2 border-primary/25
-
-      /* ✨ base shadow */
-
-      /* ✨ smooth motion */
       transition-all duration-300
-
-      /* ✨ hover lift */
       hover:-translate-y-1
       hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]
     "
-              >
-                {/* subtle inner rim */}
-                <div className="pointer-events-none absolute inset-0 rounded-[24px] ring-1 ring-primary/[0.05]" />
+  >
+    {/* subtle inner rim */}
+    <div className="pointer-events-none absolute inset-0 rounded-[24px] ring-1 ring-primary/[0.05]" />
 
-                {/* IMAGE */}
-                <div className="relative p-3 pb-0">
-                  <div className="rounded-[16px] overflow-hidden border border-primary/10">
-                    <img
-                      src="/car-image.jpg"
-                      alt="Chevrolet Camaro"
-                      className="w-full h-[190px] object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-                    />
-                  </div>
+    {/* IMAGE SECTION */}
+    <div className="relative p-2 pb-0">
+      <div className="rounded-[16px] overflow-hidden border border-primary/10 relative">
+        <img
+          src="/car_image_olx.jpg"
+          alt="Chevrolet Camaro"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+        />
+        
+        {/* ✨ PROFESSIONAL BADGE: TOP LEFT */}
+        <div className="absolute top-3 left-3 flex flex-col gap-2">
+          <div className="flex items-center gap-1.5 bg-fourth px-2.5 py-1 rounded-full shadow-lg backdrop-blur-md">
+            <ShieldCheck size={12} className="text-white" />
+            <span className="text-[10px] font-bold text-white uppercase tracking-wider">AVX Verified</span>
+          </div>
+          <div className="flex items-center gap-1.5 bg-black/60 border border-white/20 px-2.5 py-1 rounded-full backdrop-blur-md">
+             <span className="text-[10px] font-medium text-white/90">200+ Points Inspected</span>
+          </div>
+        </div>
+      </div>
 
-                  {/* wishlist */}
-                  <button className="absolute right-5 top-5 w-9 h-9 rounded-full bg-black/55 backdrop-blur border border-primary/20 flex items-center justify-center hover:bg-black/70 transition">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="15"
-                      height="15"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#f8fafc"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="opacity-80"
-                    >
-                      <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
-                    </svg>
-                  </button>
-                </div>
+      {/* wishlist */}
+      <button className="absolute right-5 top-5 w-9 h-9 rounded-full bg-black/55 backdrop-blur border border-primary/20 flex items-center justify-center hover:bg-black/70 transition">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#f8fafc"
+          strokeWidth="1.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="opacity-80"
+        >
+          <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+        </svg>
+      </button>
+    </div>
 
-                {/* CONTENT */}
-                <div className="px-5 pt-4 pb-5">
-                  <h3 className="text-[20px] font-semibold text-primary tracking-tight mb-2">
-                    Chevrolet Camaro
-                  </h3>
+    {/* CONTENT */}
+    <div className="px-5 pt-4 pb-5">
+      <div className="flex justify-between items-start mb-1">
+        <h3 className="text-[20px] font-semibold text-primary tracking-tight">
+          Chevrolet Camaro
+        </h3>
+        {/* ✨ RATING BADGE */}
+        <div className="flex items-center gap-1 bg-primary/5 px-2 py-0.5 rounded border border-primary/10">
+          <span className="text-fourth text-[11px]">★</span>
+          <span className="text-primary/80 text-[11px] font-bold">4.3</span>
+        </div>
+      </div>
 
-                  <p className="text-[13px] text-primary/65 mb-2">
-                    Listed By: Nihal Chaudhary
-                  </p>
+      <p className="text-[13px] text-primary/65 mb-3">
+        Listed By: <span className="text-primary/90 font-medium">Nihal Chaudhary</span>
+      </p>
 
-                  <div className="flex items-center gap-2 text-primary/55 text-[13px] mb-4">
-                    <span>📍</span>
-                    <span>Chhapi, Gujarat</span>
-                  </div>
+      {/* ✨ SPECIFICATION BADGES */}
+      <div className="flex flex-wrap gap-2 mb-4">
+        <span className="bg-primary/5 border border-primary/10 text-primary/70 text-[10px] px-2 py-1 rounded-md font-medium uppercase">Manual</span>
+        <span className="bg-primary/5 border border-primary/10 text-primary/70 text-[10px] px-2 py-1 rounded-md font-medium uppercase">Petrol</span>
+        <span className="bg-primary/5 border border-primary/10 text-primary/70 text-[10px] px-2 py-1 rounded-md font-medium uppercase">1st Owner</span>
+      </div>
 
-                  <div className="flex flex-wrap gap-x-3 gap-y-1 text-[13px] text-primary/65 mb-4">
-                    <span>2022</span>
-                    <span>• Manual</span>
-                    <span>• petrol</span>
-                    <span>• 5</span>
-                  </div>
+      <div className="flex items-center gap-2 text-primary/55 text-[13px] mb-5">
+        <MapPin size={14} className="text-fourth/70" />
+        <span>Chhapi, Gujarat</span>
+      </div>
 
-                  <div className="flex items-center gap-1.5 text-primary/80 text-[13px] mb-5">
-                    <span>★</span>
-                    <span>4.3</span>
-                  </div>
+      {/* PRICE + BUTTON */}
+      <div className="flex items-center justify-between pt-2 border-t border-primary/5">
+        <div>
+           <p className="text-[22px] font-semibold text-primary tracking-tight">
+             ₹ 9.25 Lakh
+           </p>
+           <p className="text-[10px] text-fourth font-medium uppercase tracking-widest">Fixed Price</p>
+        </div>
 
-                  {/* PRICE + BUTTON */}
-                  <div className="flex items-center justify-between">
-                    <p className="text-[22px] font-semibold text-primary tracking-tight">
-                      ₹ 9.25 Lakh
-                    </p>
-
-                    {/* ✅ BUTTON — your style */}
-
-                    <a
-                      href="/consultant"
-                      className="
-            px-6 py-2.5
+        <a
+          href="/consultant"
+          className="
+            px-5 py-2
             rounded-full
             bg-secondary
             text-primary/90
             text-[13px]
-            font-medium
+            font-semibold
             border border-primary/20
-
             transition-all duration-300
-
             hover:text-primary
-            hover:border-primary/35
-            hover:shadow-[0_6px_20px_rgba(0,0,0,0.5)]
+            hover:border-fourth
+            hover:shadow-[0_0_15px_rgba(255,255,255,0.1)]
           "
-                    >
-                      View Details
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* ambient glow */}
-            </motion.div>
+        >
+          View Details
+        </a>
+      </div>
+    </div>
+  </div>
+</motion.div>
 
 
           </div>
