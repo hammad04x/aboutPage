@@ -55,9 +55,8 @@ export default function AvxStructure() {
 
             {/* CORE */}
             <div className="relative z-20 flex items-center justify-center h-85 w-80 rounded-[130px]
-              bg-linear-to-b from-[#0d0d0d] to-[#070707]
               border border-neutral-500
-              shadow-[0_0_140px_rgba(59,130,246,0.25)]">
+            ">
 
               {/* Outer containment ring */}
               <div className="absolute -inset-5 rounded-full border border-neutral-700 opacity-50" />
@@ -118,24 +117,20 @@ function FlowLines() {
       preserveAspectRatio="xMidYMid meet"
     >
       {/* TOP → CORE */}
-      <line x1="400" y1="140" x2="400" y2="300" stroke="#1e40af" strokeWidth="4" />
-      <line x1="400" y1="140" x2="400" y2="300" stroke="#60a5fa" strokeWidth="1" />
-      <circle cx="400" cy="300" r="5" fill="#3b82f6" />
+      <line x1="400" y1="140" x2="400" y2="242" stroke="#1e40af" strokeWidth="4" />
+      <line x1="400" y1="140" x2="400" y2="242" stroke="#60a5fa" strokeWidth="1" />
 
       {/* LEFT → CORE */}
-      <line x1="170" y1="400" x2="320" y2="400" stroke="#1e40af" strokeWidth="4" />
-      <line x1="170" y1="400" x2="320" y2="400" stroke="#60a5fa" strokeWidth="1" />
-      <circle cx="320" cy="400" r="5" fill="#3b82f6" />
+      <line x1="170" y1="400" x2="284" y2="400" stroke="#1e40af" strokeWidth="4" />
+      <line x1="170" y1="400" x2="284" y2="400" stroke="#60a5fa" strokeWidth="1" />
 
       {/* RIGHT → CORE */}
-      <line x1="630" y1="400" x2="480" y2="400" stroke="#1e40af" strokeWidth="4" />
-      <line x1="630" y1="400" x2="480" y2="400" stroke="#60a5fa" strokeWidth="1" />
-      <circle cx="480" cy="400" r="5" fill="#3b82f6" />
+      <line x1="630" y1="400" x2="512" y2="400" stroke="#1e40af" strokeWidth="4" />
+      <line x1="630" y1="400" x2="512" y2="400" stroke="#60a5fa" strokeWidth="1" />
 
       {/* CORE → BOTTOM */}
-      <line x1="400" y1="500" x2="400" y2="655" stroke="#1e40af" strokeWidth="4" />
-      <line x1="400" y1="500" x2="400" y2="655" stroke="#60a5fa" strokeWidth="1" />
-      <circle cx="400" cy="500" r="5" fill="#3b82f6" />
+      <line x1="400" y1="558" x2="400" y2="655" stroke="#1e40af" strokeWidth="4" />
+      <line x1="400" y1="558" x2="400" y2="655" stroke="#60a5fa" strokeWidth="1" />
     </svg>
   );
 }
@@ -149,7 +144,6 @@ function TrustNode({ icon, title, desc, className = "" }) {
     <div className={`relative z-10 flex flex-col items-center text-center max-w-xs ${className}`}>
       <div className="flex items-center justify-center h-12 w-12 rounded-full
         border border-neutral-700
-        bg-secondary
        text-fourth
         mb-4">
         {icon}
