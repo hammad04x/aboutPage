@@ -18,7 +18,7 @@ const ProblemWeAreSolve = () => {
             </span>
           </h2>
 
-          <div className="w-14 h-[2px] bg-fourth mt-5 opacity-70"></div>
+          <div className="w-14 h-0.5 bg-fourth mt-5 opacity-70"></div>
         </div>
 
         {/* Content Blocks */}

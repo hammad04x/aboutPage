@@ -20,7 +20,7 @@
                 <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-6">
                 Additional assurance,
                 <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-fourth to-[#60a5fa]">
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-fourth to-[#60a5fa]">
                     when you need it.
                 </span>
                 </h2>
@@ -39,7 +39,7 @@
             <div className="lg:col-span-7 space-y-6">
                 
                 {/* CARD */}
-                <div className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-primary/10 via-primary/5 to-transparent hover:from-fourth/40 transition-all duration-500">
+                <div className="group relative rounded-2xl p-px bg-linear-to-br from-primary/10 via-primary/5 to-transparent hover:from-fourth/40 transition-all duration-500">
                 <div className="relative rounded-2xl bg-secondary p-7 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center">
                     
                     {/* icon */}
@@ -48,7 +48,7 @@
                     </div>
 
                     {/* content */}
-                    <div className="flex-grow">
+                    <div className="grow">
                     <div className="flex items-center gap-2 mb-2">
                         <span className="w-2 h-2 rounded-full bg-fourth animate-pulse" />
                         <span className="text-[10px] tracking-widest uppercase text-fourth font-semibold">
@@ -74,7 +74,7 @@
                 </div>
 
                 {/* CARD */}
-                <div className="group relative rounded-2xl p-[1px] bg-gradient-to-br from-primary/10 via-primary/5 to-transparent hover:from-fourth/40 transition-all duration-500">
+                <div className="group relative rounded-2xl p-px bg-linear-to-br from-primary/10 via-primary/5 to-transparent hover:from-fourth/40 transition-all duration-500">
                 <div className="relative rounded-2xl bg-secondary p-7 md:p-8 flex flex-col md:flex-row gap-6 items-start md:items-center">
                     
                     {/* icon */}
@@ -83,7 +83,7 @@
                     </div>
 
                     {/* content */}
-                    <div className="flex-grow">
+                    <div className="grow">
                     <div className="flex items-center gap-2 mb-2">
                         <span className="w-2 h-2 rounded-full bg-red-500 animate-ping" />
                         <span className="text-[10px] tracking-widest uppercase text-red-400 font-semibold">

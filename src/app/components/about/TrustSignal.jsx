@@ -10,7 +10,7 @@ export default function TrustSignals() {
                     {/* LEFT — CONTEXT */}
                     <div>
                         <p className="mb-6 inline-flex items-center gap-3 text-sm tracking-[0.4em] uppercase text-third font-semibold">
-                            <span className="h-[2px] w-10 bg-color-fourth" />
+                            <span className="h-0.5 w-10 bg-color-fourth" />
                             Built for Accountability
                         </p>
 
@@ -30,7 +30,7 @@ export default function TrustSignals() {
 
                     {/* RIGHT — EXACT SCHEMATIC */}
                     {/* RIGHT — TRUE REFERENCE CENTER */}
-                    <div className="relative h-[480px]">
+                    <div className="relative h-120">
 
                         {/* MAIN AXES — STOP AT SQUARE CORNERS */}
 
@@ -47,10 +47,10 @@ export default function TrustSignals() {
                         <span className="absolute top-1/2 right-0 w-[40%] h-px bg-neutral-600/50" />
 
                         {/* AXIS END TICKS */}
-                        <span className="absolute left-1/2 top-0 h-3 w-[2px] bg-fourth -translate-x-1/2" />
-                        <span className="absolute left-1/2 bottom-0 h-3 w-[2px] bg-fourth -translate-x-1/2" />
-                        <span className="absolute left-0 top-1/2 w-3 h-[2px] bg-fourth -translate-y-1/2" />
-                        <span className="absolute right-0 top-1/2 w-3 h-[2px] bg-fourth -translate-y-1/2" />
+                        <span className="absolute left-1/2 top-0 h-3 w-0.5 bg-fourth -translate-x-1/2" />
+                        <span className="absolute left-1/2 bottom-0 h-3 w-0.5 bg-fourth -translate-x-1/2" />
+                        <span className="absolute left-0 top-1/2 w-3 h-0.5 bg-fourth -translate-y-1/2" />
+                        <span className="absolute right-0 top-1/2 w-3 h-0.5 bg-fourth -translate-y-1/2" />
 
                         {/* CENTER SQUARE (OUTER) */}
                         <span className="absolute left-1/2 top-1/2 h-6 w-6 bg-third/40 -translate-x-1/2 -translate-y-1/2 z-10" />

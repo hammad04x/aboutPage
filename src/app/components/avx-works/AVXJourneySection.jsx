@@ -56,7 +56,7 @@ export default function AVXJourneySection() {
           {/* CENTER RAIL */}
           <div className="
             absolute left-1/2 top-0 bottom-0
-            w-[2px]
+            w-0.5
             bg-fourth
             opacity-60
           " />
@@ -79,7 +79,7 @@ export default function AVXJourneySection() {
 
                 {/* STEP CARD */}
                 <div className="
-                  w-[400px]
+                  w-100
                   rounded-2xl
                   border border-blue-400/20
                   bg-blue-500/5

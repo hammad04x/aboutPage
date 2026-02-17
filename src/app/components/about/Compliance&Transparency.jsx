@@ -5,7 +5,7 @@ const ComplianceAndTransparency = () => {
     <section className="py-20 px-6 bg-secondary relative overflow-hidden">
 
       {/* Ambient Blue Support Glow */}
-      <div className="absolute top-1/2 right-[-200px] -translate-y-1/2 w-[600px] h-[600px]  rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 -right-50 -translate-y-1/2 w-150 h-150  rounded-full pointer-events-none" />
 
       <div className="max-w-5xl mx-auto">
 
@@ -13,7 +13,7 @@ const ComplianceAndTransparency = () => {
         <div>
 
           {/* Blue Edge Aura */}
-          <div className="absolute -inset-[1px] rounded-3xl " />
+          <div className="absolute -inset-px rounded-3xl " />
 
           {/* Card */}
           <div className="
@@ -34,7 +34,7 @@ const ComplianceAndTransparency = () => {
                   relative
                   h-20 w-20
                   rounded-2xl
-                  bg-gradient-to-br
+                  bg-linear-to-br
                   from-fourth/20
                   to-transparent
                   border border-fourth/30
@@ -109,7 +109,7 @@ const ComplianceAndTransparency = () => {
         {/* ===== LEGAL FOOTER ===== */}
         <div className="mt-12 flex items-center justify-center gap-8">
 
-          <div className="h-px w-24 bg-gradient-to-r from-transparent via-fourth/40 to-transparent" />
+          <div className="h-px w-24 bg-linear-to-r from-transparent via-fourth/40 to-transparent" />
 
           <span className="
             text-[11px]
@@ -120,7 +120,7 @@ const ComplianceAndTransparency = () => {
             Legal Independence Verified
           </span>
 
-          <div className="h-px w-24 bg-gradient-to-r from-transparent via-fourth/40 to-transparent" />
+          <div className="h-px w-24 bg-linear-to-r from-transparent via-fourth/40 to-transparent" />
 
         </div>
 

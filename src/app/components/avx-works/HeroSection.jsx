@@ -39,13 +39,13 @@ export default function HeroSection() {
 
       {/* ===== BACKGROUND DEPTH ===== */}
 
-      <div className="absolute inset-0 bg-gradient-to-b from-secondary via-[#0b0e13] to-secondary" />
+      <div className="absolute inset-0 bg-linear-to-b from-secondary via-[#0b0e13] to-secondary" />
 
       {/* animated orb */}
       <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-[#007bff]/10 blur-[160px] rounded-full"
+        className="absolute -top-40 -right-40 w-150 h-150 bg-fourth/10 blur-[160px] rounded-full"
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-16 w-full">
@@ -74,14 +74,14 @@ export default function HeroSection() {
               accountability.
             </p>
 
-            <div className="w-24 h-[2px] bg-fourth rounded-full" />
+            <div className="w-24 h-0.5 bg-fourth rounded-full" />
 
             <div className="flex flex-col sm:flex-row gap-4 pt-3">
-              <a href="/vehicles" className="relative group inline-flex items-center justify-center px-7 py-3.5 rounded-xl text-sm font-semibold text-primary bg-gradient-to-r from-[#044596] to-[#007bff] shadow-lg shadow-blue-900/40 transition duration-300 hover:shadow-blue-600/40 hover:-translate-y-[1px]">
+              <a href="/vehicles" className="relative group inline-flex items-center justify-center px-7 py-3.5 rounded-xl text-sm font-semibold text-primary bg-linear-to-r from-[#044596] to-fourth shadow-lg shadow-blue-900/40 transition duration-300 hover:shadow-blue-600/40 hover:-translate-y-px">
                 Browse Vehicles
               </a>
 
-              <a href="/consultant" className="px-7 py-3.5 rounded-xl text-sm font-semibold border border-[#374151] border-2 text-primary bg-[#111318] transition duration-300 hover:border-fourth hover:text-fourth hover:bg-[#151922] hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]">
+              <a href="/consultant" className="px-7 py-3.5 rounded-xl text-sm font-semibold border-[#374151] border-2 text-primary bg-[#111318] transition duration-300 hover:border-fourth hover:text-fourth hover:bg-[#151922] hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]">
                 Become a Consultant
               </a>
             </div>
@@ -89,10 +89,10 @@ export default function HeroSection() {
 
           {/* ================= RIGHT ================= */}
 
-          <div className="relative h-[460px]">
+          <div className="relative h-115">
 
             {/* glow layer */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#007bff]/10 to-transparent blur-3xl rounded-3xl" />
+            <div className="absolute inset-0 bg-linear-to-r from-fourth/10 to-transparent blur-3xl rounded-3xl" />
 
             {/* MAIN CARD */}
             <motion.div
@@ -131,7 +131,7 @@ export default function HeroSection() {
             <div className="absolute left-0 top-[55%] w-[88%] h-[30%] rounded-xl overflow-hidden border border-[#1f2937] shadow-[0_30px_80px_rgba(0,0,0,0.8)] z-30"
             >
               <img src="/car-hero-21.jpg" className="w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-secondary/80 to-transparent" />
             </div>
 
             {/* PERFORMANCE CARD */}
@@ -139,7 +139,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="absolute right-10 bottom-[-10px] w-[58%] rounded-xl border border-[#1f2937] bg-[#0b0e13]/95 backdrop-blur-xl p-5 shadow-xl z-30"
+              className="absolute right-10 -bottom-2.5 w-[58%] rounded-xl border border-[#1f2937] bg-[#0b0e13]/95 backdrop-blur-xl p-5 shadow-xl z-30"
             >
               <p className="text-xs text-third mb-4 tracking-wide uppercase">
                 Performance Snapshot

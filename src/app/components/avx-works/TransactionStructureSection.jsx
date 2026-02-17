@@ -43,7 +43,7 @@ export default function TransactionStructureSection() {
           </div>
 
           {/* RIGHT TRANSPARENCY CARD */}
-          <div className="flex w-[100%]">
+          <div className="flex w-full">
 
             <div className="
               w-full 

@@ -7,7 +7,7 @@ export default function PerformanceVisibilitySection() {
   return (
     <section className="relative py-15 bg-secondary overflow-hidden">
       {/* ambient glow */}
-      <div className="absolute left-1/2 top-0 w-[700px] h-[700px]  rounded-full" />
+      <div className="absolute left-1/2 top-0 w-175 h-175  rounded-full" />
 
       <div className="relative max-w-7xl mx-auto px-6">
         <div>

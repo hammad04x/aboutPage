@@ -19,7 +19,7 @@ const VisionAndApproach = () => {
       </p>
 
       {/* The Animated Line: Starts at 0 width and expands on hover */}
-      <div className="absolute bottom-0 left-0 h-[3px] w-0 bg-fourth transition-all duration-500 ease-out group-hover:w-full"></div>
+      <div className="absolute bottom-0 left-0 h-0.75 w-0 bg-fourth transition-all duration-500 ease-out group-hover:w-full"></div>
       
       {/* Subtle Glow Effect on Hover */}
       <div className="absolute -inset-px bg-fourth opacity-0 blur-lg transition-opacity duration-500 group-hover:opacity-10 -z-10"></div>

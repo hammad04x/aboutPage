@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden min-h-screen  bg-secondary">
       <div className="absolute inset-0 bg-black" />
-      <div className="absolute right-[-200px] top-[-200px] w-[600px] h-[600px] rounded-full" />
+      <div className="absolute -right-50 -top-50 w-150 h-150 rounded-full" />
 
       <div className="relative mx-auto max-w-7xl  pt-10 lg:pt-10 pb-5">
         <div className="flex flex-col lg:flex-row items-center gap-0 lg:gap-4 pl-8 lg:pl-8 pr-0">
@@ -54,7 +54,7 @@ export default function HeroSection() {
 
               <div
                 className="
-  p-[2px]
+  p-0.5
   rounded-full
   bg-third/20
   transition-all duration-300
@@ -88,10 +88,10 @@ export default function HeroSection() {
               alt="Vehicle"
               className="
                 w-full
-                h-[260px]
-                sm:h-[340px]
-                md:h-[420px]
-                lg:h-[480px]
+                h-65
+                sm:h-85
+                md:h-105
+                lg:h-120
                 object-cover
               "
             />

@@ -95,7 +95,7 @@ export default function AvxInspectionLayer() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
                     {/* RADIAL SYSTEM */}
                     <div className="lg:col-span-6 flex justify-center">
-                        <div className="relative h-[420px] w-[420px]">
+                        <div className="relative h-105 w-105">
                             {/* CORE */}
                             <div className="absolute inset-24 rounded-full overflow-hidden border border-neutral-700">
                                 {/* IMAGE */}
@@ -147,7 +147,7 @@ export default function AvxInspectionLayer() {
                     <div className="lg:col-span-6">
                         <div
                             className="rounded-3xl border border-neutral-800
-              bg-gradient-to-b from-[#101010] to-[#090909]
+              bg-linear-to-b from-[#101010] to-[#090909]
               p-10 flex flex-col"
                         >
                             <p className="text-xs tracking-widest uppercase text-neutral-500 mb-2">
@@ -205,10 +205,10 @@ function SignalPoint({ index, title, desc }) {
             className="
         group relative overflow-hidden
         rounded-2xl
-        bg-gradient-to-b from-[#101010] to-[#090909]
+        bg-linear-to-b from-[#101010] to-[#090909]
         p-8
         transition-all duration-300 ease-out
-        border-2 border-third/10 transition-all duration-300  hover:border-third/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]
+        border-2 border-third/10  hover:border-third/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]
       "
         >
             {/* GHOST INDEX */}

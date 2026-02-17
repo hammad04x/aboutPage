@@ -52,14 +52,14 @@ const HowAvxWorks = () => {
 
           <div className="relative z-10">
             <div className="inline-flex items-center gap-3 mb-4">
-              <span className="h-[1px] w-8 bg-fourth/50"></span>
-              <span className="text-fourth text-sm tracking-[0.4em] uppercase text-third font-semibold">
+              <span className="h-px w-8 bg-fourth/50"></span>
+              <span className="text-sm tracking-[0.4em] uppercase text-third font-semibold">
                 The Journey
               </span>
-              <span className="h-[1px] w-8 bg-fourth/50"></span>
+              <span className="h-px w-8 bg-fourth/50"></span>
             </div>
 
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-gradient-to-b from-primary to-primary/60 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 bg-linear-to-b from-primary to-primary/60 bg-clip-text text-transparent">
               How AVX Works
             </h2>
 
@@ -75,13 +75,13 @@ const HowAvxWorks = () => {
 
         {/* INTERACTIVE SLIDE DECK */}
         {/* Added h-[450px] to prevent height jumping which causes the "glitch" */}
-        <div className="flex flex-col md:flex-row gap-3 min-h-[350px] md:h-[350px]">
+        <div className="flex flex-col md:flex-row gap-3 min-h-87.5 md:h-87.5">
           {steps.map((step, index) => (
             <div
               key={index}
               onMouseEnter={() => setActiveStep(index)}
               className={`relative overflow-hidden transition-all duration-500 ease-in-out cursor-pointer rounded-2xl border border-primary/70 
-                ${activeStep === index ? 'flex-[3] bg-[#111]' : 'flex-1 bg-[#0a0a0a] hover:bg-[#0f0f0f]'}`}
+                ${activeStep === index ? 'flex-3 bg-[#111]' : 'flex-1 bg-[#0a0a0a] hover:bg-[#0f0f0f]'}`}
             >
 
               {/* Collapsed Title */}
@@ -115,7 +115,7 @@ const HowAvxWorks = () => {
                 </div>
 
                 {/* Progress Bar */}
-                <div className="w-full h-[2px] bg-primary/5 mt-6 overflow-hidden">
+                <div className="w-full h-0.5 bg-primary/5 mt-6 overflow-hidden">
                   <div
                     className="h-full bg-fourth transition-all duration-700 ease-out"
                     style={{ width: activeStep === index ? '100%' : '0%' }}
@@ -139,7 +139,7 @@ const HowAvxWorks = () => {
           {steps.map((_, i) => (
             <div
               key={i}
-              className={`h-[2px] rounded-full transition-all duration-300 ${activeStep === i ? 'w-14 bg-fourth' : 'w-5 bg-primary/10'}`}
+              className={`h-0.5 rounded-full transition-all duration-300 ${activeStep === i ? 'w-14 bg-fourth' : 'w-5 bg-primary/10'}`}
             />
           ))}
         </div>
