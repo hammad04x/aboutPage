@@ -208,8 +208,7 @@ function SignalPoint({ index, title, desc }) {
         bg-linear-to-b from-[#101010] to-[#090909]
         p-8
         transition-all duration-300 ease-out
-        border-2 border-third/10  hover:border-third/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]
-      "
+        border-2 border-third/10  hover:border-third/5 hover:shadow-[0_10px_40px_-10px_rgba(230,230,230,0.15)]    "
         >
             {/* GHOST INDEX */}
             <span

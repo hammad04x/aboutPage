@@ -44,7 +44,6 @@ export default function TransactionStructureSection() {
 
           {/* RIGHT TRANSPARENCY CARD */}
           <div className="flex w-full">
-
             <div className="
               w-full 
               rounded-2xl

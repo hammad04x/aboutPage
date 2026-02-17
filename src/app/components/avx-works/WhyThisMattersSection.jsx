@@ -46,7 +46,7 @@ export default function WhyThisMattersSection() {
       />
 
       <div className="relative max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center h-[fit-content]">
+        <div className="grid lg:grid-cols-2 gap-16 items-center h-fit">
           {/* LEFT //// */}
           <div className="space-y-8 max-w-xl">
             <p className="text-sm tracking-[0.4em] uppercase text-third font-semibold">
@@ -117,7 +117,7 @@ export default function WhyThisMattersSection() {
     group-hover:max-h-45
     group-hover:opacity-100
     transition-all duration-650
-    ease-[cubic-bezier(0.22,1,0.36,1)]
+   ease-[cubic-bezier(0.22,1,0.36,1)]
     overflow-hidden
   "
                 >

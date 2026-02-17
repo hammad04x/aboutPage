@@ -140,7 +140,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="absolute right-10 -bottom-2.5 w-[58%] rounded-xl border border-[#1f2937] bg-[#0b0e13]/95 backdrop-blur-xl p-5 shadow-xl z-30"
-            >
+           >
               <p className="text-xs text-third mb-4 tracking-wide uppercase">
                 Performance Snapshot
               </p>

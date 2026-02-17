@@ -80,7 +80,7 @@ export default function AVXJourneySection() {
                 {/* STEP CARD */}
                 <div className="
                   w-100
-                  rounded-2xl
+                 rounded-2xl
                   border border-blue-400/20
                   bg-blue-500/5
                   backdrop-blur-xl
