@@ -10,7 +10,7 @@ export default function TrustSignals() {
                     {/* LEFT — CONTEXT */}
                     <div>
                         <p className="mb-6 inline-flex items-center gap-3 text-sm tracking-[0.4em] uppercase text-third font-semibold">
-                            <span className="h-[2px] w-10 bg-color-fourth" />
+                            <span className="h-[2px] w-10 color-fourth" />
                             Built for Accountability
                         </p>
 
