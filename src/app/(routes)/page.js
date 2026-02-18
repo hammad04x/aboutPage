@@ -1,7 +1,9 @@
+import CoreDifferentiators from "../components/choose-avx/CoreDifferentiators";
+
 export default function AvxWorksPage() {
-    return (
-        <>
-          <h1>Hello</h1>
-        </>
-    );
+  return (
+    <>
+      <CoreDifferentiators />
+    </>
+  );
 }

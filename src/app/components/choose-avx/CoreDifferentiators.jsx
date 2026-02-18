@@ -1,6 +1,6 @@
 "use client"
 
-export default function AVXJourneySection() {
+export default function CoreDifferentiators() {
   return (
   <>
   <h1>Hello</h1>
