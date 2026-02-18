@@ -41,6 +41,7 @@
       font-family: var(--font-primary);
     }
   }
+
   section {
     background: linear-gradient(90deg, #313131 0%, #1a1919 45%, #000000 100%);
   }
