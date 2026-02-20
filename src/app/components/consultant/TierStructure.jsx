@@ -153,7 +153,7 @@ export default function TierStructure() {
           className="mt-16"
         >
           <a
-            href="/pricing#pricing-table"
+            href="/pricing"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl text-sm font-semibold text-primary bg-linear-to-r from-[#044596] to-fourth shadow-lg shadow-blue-900/40 transition duration-300 hover:shadow-blue-600/40 hover:-translate-y-px"
           >
             View Full Pricing →

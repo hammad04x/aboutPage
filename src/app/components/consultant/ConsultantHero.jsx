@@ -125,7 +125,7 @@ export default function ConsultantHeroSection() {
                 Become a Consultant
               </a>
               <a href="/pricing"
-                className="px-7 py-3.5 rounded-xl text-sm font-semibold border-[#374151] border-2 text-primary bg-[#111318] transition duration-300 hover:border-fourth hover:text-fourth hover:bg-[#151922] hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]">
+                className="px-7 py-3.5 rounded-xl text-center text-sm font-semibold border-[#374151] border-2 text-primary bg-[#111318] transition duration-300 hover:border-fourth hover:text-fourth hover:bg-[#151922] hover:shadow-[0_10px_40px_-10px_rgba(255,255,255,0.25)]">
                 View Pricing
               </a>
             </div>
