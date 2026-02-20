@@ -10,11 +10,13 @@ import {
   FiVideo,
 } from "react-icons/fi";
 import { useState } from "react";
+import PricingHero from "./PricingHero";
 
 const tiers = [
   {
     name: "Basic",
-    color: "text-emerald-400",
+    tagline: "Start building your presence on AVX.",
+    color: "#6b7280",
     priceMonth: "₹999 – ₹1,499",
     priceYear: "₹9,999 – ₹12,999",
     bestFor: "Small consultants & entry-level sellers",
@@ -28,11 +30,14 @@ const tiers = [
       "Access to PPC (paid separately)",
     ],
     note: "No customization. No featured priority.",
+    cta: "Get Started",
+    ctaStyle: "border border-[#d1d5db] text-[#111827] hover:bg-[#f9fafb]",
   },
   {
     name: "Pro",
+    tagline: "Everything you need to grow and compete.",
     highlight: true,
-    color: "text-yellow-400",
+    color: "#2563eb",
     priceMonth: "₹2,999 – ₹4,999",
     priceYear: "₹19,999 – ₹29,999",
     bestFor: "Growing dealerships",
@@ -46,10 +51,13 @@ const tiers = [
       "WhatsApp integration",
     ],
     note: "Designed for growth-focused consultants.",
+    cta: "Get Started",
+    ctaStyle: "bg-[#2563eb] text-white hover:bg-[#1d4ed8]",
   },
   {
     name: "Premium",
-    color: "text-blue-400",
+    tagline: "Maximum authority across the marketplace.",
+    color: "#6b7280",
     priceMonth: "₹7,999+",
     priceYear: "₹69,999+",
     bestFor: "Large inventory dealers & brands",
@@ -64,6 +72,8 @@ const tiers = [
       "Advanced analytics dashboard",
     ],
     note: "Premium visibility & authority positioning.",
+    cta: "Get Started",
+    ctaStyle: "border border-[#d1d5db] text-[#111827] hover:bg-[#f9fafb]",
   },
 ];
 
@@ -99,158 +109,185 @@ export default function FullPricing() {
   const [yearly, setYearly] = useState(false);
 
   return (
-    <section id="pricing-table" className="py-10 relative overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6">
-        {/* HEADER */}
-        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-          <p className="text-[10px] uppercase tracking-[0.35em] text-fourth font-semibold mb-3">
-            Pricing
-          </p>
+    <div>
+      {/* HERO */}
+      <PricingHero yearly={yearly} setYearly={setYearly} />
 
-          <h2 className="text-[28px] sm:text-[36px] md:text-[46px] font-semibold leading-tight text-primary">
-            Transparent Pricing Built for{" "}
-            <span className="text-fourth font-bold">Every Growth Stage</span>
-          </h2>
+      {/* CARDS — div NOT section, inline style beats global CSS */}
+      <div
+        id="pricing-table"
+        className="relative z-10 -mt-64"
+        style={{ background: "#ffffff" }}
+      >
+        <div className=" relative -top-40 max-w-6xl mx-auto px-5 sm:px-6 pt-0">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-end">
+            {tiers.map((tier, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 32 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className={`relative flex flex-col rounded-2xl overflow-hidden ${
+                  tier.highlight ? "lg:-translate-y-4" : ""
+                }`}
+                style={{
+                  background: tier.highlight
+                    ? "linear-gradient(180deg, #ffffff 0%, #f8fafc 100%)"
+                    : "linear-gradient(180deg, #ffffff 0%, #f9fafb 100%)",
+                  border: tier.highlight
+                    ? "1px solid rgba(37,99,235,0.35)"
+                    : "1px solid rgba(0,0,0,0.08)",
+                  boxShadow: tier.highlight
+                    ? "0 20px 60px rgba(37,99,235,0.18)"
+                    : "0 8px 30px rgba(0,0,0,0.08)",
+                }}
+              >
+                {/* soft glow ring for highlight */}
+                {tier.highlight && (
+                  <div className="absolute -inset-0.5 rounded-2xl bg-blue-500/10 blur-xl opacity-40 pointer-events-none" />
+                )}
 
-          <p className="mt-4 text-third text-[14px] sm:text-[15px] leading-relaxed">
-            Choose the plan that aligns with your scale and unlock tools
-            designed to increase visibility.
-          </p>
-        </div>
+                {tier.highlight && (
+                  <div className="text-white text-[10px] font-bold tracking-[0.2em] uppercase text-center py-2.5 bg-blue-600">
+                    Recommended
+                  </div>
+                )}
 
-        {/* TOGGLE */}
-        <div className="flex justify-center mb-14">
-          <div className="relative flex items-center rounded-full bg-[#1b1e24]/80 backdrop-blur-md border border-white/10 p-1.5">
-            <motion.div
-              animate={{ x: yearly ? 110 : 0 }}
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="absolute left-1.5 top-1.5 bottom-1.5 w-[110px] rounded-full bg-gradient-to-b from-[#2d7be6] to-[#1a63c9]"
-            />
-            <button
-              onClick={() => setYearly(false)}
-              className={`relative z-10 w-[110px] py-2.5 text-sm font-semibold hover:cursor-pointer ${!yearly ? "text-white" : "text-white/60"}`}
-            >
-              Monthly
-            </button>
-            <button
-              onClick={() => setYearly(true)}
-              className={`relative z-10 w-[110px] py-2.5 text-sm font-semibold hover:cursor-pointer ${yearly ? "text-white" : "text-white/60"}`}
-            >
-              Yearly
-            </button>
+                <div className="relative p-7 flex flex-col flex-1">
+                  <h3 className="text-[20px] font-bold mb-1 text-[#111827]">
+                    {tier.name}
+                  </h3>
+
+                  <p className="text-[13px] text-[#6b7280] mb-5">
+                    {tier.tagline}
+                  </p>
+
+                  <div className="mb-1">
+                    <span className="text-[26px] font-black text-[#111827]">
+                      {yearly && tier.priceYear
+                        ? tier.priceYear
+                        : tier.priceMonth}
+                    </span>
+                    <span className="text-[12px] text-[#9ca3af] ml-1">
+                      / {yearly ? "year" : "month"}
+                    </span>
+                  </div>
+
+                  <p className="text-[11px] text-[#9ca3af] mb-5">
+                    Best for: {tier.bestFor}
+                  </p>
+
+                  {/* BUTTON */}
+                  <button
+                    className="w-full py-3 rounded-xl text-[14px] font-semibold transition-all duration-300 mb-5 hover:cursor-pointer"
+                    style={{
+                      background: tier.highlight
+                        ? "#2563eb"
+                        : "linear-gradient(90deg, #313131 0%, #1a1919 45%, #000000 100%)",
+                      color: "#fff",
+                      boxShadow: tier.highlight
+                        ? "0 6px 20px rgba(37,99,235,0.35)"
+                        : "0 6px 20px rgba(0,0,0,0.25)",
+                    }}
+                  >
+                    {tier.cta}
+                  </button>
+
+                  <div className="h-px bg-[#eef2f7] mb-5" />
+
+                  {/* FEATURES */}
+                  <ul className="space-y-3 flex-1">
+                    {tier.features.map((f, idx) => (
+                      <li key={idx} className="flex items-start gap-3">
+                        <div
+                          className="w-5 h-5 rounded-full flex items-center justify-center mt-0.5"
+                          style={{
+                            background: tier.highlight
+                              ? "rgba(37,99,235,0.1)"
+                              : "rgba(0,0,0,0.05)",
+                          }}
+                        >
+                          <FiCheck
+                            className="text-[10px]"
+                            style={{
+                              color: tier.highlight ? "#2563eb" : "#6b7280",
+                            }}
+                          />
+                        </div>
+                        <span className="text-[13px] text-[#374151]">{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <p className="text-[11px] text-[#9ca3af] mt-5 italic">
+                    {tier.note}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
+      </div>
 
-        {/* CARDS */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {tiers.map((tier, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 28 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.08 }}
-              viewport={{ once: true }}
-              className={`relative rounded-2xl p-6 sm:p-8 backdrop-blur-xl flex flex-col transition-all duration-300 ${
-                tier.highlight
-                  ? "bg-gradient-to-b from-[#0b2a4a]/80 via-[#0d1b2e]/70 to-transparent border border-fourth/40 shadow-[0_40px_120px_rgba(0,0,0,0.9)] scale-[1.05] z-10"
-                  : "bg-white/[0.04] border border-white/10 hover:border-white/20"
-              }`}
-            >
-              {tier.highlight && (
-                <div className="absolute -inset-0.5 rounded-2xl bg-fourth/10 blur-2xl opacity-40 pointer-events-none" />
-              )}
-
-              {tier.highlight && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-fourth text-[10px] font-semibold px-3 py-1 rounded-full text-white shadow">
-                  Most Popular
-                </div>
-              )}
-
-              <h3 className={`text-lg font-semibold ${tier.color}`}>
-                {tier.name}
+      {/* ADD-ONS — div NOT section, inline style white */}
+      <div style={{ background: "#ffffff" }}>
+        <div className=" pb-20">
+          <div className="max-w-6xl mx-auto px-5 sm:px-6">
+            <div className="text-center mb-12">
+              <p className="text-[10px] uppercase tracking-[0.35em] text-fourth font-semibold mb-3">
+                Optional Add-ons
+              </p>
+              <h3
+                className="text-[26px] sm:text-[32px] font-semibold"
+                style={{ color: "#111827" }}
+              >
+                Extend Your Growth Capabilities
               </h3>
-
-              <p className="text-primary mt-3 text-[26px] font-bold">
-                {yearly && tier.priceYear ? tier.priceYear : tier.priceMonth}
-                <span className="text-xs text-third font-normal">
-                  {" "}
-                  / {yearly && tier.priceYear ? "year" : "month"}
-                </span>
+              <p
+                className="text-[14px] mt-3 max-w-xl mx-auto"
+                style={{ color: "#6b7280" }}
+              >
+                Add specialized visibility and performance tools without
+                changing your core plan.
               </p>
+            </div>
 
-              <p className="text-third text-[12px] mt-2">
-                Best for: {tier.bestFor}
-              </p>
-
-              <div className="my-6 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-
-              <div className="space-y-3 flex-1">
-                {tier.features.map((f, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <FiCheck className="text-fourth mt-0.5" />
-                    <span className="text-[14px] text-primary/90">{f}</span>
+            <div
+              className="rounded-2xl overflow-hidden"
+              style={{
+                background: "#000000",
+                border: "1px solid rgba(255,255,255,0.08)",
+                boxShadow: "0 10px 40px rgba(0,0,0,0.6)",
+              }}
+            >
+              <div className="divide-y divide-white/5">
+                {addons.map((addon, i) => (
+                  <div
+                    key={i}
+                    className="flex flex-col sm:flex-row sm:items-center gap-4 px-6 py-5 transition-colors duration-200 hover:bg-gray-900"
+                  >
+                    <div className="w-11 h-11 rounded-xl bg-fourth/10 border border-fourth/20 flex items-center justify-center text-lg text-fourth shrink-0">
+                      {addon.icon}
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-[15px] font-semibold text-white">
+                        {addon.title}
+                      </p>
+                      <p className="text-[13px] text-white/60 mt-0.5 leading-relaxed">
+                        {addon.desc}
+                      </p>
+                    </div>
+                    <span className="text-[10px] font-semibold text-fourth border border-fourth/20 bg-fourth/10 px-3 py-1 rounded-full self-start sm:self-center whitespace-nowrap">
+                      Optional
+                    </span>
                   </div>
                 ))}
               </div>
-
-              <p className="text-third text-[11px] mt-5 italic">{tier.note}</p>
-            </motion.div>
-          ))}
-        </div>
-
-        <div className="mt-24">
-          {/* HEADER */}
-          <div className="text-center mb-12">
-            <p className="text-[10px] uppercase tracking-[0.35em] text-fourth mb-3">
-              Optional Add-ons
-            </p>
-
-            <h3 className="text-[26px] sm:text-[32px] font-semibold text-primary">
-              Extend Your Growth Capabilities
-            </h3>
-
-            <p className="text-third text-[14px] mt-3 max-w-xl mx-auto">
-              Add specialized visibility and performance tools without changing
-              your core plan.
-            </p>
-          </div>
-
-          {/* PANEL */}
-          <div className="relative rounded-2xl border border-white/10 bg-gradient-to-b from-[#0b0e13]/80 to-[#0f1117]/90 backdrop-blur-xl overflow-hidden">
-            {/* subtle glow */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(37,99,235,0.08),transparent_60%)] pointer-events-none" />
-
-            <div className="relative divide-y divide-white/5">
-              {addons.map((addon, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col sm:flex-row sm:items-center gap-4 px-6 py-5 hover:bg-white/[0.03] transition"
-                >
-                  {/* icon */}
-                  <div className="w-11 h-11 rounded-xl bg-fourth/10 border border-fourth/20 flex items-center justify-center text-lg text-fourth shrink-0">
-                    {addon.icon}
-                  </div>
-
-                  {/* text */}
-                  <div className="flex-1">
-                    <p className="text-[15px] font-semibold text-primary">
-                      {addon.title}
-                    </p>
-                    <p className="text-[13px] text-third mt-1 leading-relaxed">
-                      {addon.desc}
-                    </p>
-                  </div>
-
-                  {/* tag */}
-                  <span className="text-[10px] font-semibold text-fourth border border-fourth/20 bg-fourth/10 px-3 py-1 rounded-full self-start sm:self-center">
-                    Optional
-                  </span>
-                </div>
-              ))}
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

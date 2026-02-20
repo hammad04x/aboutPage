@@ -8,7 +8,6 @@ import TierCta from "@/app/components/pricing/TierCta";
 export default function ConsultantPage() {
     return (
         <>
-        <PricingHero/>
         <FullPricing/>
         <NoCommissionModel/>
         <FAQ/>
