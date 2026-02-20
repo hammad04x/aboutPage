@@ -28,7 +28,7 @@ export default function InspectionFlow() {
       <div className="max-w-6xl mx-auto px-6 text-center">
 
         {/* HEADER */}
-        <p className="text-[11px] uppercase tracking-[0.3em] text-fourth font-semibold">
+        <p className="inline-block px-3 py-1 rounded-full text-[10px] tracking-[0.25em] uppercase text-fourth border border-fourth/20 bg-fourth/5 mb-4">
           Inspection Advantage
         </p>
 

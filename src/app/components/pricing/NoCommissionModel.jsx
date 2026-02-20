@@ -21,7 +21,7 @@ export default function NoCommissionModel() {
             viewport={{ once: true }}
             className="lg:pr-16"
           >
-            <span className="text-[15px] tracking-[0.3em] uppercase text-third block mb-4">
+            <span className="inline-block px-3 py-1 rounded-full text-[10px] tracking-[0.25em] uppercase text-fourth border border-fourth/20 bg-fourth/5 mb-4">
               Revenue Model
             </span>
 
