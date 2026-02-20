@@ -55,7 +55,7 @@ export default function GrowthTools() {
             viewport={{ once: true }}
             className="max-w-xl lg:sticky lg:top-28"
           >
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-fourth/25 text-[10px] tracking-[0.3em] uppercase text-fourth font-semibold bg-fourth/5 mb-6">
+            <span className="text-sm tracking-[0.4em] uppercase text-third font-semibold mb-4">
               Growth Tools
             </span>
 

@@ -43,7 +43,7 @@ export default function AccountabilityTrust() {
 
         {/* HEADER */}
         <div className="max-w-xl mb-10">
-          <p className="text-[11px] tracking-[0.35em] uppercase text-fourth mb-3">
+          <p className="text-sm tracking-[0.4em] uppercase text-third font-semibold mb-4">
             Accountability & Trust
           </p>
 

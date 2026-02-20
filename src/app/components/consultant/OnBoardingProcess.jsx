@@ -73,11 +73,11 @@ export default function OnboardingProcess() {
       <div className="relative z-10 max-w-6xl mx-auto px-5 md:px-6">
         {/* HEADER */}
         <div className="text-center max-w-2xl mx-auto mb-14 md:mb-16">
-          <span className="inline-block px-3 py-1 rounded-full text-[10px] tracking-[0.25em] uppercase text-fourth border border-fourth/20 bg-fourth/5 mb-4">
+          <span className="text-sm tracking-[0.4em] uppercase text-third font-semibold mb-4">
             How to Get Started
           </span>
 
-          <h2 className="text-[30px] sm:text-[40px] md:text-[48px] font-bold leading-tight text-primary mb-3">
+          <h2 className="text-[30px] sm:text-[40px] md:text-[48px] font-bold leading-tight text-primary mb-3 mt-5">
             Onboarding in{" "}
             <span className="bg-linear-to-r from-fourth via-[#60a5fa] to-fourth bg-clip-text text-transparent">
               5 Simple Steps

@@ -56,7 +56,7 @@ export default function TierStructure() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto"
         >
-          <p className="inline-block px-3 py-1 rounded-full text-[10px] tracking-[0.25em] uppercase text-fourth border border-fourth/20 bg-fourth/5 mb-4">
+          <p className="text-sm tracking-[0.4em] uppercase text-third font-semibold mb-4">
             Tier Structure
           </p>
 

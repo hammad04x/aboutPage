@@ -21,12 +21,12 @@ export default function NoCommissionModel() {
             viewport={{ once: true }}
             className="lg:pr-16"
           >
-            <span className="inline-block px-3 py-1 rounded-full text-[10px] tracking-[0.25em] uppercase text-fourth border border-fourth/20 bg-fourth/5 mb-4">
+            <span className="text-sm tracking-[0.4em] uppercase text-third font-semibold mb-4">
               Revenue Model
             </span>
 
             {/* big number */}
-            <div className="mb-6">
+            <div className="mb-6 mt-0">
               <span className="text-[88px] sm:text-[110px] md:text-[128px] font-black leading-none text-primary tracking-tight">
                 0<span className="text-fourth">%</span>
               </span>

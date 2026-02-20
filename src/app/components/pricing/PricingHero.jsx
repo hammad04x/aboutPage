@@ -25,7 +25,7 @@ export default function PricingHero({ yearly, setYearly }) {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-block px-4 py-1.5 rounded-full text-[10px] tracking-[0.35em] uppercase text-fourth border border-fourth/20 bg-fourth/10 backdrop-blur mb-6"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#60a5fa]/30 text-sm tracking-[0.35em] uppercase text-third font-semibold bg-[#044596]/10 backdrop-blur-md mb-6"
         >
           Pricing & Tiers
         </motion.span>

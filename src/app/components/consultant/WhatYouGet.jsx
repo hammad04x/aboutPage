@@ -65,11 +65,11 @@ export default function WhatYouGetSpotlight() {
           viewport={{ once: true }}
           className="mb-20"
         >
-          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-fourth/25 text-[10px] tracking-[0.3em] uppercase text-fourth font-semibold bg-fourth/5 mb-4">
+          <span className="text-sm tracking-[0.4em] uppercase text-third font-semibold mb-4">
             What You Get
           </span>
 
-          <h2 className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[52px] font-semibold leading-[1.08] tracking-tight text-primary max-w-xl">
+          <h2 className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[52px] font-semibold leading-[1.08] tracking-tight text-primary max-w-xl mt-5">
             Everything you need to{" "}
             <span className="bg-linear-to-r from-fourth via-[#60a5fa] to-fourth bg-clip-text text-transparent font-bold">
               dominate

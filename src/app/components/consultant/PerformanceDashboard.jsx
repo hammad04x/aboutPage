@@ -140,11 +140,11 @@ export default function PerformanceDashboard() {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-14">
 
           <div className="max-w-xl">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-fourth/25 text-[10px] tracking-[0.3em] uppercase text-fourth font-semibold bg-fourth/5 mb-5">
+            <span className="text-sm tracking-[0.4em] uppercase text-third font-semibold mb-4">
               Analytics & Insights
             </span>
 
-            <h2 className="text-[32px] sm:text-[42px] md:text-[52px] font-bold leading-[1.08] text-primary">
+            <h2 className="text-[32px] sm:text-[42px] md:text-[52px] font-bold leading-[1.08] text-primary mt-5">
               Operate with Data,
               <br className="hidden sm:block" />
               <span className="text-fourth">
@@ -232,7 +232,7 @@ export default function PerformanceDashboard() {
               <div className="h-[220] w-full">
                 <MetricBarChart data={active.data} color={active.color} />
               </div>
-              
+
               <div className="grid grid-cols-3 gap-3 pt-2 border-t border-[#1f2937]">
                 {[
                   { l: "Peak Week", v: `W${peakIndex + 1}` },
