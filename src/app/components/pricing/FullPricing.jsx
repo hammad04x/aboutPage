@@ -235,7 +235,7 @@ export default function FullPricing() {
         <div className=" pb-20">
           <div className="max-w-6xl mx-auto px-5 sm:px-6">
             <div className="text-center mb-12">
-              <p className="text-[10px] uppercase tracking-[0.35em] text-fourth font-semibold mb-3">
+              <p className="inline-block px-3 py-1 rounded-full text-[10px] tracking-[0.25em] uppercase text-fourth border border-fourth/20 bg-fourth/5 mb-4">
                 Optional Add-ons
               </p>
               <h3
