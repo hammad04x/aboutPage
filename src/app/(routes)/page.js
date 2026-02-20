@@ -1,10 +1,8 @@
-import CoreDifferentiators from "../components/choose-avx/CoreDifferentiators";
-import AvxHero from "../components/choose-avx/Hero";
 
-export default function AvxWorksPage() {
+export default function HomePage() {
   return (
     <>
-      <AvxHero/>
+    <h1>HELLO WORLD</h1>
     </>
   );
 }

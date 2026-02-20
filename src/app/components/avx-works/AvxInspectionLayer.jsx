@@ -53,7 +53,7 @@ export default function AvxInspectionLayer() {
     const [active, setActive] = useState(ITEMS[0]);
 
     return (
-        <section className="bg-secondary">
+        <section >
             <div className="mx-auto max-w-7xl px-6 pb-10">
                 {/* HEADER */}
                 <div className="max-w-4xl mb-14">

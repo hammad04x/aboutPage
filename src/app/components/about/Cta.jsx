@@ -12,7 +12,7 @@ export default function Cta() {
             font-semibold
             leading-[1.12]
             text-primary
-            font-[Montserrat]
+            font-primary
           ">
             Ready to explore better
             <span className="block mt-3 text-fourth">
@@ -64,7 +64,7 @@ export default function Cta() {
               text-2xl sm:text-3xl
               font-semibold
               text-fourth
-              font-[Montserrat]
+              font-primary
             ">
               Browse Vehicles
             </p>
@@ -128,7 +128,7 @@ export default function Cta() {
               text-2xl sm:text-3xl
               font-semibold
               text-fourth
-              font-[Montserrat]
+              font-primary
             ">
               Become a Consultant
             </p>
