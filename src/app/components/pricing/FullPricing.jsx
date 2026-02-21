@@ -265,7 +265,7 @@ export default function FullPricing() {
                 {addons.map((addon, i) => (
                   <div
                     key={i}
-                    className="group grid grid-cols-[48px_1fr] sm:flex sm:items-center gap-4 px-5 sm:px-6 py-5 sm:py-6 transition-colors duration-200 hover:bg-white/[0.03]"
+                    className="group grid grid-cols-[48px_1fr] sm:flex sm:items-center gap-4 px-5 sm:px-6 py-5 sm:py-6 transition-colors duration-200 hover:bg-white/15"
                   >
                     {/* ICON */}
                     <div className="w-12 h-12 rounded-xl bg-fourth/10 border border-fourth/20 flex items-center justify-center text-lg text-fourth shrink-0">
