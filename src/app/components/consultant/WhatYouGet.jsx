@@ -135,7 +135,7 @@ export default function WhatYouGetSpotlight() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
             className="flex-1 min-h-[300]"
-          >
+       >
             <div className="relative h-full rounded-2xl border border-[#1f2937] overflow-hidden">
               {/* Dynamic Background */}
               <div

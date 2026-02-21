@@ -132,7 +132,7 @@ export default function ConsultantHeroSection() {
           </div>
 
           {/* ── RIGHT – interactive panel ── */}
-          <div className="relative h-[470] select-none">
+          <div className="relative h-117.5 select-none">
             <div className="absolute inset-0 bg-linear-to-r from-fourth/10 to-transparent blur-3xl rounded-3xl" />
 
             <motion.div

@@ -234,7 +234,7 @@ export default function PerformanceDashboard() {
               </div>
 
               <div className="grid grid-cols-3 gap-3 pt-2 border-t border-[#1f2937]">
-                {[
+               {[
                   { l: "Peak Week", v: `W${peakIndex + 1}` },
                   { l: "Avg / Week", v: `${(active.data.reduce((a,b)=>a+b,0)/active.data.length).toFixed(1)}` },
                   { l: "Growth", v: active.delta },

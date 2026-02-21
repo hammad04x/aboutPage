@@ -198,7 +198,7 @@ export default function PerspectiveSwitcher() {
           </div>
 
           {/* Pill toggle */}
-          <div className="relative flex items-center p-1 rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm gap-1 self-start sm:self-auto">
+          <div className="relative flex items-center p-1 rounded-2xl border border-white/10 bg-white/3 backdrop-blur-sm gap-1 self-start sm:self-auto">
             {["buyer", "consultant"].map((id) => (
               <button
                 key={id}
@@ -252,7 +252,7 @@ export default function PerspectiveSwitcher() {
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1px_1fr]">
 
             {/* ── LEFT: ROLE IDENTITY ── */}
-            <div className="relative p-8 sm:p-10 lg:p-14 flex flex-col justify-between min-h-[360px] sm:min-h-[420px] lg:min-h-[480px]">
+            <div className="relative p-8 sm:p-10 lg:p-14 flex flex-col justify-between min-h-90 sm:min-h-105 lg:min-h-120">
 
               {/* Ghost index */}
               <div

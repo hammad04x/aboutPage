@@ -150,7 +150,13 @@ export default function OnboardingProcess() {
                     onClick={() => setActiveStep(i)}
                     className="flex items-center gap-4 group transition-all hover:cursor-pointer"
                   >
-                    {/* ICON CIRCLE */}
+                    {(isActive || isDone) && (
+                      <div
+                        className="absolute left-2.5 w-8 h-8 rounded-full blur-lg opacity-30"
+                        style={{ background: isDone ? "#10b981" : step.color }}
+                      />
+                    )}
+
                     <div
                       className="w-12 h-12 rounded-full flex items-center justify-center border transition-all duration-300"
                       style={{
