@@ -49,3 +49,52 @@
        font-family: var(--font-primary);
   }
 
+
+
+  /* ===== PRICING TOGGLE ===== */
+
+.pricing-toggle {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.8em;
+  height: 2em;
+}
+
+.pricing-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.pricing-toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: rgb(182, 182, 182);
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.pricing-toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 8px;
+  left: 0.3em;
+  bottom: 0.3em;
+  transform: rotate(270deg);
+  background-color: white;
+  transition: 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+/* ACTIVE */
+
+.pricing-toggle input:checked + .pricing-toggle-slider {
+  background-color: #007bff;
+}
+
+.pricing-toggle input:checked + .pricing-toggle-slider:before {
+  transform: translateX(1.7em) rotate(360deg);
+}

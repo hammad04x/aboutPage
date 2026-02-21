@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 export default function PricingHero({ yearly, setYearly }) {
   return (
     <section className="relative pt-24 md:pt-32 pb-120 overflow-hidden">
-
       {/* BACKGROUND IMAGE — covers the whole section including the pb-80 space where cards overlap */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -19,7 +18,6 @@ export default function PricingHero({ yearly, setYearly }) {
       <div className="absolute bottom-0 left-0 right-0 h-40 bg-linear-to-b from-transparent to-black/40" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-
         {/* LABEL */}
         <motion.span
           initial={{ opacity: 0, y: 12 }}
@@ -50,8 +48,9 @@ export default function PricingHero({ yearly, setYearly }) {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mt-5 text-white/60 text-[15px] md:text-[16px] leading-relaxed max-w-2xl mx-auto"
         >
-          Choose a subscription tier that fits your inventory size and growth ambitions.
-          Built for transparency, scalability, and long-term visibility.
+          Choose a subscription tier that fits your inventory size and growth
+          ambitions. Built for transparency, scalability, and long-term
+          visibility.
         </motion.p>
 
         {/* TOGGLE */}
@@ -61,24 +60,32 @@ export default function PricingHero({ yearly, setYearly }) {
           transition={{ duration: 0.5, delay: 0.18 }}
           className="mt-8 flex items-center justify-center gap-4"
         >
-          <span className={`text-sm font-medium transition-colors duration-200 ${!yearly ? "text-white" : "text-white/40"}`}>
-            Monthly
-          </span>
+          <div className="mt-8 flex items-center justify-center gap-4">
+            <span
+              className={`text-md font-medium transition-colors duration-200 ${
+                !yearly ? "text-white" : "text-white/40"
+              }`}
+            >
+              Monthly
+            </span>
 
-          <button
-            onClick={() => setYearly(!yearly)}
-            className="relative w-14 h-7 rounded-full border border-white/20 bg-white/10 backdrop-blur transition-colors duration-200 hover:cursor-pointer"
-          >
-            <motion.div
-              animate={{ x: yearly ? 28 : 2 }}
-              transition={{ type: "spring", stiffness: 400, damping: 28 }}
-              className="absolute top-[3] w-[22] h-[22] rounded-full bg-fourth shadow-md"
-            />
-          </button>
+            <label className="pricing-toggle">
+              <input
+                type="checkbox"
+                checked={yearly}
+                onChange={() => setYearly(!yearly)}
+              />
+              <span className="pricing-toggle-slider"></span>
+            </label>
 
-          <span className={`text-sm font-medium transition-colors duration-200 ${yearly ? "text-white" : "text-white/40"}`}>
-            Yearly
-          </span>
+            <span
+              className={`text-md font-medium transition-colors duration-200 ${
+                yearly ? "text-white" : "text-white/40"
+              }`}
+            >
+              Yearly
+            </span>
+          </div>
         </motion.div>
 
         {/* TRUST LINE */}
@@ -91,9 +98,7 @@ export default function PricingHero({ yearly, setYearly }) {
           <span className="w-2 h-2 rounded-full bg-emerald-400" />
           No commission on vehicle sales
         </motion.div>
-
       </div>
-
     </section>
   );
 }
