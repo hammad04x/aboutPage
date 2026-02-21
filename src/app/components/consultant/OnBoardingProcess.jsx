@@ -28,7 +28,7 @@ const steps = [
     fullTitle: "Submit KYC & Business Details",
     desc: "Verify your identity and business credentials to unlock full marketplace access.",
     icon: <FiFileText />,
-    color: "#10b981",
+    color: "#f43f5e"  ,
     time: "~5 min",
     detail: "Government ID · License · Address proof",
   },
@@ -58,7 +58,7 @@ const steps = [
     fullTitle: "Activate Storefront",
     desc: "Your verified consultant profile and storefront go live across the AVX marketplace.",
     icon: <FiZap />,
-    color: "#f43f5e",
+    color:"#10b981",
     time: "Instant",
     detail: "Storefront live · Dashboard access",
   },
@@ -148,43 +148,31 @@ export default function OnboardingProcess() {
                   <button
                     key={i}
                     onClick={() => setActiveStep(i)}
-                    className="flex items-center gap-4 group transition-all"
+                    className="flex items-center gap-4 group transition-all hover:cursor-pointer"
                   >
-                    {(isActive || isDone) && (
-                      <div
-                        className="absolute left-[10] w-8 h-8 rounded-full blur-lg opacity-30"
-                        style={{ background: isDone ? "#10b981" : step.color }}
-                      />
-                    )}
-
+                    {/* ICON CIRCLE */}
                     <div
-                      className="relative w-12 h-12 rounded-full flex items-center justify-center border transition-all duration-300"
+                      className="w-12 h-12 rounded-full flex items-center justify-center border transition-all duration-300"
                       style={{
-                        borderColor: isActive
-                          ? step.color
-                          : isDone
-                            ? "#10b981"
+                        background: isDone
+                          ? "#10b981" // solid green when done
+                          : "#0f1117", // always dark otherwise
+                        borderColor: isDone
+                          ? "#10b981"
+                          : isActive
+                            ? step.color
                             : "#1f2937",
-                        background: isActive
-                          ? `${step.color}25`
-                          : isDone
-                            ? "rgba(16,185,129,0.15)"
-                            : "#0f1117",
-                        color: isActive
-                          ? step.color
-                          : isDone
-                            ? "#10b981"
+                        color: isDone
+                          ? "#ffffff" // white icon when done
+                          : isActive
+                            ? step.color // colored icon when active
                             : "#4b5563",
-                        transform: isActive ? "scale(1.05)" : "scale(1)",
-                        boxShadow: isActive
-                          ? `0 0 0 3px ${step.color}20`
-                          : "none",
                       }}
                     >
                       {isDone ? <FiCheck /> : step.icon}
                     </div>
 
-                    {/* text */}
+                    {/* TEXT */}
                     <div className="text-left">
                       <p className="text-[10px] tracking-wider text-third font-semibold">
                         {step.number}
@@ -251,7 +239,7 @@ export default function OnboardingProcess() {
                   <button
                     onClick={() => setActiveStep((i) => Math.max(0, i - 1))}
                     disabled={activeStep === 0}
-                    className="px-4 py-2 rounded-md border border-[#1f2937] text-xs text-third hover:text-primary transition disabled:opacity-30"
+                    className="px-4 py-2 rounded-md border border-[#1f2937] text-xs text-third hover:cursor-pointer hover:text-primary transition disabled:opacity-30"
                   >
                     Previous
                   </button>
@@ -261,7 +249,7 @@ export default function OnboardingProcess() {
                       setActiveStep((i) => Math.min(steps.length - 1, i + 1))
                     }
                     disabled={activeStep === steps.length - 1}
-                    className="px-4 py-2 rounded-md text-xs font-semibold disabled:opacity-30"
+                    className="px-4 py-2 rounded-md text-xs font-semibold disabled:opacity-30 hover:cursor-pointer"
                     style={{
                       background: `${active.color}20`,
                       color: active.color,
