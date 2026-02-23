@@ -28,7 +28,9 @@
 
       --animate-spin-slow: spin 3s linear infinite;
     }
-
+*{
+  scrollbar-width: none;
+}
     body {
       background-color: var(--color-secondary);
       color: var(--color-primary);
