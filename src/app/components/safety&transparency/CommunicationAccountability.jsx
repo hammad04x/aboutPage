@@ -29,7 +29,7 @@ export default function CommunicationAccountability() {
 
   return (
     <section className="relative py-25 px-6">
-      <div className="max-w-6xl mx-auto">
+      <div className="w-full">
         {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
